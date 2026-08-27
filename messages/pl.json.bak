@@ -1,0 +1,243 @@
+{
+  "navigation": {
+    "brands": "Marki",
+    "aboutUs": "O nas",
+    "news": "Aktualności",
+    "salesAreas": "Obszary sprzedaży",
+    "returns": "Zwroty",
+    "search": "Szukaj produktów...",
+    "account": "Konto",
+    "basket": "Koszyk",
+    "noBrandsYet": "Jeszcze brak marek",
+    "loading": "Ładowanie..."
+  },
+  "home": {
+    "welcome": "Witamy w Sound Service",
+    "homepageContent": "Treść strony głównej znajduje się tutaj",
+    "mainTitle": "Sound Service Europejska Dystrybucja Muzyczna",
+    "mainSubtitle": "Wsparcie i marketing ekskluzywnych produktów",
+    "heading1": "Doskonałe magazynowanie, najnowocześniejsza logistyka",
+    "heading2": "oraz dobrze przeszkolony międzynarodowy zespół sprzedaży i serwisu.",
+    "paragraph1": "Po założeniu firmy w 1983 roku, w Sound Service skupiliśmy się na działalności sprzedażowej w Niemczech, Austrii i krajach Beneluksu. W międzyczasie nasz obszar sprzedaży obejmuje całą Europę, a Sound Service stał się jednym z wiodących europejskich dystrybutorów instrumentów muzycznych, sprzętu nagłośnieniowego i oświetleniowego oraz wyposażenia DJ.",
+    "paragraph2": "Zawsze pracujemy zgodnie z motto wspierania wszystkich naszych partnerów w 100% we wszystkich sprawach: 360° kompleksowe wsparcie jest dla nas standardem, nie ma co do tego wątpliwości. Razem budujemy Twoją markę w Europie.",
+    "paragraph3": "Również dzięki naszej centralnej lokalizacji w sercu Europy możemy zaoferować naszym partnerom biznesowym optymalne kanały dystrybucji naszych marek i produktów. W tym celu opracowaliśmy doskonałe metody magazynowania, polegamy na najnowocześniejszych procesach logistycznych i imponujemy naszą wyjątkową niezawodnością.",
+    "paragraph4": "Pasja i zaangażowanie w nasze marki i naszych partnerów biznesowych stanowią podstawę naszej pracy, nawet po godzinach. Gramy na naszych markach, poznajemy je w najdrobniejszych szczegółach i dlatego dokładnie wiemy, o czym mówimy.",
+    "paragraph5": "Aby zapewnić Twój sukces, opracowujemy szczegółowe kampanie marketingowe dla Twojej marki i produktu. Dzięki stałej wymianie z naszymi detalistami dokładnie wiemy, jak najlepiej dotrzeć do Twojej grupy docelowej i wspieramy naszych detalistów materiałami marketingowymi optymalnie dopasowanymi do grupy docelowej.",
+    "paragraph6": "Nie ma serwisu takiego jak Sound Service!",
+    "latestNews": "Najnowsze Wiadomości",
+    "checkmarks": {
+      "leadingInEurope": "Lider w Europie",
+      "excellentStock": "Doskonała dostępność magazynowa",
+      "modernLogistics": "Nowoczesna logistyka",
+      "internationalSales": "Sprzedaż międzynarodowa",
+      "serviceTeams": "Zespoły serwisowe",
+      "exclusiveProducts": "Ekskluzywne produkty"
+    },
+    "aboutUs": {
+      "modernLogistics": {
+        "title": "Nowoczesna Logistyka",
+        "text": "Doskonałe magazynowanie dla całej Europy. Znamy nasze marki i znamy Twoich klientów. Dzięki najnowocześniejszym metodom magazynowania i logistyki dystrybuujemy Twoje produkty nawet do najbardziej odległych zakątków Europy - i to błyskawicznie."
+      },
+      "heartOfEurope": {
+        "title": "W Sercu Europy",
+        "text": "Z kosmopolitycznego miasta Berlin dbamy o potrzeby muzyczne sprzedawców detalicznych w całej Europie. Przy tym przywiązujemy dużą wagę do zapewnienia każdemu sprzedawcy kompleksowego wsparcia 360°. Rozwiązujemy każdy problem!"
+      },
+      "salesServiceTeams": {
+        "title": "Zespoły Sprzedaży I Serwisu",
+        "text": "Jeśli chodzi o dźwięk, wiemy, o czym mówimy. Nasz międzynarodowy personel jest wysoko wykwalifikowany i regularnie przechodzi szkolenia. Wiemy, jak budować marki: Razem i z pasją."
+      }
+    }
+  },
+  "about": {
+    "title": "O nas",
+    "paragraph1": "Założona w 1983 roku, berlińska firma Sound Service rozwinęła się systematycznie od dystrybutora jednego produktu (MFB Fricke, pierwsza na świecie cyfrowa perkusja poniżej 1000 $) do jednej z głównych niezależnych niemieckich firm dystrybucyjnych sprzętu MI-, profesjonalnego audio-, CE- i nagłośnieniowego. W ciągu ostatnich lat Sound Service systematycznie rozwijał się do międzynarodowej firmy dystrybucyjnej z niezwykle szerokim portfolio produktów, składającym się z szerokiej gamy marek oferujących wspaniały asortyment nowych i innowacyjnych produktów.",
+    "paragraph2": "Dzięki nadzwyczajnym możliwościom magazynowym i dobrze przeszkolonemu personelowi sprzedaży i serwisu w centrum Europy jesteśmy w stanie zaoferować naszym klientom maksimum dostępności i obsługi.",
+    "paragraph3": "Nie ma serwisu takiego jak Sound Service!"
+  },
+  "footer": {
+    "company": "Firma",
+    "aboutUs": "O nas",
+    "careerOpportunities": "Możliwości Kariery",
+    "service": "Serwis",
+    "contact": "Kontakt",
+    "shipping": "Wysyłka",
+    "returns": "Zwroty",
+    "information": "Informacja",
+    "terms": "Regulamin",
+    "imprint": "Stopka",
+    "dataProtection": "Ochrona Danych",
+    "environment": "Środowisko",
+    "copyright": "Copyright © 2025 Sound-Service Musikanlagen-Vertriebsgesellschaft mbH, Wszelkie prawa zastrzeżone."
+  },
+  "contact": {
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Nasz zespół odpowie na Twoje zapytanie tak szybko, jak to możliwe."
+  },
+  "cookieBanner": {
+    "title": "Szanujemy Twoją prywatność",
+    "description": "Używamy plików cookie, aby poprawić Twoje wrażenia z przeglądania, dostarczać spersonalizowane treści i analizować nasz ruch. Klikając 'Akceptuj wszystko', wyrażasz zgodę na użycie plików cookie.",
+    "accept": "Akceptuj wszystko",
+    "reject": "Odrzuć wszystko",
+    "learnMore": "Dowiedz się więcej"
+  },
+  "dataProtection": {
+    "title": "Ochrona Danych & Polityka Prywatności",
+    "intro": "Sound Service Europe zobowiązuje się do ochrony Twoich danych osobowych i poszanowania Twojej prywatności. Niniejsza polityka wyjaśnia, w jaki sposób zbieramy, wykorzystujemy i chronimy Twoje informacje zgodnie z Ogólnym Rozporządzeniem o Ochronie Danych (RODO).",
+    "lastUpdated": "Ostatnia aktualizacja",
+    "section1": {
+      "heading": "Administrator & Informacje Kontaktowe",
+      "company": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3, 12489 Berlin, Niemcy",
+      "phone": "Telefon",
+      "fax": "Faks",
+      "email": "E-mail",
+      "dpoTitle": "Inspektor Ochrony Danych",
+      "dpoName": "Konrad Hartsch",
+      "dpoContact": "datenschutz@sound-service.eu"
+    },
+    "section2": {
+      "heading": "Zbieranie Danych o Odwiedzinach Witryny",
+      "intro": "Podczas odwiedzania w celach informacyjnych witryna zbiera dane dziennika serwera, w tym:",
+      "items": [
+        "Odwiedzone strony i znaczniki czasu",
+        "Przesłana ilość danych",
+        "Źródło odesłania i informacje o przeglądarce",
+        "Szczegóły systemu operacyjnego",
+        "Zanonimizowane adresy IP"
+      ],
+      "legalBasis": "Podstawa prawna: Art. 6(1)(f) RODO (uzasadniony interes w stabilności witryny)"
+    },
+    "section3": {
+      "heading": "Wykorzystanie Plików Cookie",
+      "text": "Witryna wykorzystuje pliki cookie sesyjne i trwałe w celu poprawy doświadczenia użytkownika i uproszczenia procesów zamawiania. Pliki cookie przechowują ustawienia przeglądarki, dane o lokalizacji i informacje IP.",
+      "userControl": "Kontrola użytkownika: Odwiedzający mogą konfigurować preferencje plików cookie poprzez ustawienia przeglądarki (dostępne linki dla Internet Explorer, Firefox, Chrome, Safari, Opera).",
+      "note": "Niektóre pliki cookie są niezbędne do prawidłowego funkcjonowania platformy. Wyłączenie tych plików cookie może wpłynąć na Twoją możliwość korzystania z niektórych funkcji."
+    },
+    "section4": {
+      "heading": "Przetwarzanie Informacji Kontaktowych",
+      "text": "Dane osobowe przesłane za pośrednictwem formularzy kontaktowych są zbierane wyłącznie w celu odpowiedzi na zapytania. Dane są usuwane po rozwiązaniu sprawy, z poszanowaniem obowiązujących wymogów przechowywania.",
+      "legalBasisA": "Podstawa prawna: Art. 6(1)(f) RODO",
+      "legalBasisB": "Art. 6(1)(b) RODO jeśli dotyczy umowy"
+    },
+    "section5": {
+      "heading": "Konta Klientów & Realizacja Umowy",
+      "text": "Dane konta umożliwiają realizację umowy. Użytkownicy mogą w każdej chwili usunąć konta kontaktując się z administratorem. Przechowywanie danych jest zgodne z wymogami podatkowymi i handlowymi."
+    },
+    "section6": {
+      "heading": "Praktyki Marketingu Bezpośredniego",
+      "newsletter": {
+        "title": "Subskrypcja newslettera",
+        "items": [
+          "Wymagane potwierdzenie podwójnego opt-in",
+          "Podstawa prawna: Art. 6(1)(a) RODO (zgoda)",
+          "Adres IP i znacznik czasu rejestracji są rejestrowane",
+          "Rezygnacja dostępna przez link w newsletterze"
+        ]
+      },
+      "email": {
+        "title": "E-mail do istniejących klientów",
+        "items": [
+          "Podobne produkty promowane zgodnie z Art. 7(3) UWG",
+          "Podstawa prawna: Art. 6(1)(f) RODO (uzasadniony interes)",
+          "Prawo sprzeciwu dostępne w każdej chwili"
+        ]
+      },
+      "postal": {
+        "title": "Marketing pocztowy",
+        "items": [
+          "Przechowywane są imię, nazwisko, adres i informacje o tytule",
+          "Podstawa prawna: Art. 6(1)(f) RODO",
+          "Sprzeciw dozwolony w każdej chwili"
+        ]
+      }
+    },
+    "section7": {
+      "heading": "Media Społecznościowe & Integracja Wideo",
+      "youtube": {
+        "title": "Integracja YouTube (tryb zwiększonej prywatności)",
+        "items": [
+          "Dane użytkownika zbierane tylko podczas odtwarzania wideo",
+          "Google kojarzy dane z zalogowanymi kontami",
+          "Google analizuje użycie do celów marketingowych i badawczych",
+          "Podstawa prawna: Art. 6(1)(f) RODO (uzasadnione interesy Google)",
+          "Użytkownicy mogą sprzeciwić się tworzeniu profilu"
+        ],
+        "note": "Połączenia DoubleClick są nawiązywane podczas odwiedzin witryny niezależnie od odtwarzania wideo.",
+        "reference": "https://www.google.de/intl/de/policies/privacy"
+      }
+    },
+    "section8": {
+      "heading": "Bezpieczeństwo Danych",
+      "intro": "Wdrażamy odpowiednie środki techniczne i organizacyjne w celu ochrony Twoich danych osobowych przed nieuprawnionym dostępem, zmianą, ujawnieniem lub zniszczeniem. Środki te obejmują:",
+      "encryption": {
+        "title": "Szyfrowanie",
+        "text": "Wszystkie dane przesyłane między Twoją przeglądarką a naszymi serwerami są szyfrowane przy użyciu technologii SSL/TLS."
+      },
+      "accessControl": {
+        "title": "Kontrola Dostępu",
+        "text": "Ścisłe kontrole dostępu zapewniają, że tylko upoważniony personel ma dostęp do danych osobowych."
+      },
+      "audits": {
+        "title": "Regularne Audyty",
+        "text": "Regularnie sprawdzamy i aktualizujemy nasze praktyki bezpieczeństwa, aby utrzymać najwyższe standardy."
+      },
+      "storage": {
+        "title": "Bezpieczne Przechowywanie",
+        "text": "Dane są przechowywane na bezpiecznych serwerach w zgodnych centrach danych w UE."
+      }
+    },
+    "section9": {
+      "heading": "Twoje Prawa zgodnie z RODO",
+      "intro": "Jako osoba, której dane dotyczą, masz następujące prawa:",
+      "access": {
+        "title": "Prawo Dostępu",
+        "text": "Poproś o kopię danych osobowych, które przechowujemy na Twój temat."
+      },
+      "rectification": {
+        "title": "Prawo do Sprostowania",
+        "text": "Poproś o poprawienie nieprawidłowych lub niekompletnych danych."
+      },
+      "erasure": {
+        "title": "Prawo do Usunięcia",
+        "text": "Poproś o usunięcie Twoich danych osobowych (z zastrzeżeniem obowiązków prawnych)."
+      },
+      "restriction": {
+        "title": "Prawo do Ograniczenia",
+        "text": "Poproś o ograniczenie przetwarzania Twoich danych osobowych."
+      },
+      "portability": {
+        "title": "Prawo do Przenoszenia Danych",
+        "text": "Otrzymaj swoje dane w ustrukturyzowanym, powszechnie używanym formacie."
+      },
+      "object": {
+        "title": "Prawo Sprzeciwu",
+        "text": "Sprzeciw wobec przetwarzania Twoich danych osobowych do celów marketingowych."
+      }
+    },
+    "section10": {
+      "heading": "Przechowywanie Danych",
+      "text": "Przechowujemy Twoje dane osobowe tylko tak długo, jak jest to konieczne do realizacji celów określonych w niniejszej polityce, wypełnienia zobowiązań prawnych, rozstrzygania sporów i egzekwowania naszych umów."
+    },
+    "section11": {
+      "heading": "Usługi Osób Trzecich",
+      "text": "Możemy udostępniać Twoje dane zaufanym zewnętrznym dostawcom usług, którzy pomagają nam w prowadzeniu naszej platformy, przetwarzaniu płatności lub świadczeniu usług. Strony te są zobowiązane umownie do ochrony Twoich danych i używania ich tylko do określonych celów."
+    },
+    "section12": {
+      "heading": "Skontaktuj Się z Naszym Inspektorem Ochrony Danych",
+      "intro": "Jeśli masz pytania dotyczące naszych praktyk ochrony danych lub chcesz skorzystać ze swoich praw, skontaktuj się z naszym Inspektorem Ochrony Danych:",
+      "title": "Inspektor Ochrony Danych",
+      "company": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3",
+      "city": "12489 Berlin, Niemcy",
+      "emailLabel": "E-mail"
+    },
+    "section13": {
+      "heading": "Organ Nadzorczy",
+      "text": "Masz prawo złożyć skargę do lokalnego organu ochrony danych, jeśli uważasz, że nie przetwarzaliśmy Twoich danych osobowych w odpowiedni sposób."
+    },
+    "section14": {
+      "heading": "Zmiany w Niniejszej Polityce",
+      "text": "Możemy od czasu do czasu aktualizować niniejszą politykę prywatności, aby odzwierciedlić zmiany w naszych praktykach lub wymogach prawnych. Powiadomimy Cię o wszelkich istotnych zmianach, publikując nową politykę na tej stronie i aktualizując datę 'Ostatnia aktualizacja'."
+    }
+  }
+}

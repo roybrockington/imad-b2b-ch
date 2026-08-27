@@ -1,0 +1,863 @@
+{
+  "navigation": {
+    "brands": "Marken",
+    "aboutUs": "Über uns",
+    "news": "Aktuelles",
+    "salesAreas": "Vertriebsgebiet",
+    "returns": "Rücksendungen & Retouren",
+    "contact": "Kontakt",
+    "search": "Produkte suchen...",
+    "account": "Konto",
+    "basket": "Warenkorb",
+    "noBrandsYet": "Noch keine Marken",
+    "loading": "Laden...",
+    "currency": "Währung",
+    "language": "Sprache"
+  },
+  "categories": {
+    "allCategories": "Alle Kategorien",
+    "all": "Alle"
+  },
+  "pricing": {
+    "contactSalesForPricing": "Kontaktieren Sie den Vertrieb für Preise",
+    "callForAvailability": "Rufen Sie an für Verfügbarkeit",
+    "callForInfo": "Rufen Sie an für Informationen"
+  },
+  "search": {
+    "title": "Suchergebnisse",
+    "searching": "Suche läuft...",
+    "resultsFor": "{count} Ergebnisse für \"{query}\"",
+    "enterQuery": "Geben Sie einen Suchbegriff ein, um Ergebnisse zu sehen",
+    "loading": "Laden...",
+    "noResults": "Keine Produkte gefunden für \"{query}\"",
+    "noImage": "Kein Bild"
+  },
+  "heroSlider": {
+    "findOutMore": "Mehr erfahren",
+    "loading": "Laden..."
+  },
+  "product": {
+    "addToCart": "In den Warenkorb",
+    "addedToCart": "✓ Zum Warenkorb hinzugefügt",
+    "quantity": "Menge:",
+    "loginToAddToCart": "Bitte melden Sie sich an, um Artikel in den Warenkorb zu legen",
+    "accountPendingApproval": "Ihr Konto wartet auf Genehmigung",
+    "logIn": "Anmelden",
+    "contactSales": "Vertrieb kontaktieren",
+    "loading": "Laden...",
+    "manufacturer": "Hersteller",
+    "importer": "Importeur",
+    "responsibleEntity": "Verantwortliche Stelle",
+    "originOfArticle": "Artikelherkunft",
+    "bstockAvailable": "B-Ware verfügbar",
+    "bstockDescription": "Geöffnete oder generalüberholte Geräte zu einem reduzierten Preis. Es gilt dieselbe Garantie.",
+    "save": "Sparen",
+    "inStock": "auf Lager",
+    "addBstockToCart": "B-Ware in den Warenkorb",
+    "embargoTitle": "Unveröffentlichtes Produkt (Embargo)",
+    "embargoNotice": "Dieses Produkt ist noch nicht veröffentlicht! Sie können es bereits bestellen, allerdings darf dieses Produkt noch nicht öffentlich beworben werden."
+  },
+  "cart": {
+    "title": "Warenkorb",
+    "loginPrompt": "Bitte melden Sie sich an, um Ihren Warenkorb anzuzeigen",
+    "logIn": "Anmelden",
+    "accessRestricted": "Zugriff eingeschränkt",
+    "notAvailableForAdmin": "Der Warenkorb ist für Admin-Benutzer nicht verfügbar.",
+    "goToAdminDashboard": "Zum Admin-Dashboard gehen",
+    "emptyCart": "Ihr Warenkorb ist leer",
+    "continueShopping": "Weiter einkaufen",
+    "clearCart": "Warenkorb leeren",
+    "noImage": "Kein Bild",
+    "sku": "Artikelnummer:",
+    "orderSummary": "Bestellübersicht",
+    "items": "Artikel:",
+    "total": "Gesamt:",
+    "proceedToCheckout": "Zur Kasse gehen"
+  },
+  "checkout": {
+    "loading": "Laden...",
+    "title": "Kasse",
+    "accountInformation": "Kontoinformationen",
+    "account": "Konto:",
+    "accountCode": "Kontonummer:",
+    "email": "E-Mail:",
+    "deliveryAddress": "Lieferadresse",
+    "default": "Standard",
+    "orderReference": "Bestellreferenz",
+    "yourOrderReference": "Ihre Bestellreferenznummer",
+    "optional": "(Optional)",
+    "enterPONumber": "Geben Sie Ihre Bestellnummer oder Referenz ein",
+    "poNumberHelp": "Fügen Sie Ihre interne Bestellnummer oder Referenznummer zur Nachverfolgung hinzu",
+    "orderNotes": "Bestellnotizen",
+    "specialInstructions": "Besondere Anweisungen oder Hinweise für diese Bestellung",
+    "characters": "Zeichen",
+    "orderItems": "Bestellartikel",
+    "noImage": "Kein Bild",
+    "sku": "Artikelnummer:",
+    "orderSummary": "Bestellübersicht",
+    "items": "Artikel:",
+    "subtotal": "Zwischensumme:",
+    "total": "Gesamt:",
+    "placingOrder": "Bestellung wird aufgegeben...",
+    "placeOrder": "Bestellung aufgeben",
+    "backToCart": "Zurück zum Warenkorb",
+    "mustBeLoggedIn": "Sie müssen angemeldet sein, um eine Bestellung aufzugeben",
+    "accountNotApproved": "Ihr Konto muss genehmigt werden, um Bestellungen aufzugeben",
+    "selectAddress": "Bitte wählen Sie eine Lieferadresse",
+    "poReferenceRequired": "Bitte geben Sie Ihre Bestellreferenznummer ein",
+    "orderFailed": "Bestellung konnte nicht übermittelt werden. Bitte versuchen Sie es erneut."
+  },
+  "orderConfirmation": {
+    "loadingOrder": "Bestelldetails werden geladen...",
+    "orderNotFound": "Bestellung nicht gefunden",
+    "unableToFind": "Bestelldetails können nicht gefunden werden",
+    "noOrderId": "Keine Bestellnummer angegeben",
+    "failedToLoad": "Bestelldetails konnten nicht geladen werden",
+    "returnHome": "Zur Startseite",
+    "orderConfirmed": "Bestellung bestätigt!",
+    "thankYou": "Vielen Dank für Ihre Bestellung. Wir werden sie in Kürze bearbeiten.",
+    "orderDetails": "Bestelldetails",
+    "orderNumber": "Bestellnummer:",
+    "orderDate": "Bestelldatum:",
+    "yourPONumber": "Ihre Bestellnummer:",
+    "status": "Status:",
+    "account": "Konto:",
+    "totalAmount": "Gesamtbetrag:",
+    "orderNotes": "Bestellnotizen:",
+    "orderItems": "Bestellartikel",
+    "noImage": "Kein Bild",
+    "sku": "Artikelnummer:",
+    "whatHappensNext": "Was passiert als Nächstes?",
+    "step1": "Sie erhalten in Kürze eine Bestellbestätigung per E-Mail",
+    "step2": "Unser Team wird Ihre Bestellung prüfen und bearbeiten",
+    "step3": "Sie erhalten Updates zum Bestellstatus per E-Mail",
+    "step4": "Bei Fragen wenden Sie sich bitte an unser Vertriebsteam",
+    "continueShopping": "Weiter einkaufen",
+    "viewDashboard": "Dashboard anzeigen"
+  },
+  "home": {
+    "welcome": "Willkommen bei Sound Service",
+    "homepageContent": "Homepage-Inhalt kommt hier hin",
+    "mainTitle": "iMAD AG International Marketing & Distribution",
+    "mainSubtitle": "Exklusivvertrieb von erstklassigen Produkten",
+    "heading1": "Exklusivvertrieb von erstklassigen Produkten",
+    "heading2": "und ein gut ausgebildetes internationales Vertriebs- und Serviceteam",
+    "paragraph1": "Nach der Firmengründung 1983 konzentrierten wir uns bei Sound Service auf die Vertriebsarbeit in Deutschland, Österreich und Benelux. Inzwischen erstreckt sich unser Vertriebsgebiet auf ganz Europa und Sound Service ist zu einem der führenden europäischen Vertriebsunternehmen für Musikinstrumente, Ton- und Lichttechnik sowie DJ-Bedarf geworden.",
+    "paragraph2": "Dabei arbeiten wir stets nach der Devise all unsere Partner in allen Angelegenheiten zu 100% zu unterstützen: 360° Rundum-Betreuung ist für uns der Standard, daran gibt es nichts zu rütteln. Gemeinsam bauen wir Ihre Marke in Europa auf.",
+    "paragraph3": "Auch dank unserer zentralen Lage im Herzen Europas können wir unseren Geschäftspartnern optimale Verteilungswege unserer Marken und Produkte bieten. Dazu haben wir exzellente Bevorratungsmethoden entwickelt, setzen auf modernste Logistik-Abläufe und überzeugen mit einer außerordentlichen Zuverlässigkeit.",
+    "paragraph4": "Leidenschaft und Engagement für unsere Marken und unsere Geschäftspartner bilden die Grundlage unserer Arbeit, auch nach Feierabend. Wir spielen unsere Marken, lernen sie bis ins kleinste Detail kennen und wissen somit genau, wovon wir sprechen.",
+    "paragraph5": "Um Ihren Erfolg sicherzustellen entwickeln wir detailliert konzipierte Marketing-Aktionen für Ihre Marke und Ihr Produkt. Durch den ständigen Austausch mit unseren Einzelhändlern wissen wir genau, wie wir Ihre Zielgruppe am besten erreichen und unterstützen unsere Einzelhändler dabei gezielt mit optimal auf die Zielgruppe zugeschnittenen Marketing-Materialien.",
+    "paragraph6": "There is no service like Sound Service!",
+    "topBrands": "Top-Marken bei Sound Service",
+    "latestNews": "Aktuelles Direkt aus dem Blog",
+    "checkmarks": {
+      "leadingInEurope": "Führend in Europa",
+      "excellentStock": "Exzellente Bevorratung",
+      "modernLogistics": "Moderne Logistik",
+      "internationalSales": "Internationaler Vertrieb",
+      "serviceTeams": "Service-Teams",
+      "exclusiveProducts": "Exklusive Produkte"
+    },
+    "aboutUs": {
+      "modernLogistics": {
+        "title": "Moderne Logistik",
+        "text": "Exzellente Bevorratung für ganz Europa. Wir kennen unsere Marken und wir kennen Ihre Kunden. Mit modernsten Lager- und Logistik-Methoden verteilen wir Ihre Produkte auch in die abgelegensten Ecken Europas - und das blitzschnell."
+      },
+      "heartOfEurope": {
+        "title": "Im Zentrum Europas",
+        "text": "Aus der Weltstadt Berlin heraus kümmern wir uns um die musikalischen Belange von Einzelhändlern in ganz Europa. Dabei legen wir größten Wert darauf, jedem Einzelhändler eine 360° Rundum-Betreuung zukommen zu lassen. Wir lösen jedes Problem!"
+      },
+      "salesServiceTeams": {
+        "title": "Vertriebs- & Service-Teams",
+        "text": "Wenn es um Sound geht, wissen wir wovon wir sprechen. Unsere internationalen Mitarbeiter sind bestens ausgebildet und werden regelmäßig geschult. Wir wissen, wie man Marken aufbaut: Gemeinsam und mit Leidenschaft."
+      }
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "paragraph1": "Gegründet 1983, ist das in Berlin ansässige Sound Service stetig gewachsen von einem Ein-Produkt-Distributor (MFB Fricke, die weltweit erste digitale Drum-Machine unter $1000) zu einem der führenden unabhängigen deutschen Vertriebsunternehmen für MI-, Profi-Audio-, CE- und Beschallungsausrüstung. In den letzten Jahren hat sich Sound Service stetig zu einem internationalen Vertriebsunternehmen mit einem äußerst breiten Produktportfolio entwickelt, bestehend aus einer Vielzahl von Marken, die ein großes Sortiment neuer und innovativer Produkte anbieten.",
+    "paragraph2": "Mit außergewöhnlichen Lagerkapazitäten und gut ausgebildetem Vertriebs- und Servicepersonal im Zentrum Europas sind wir in der Lage, unseren Kunden ein Maximum an Verfügbarkeit und Service zu bieten.",
+    "paragraph3": "Es gibt keinen Service wie Sound Service!"
+  },
+  "footer": {
+    "company": "Unternehmen",
+    "aboutUs": "Über uns",
+    "careerOpportunities": "Stellenangebote",
+    "service": "Unser Service",
+    "contact": "Kontakt",
+    "shipping": "Versandkosten",
+    "returns": "Rücksendungen & Retouren",
+    "information": "Informationen",
+    "terms": "Allgemeine Geschäftsbedingungen",
+    "imprint": "Impressum",
+    "dataProtection": "Datenschutz",
+    "environment": "Umwelt",
+    "copyright": "Copyright © 2025 Sound-Service Musikanlagen-Vertriebsgesellschaft mbH, Alle Rechte vorbehalten."
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Unser Team wird Ihre Anfrage so schnell wie möglich beantworten."
+  },
+  "cookieBanner": {
+    "title": "Wir schätzen Ihre Privatsphäre",
+    "description": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, personalisierte Inhalte bereitzustellen und unseren Datenverkehr zu analysieren. Durch Klicken auf 'Alle akzeptieren' stimmen Sie der Verwendung von Cookies zu.",
+    "accept": "Alle akzeptieren",
+    "reject": "Alle ablehnen",
+    "learnMore": "Mehr erfahren"
+  },
+  "dataProtection": {
+    "title": "Datenschutz & Datenschutzrichtlinie",
+    "intro": "Sound Service Europe verpflichtet sich zum Schutz Ihrer personenbezogenen Daten und zur Wahrung Ihrer Privatsphäre. Diese Richtlinie erklärt, wie wir Ihre Informationen gemäß der Datenschutz-Grundverordnung (DSGVO) erfassen, verwenden und schützen.",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "section1": {
+      "heading": "Verantwortlicher & Kontaktinformationen",
+      "company": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3, 12489 Berlin, Deutschland",
+      "phone": "Telefon",
+      "fax": "Fax",
+      "email": "E-Mail",
+      "dpoTitle": "Datenschutzbeauftragter",
+      "dpoName": "Konrad Hartsch",
+      "dpoContact": "datenschutz@sound-service.eu"
+    },
+    "section2": {
+      "heading": "Erfassung von Website-Besuchsdaten",
+      "intro": "Beim Besuch zu Informationszwecken erfasst die Website Server-Protokolldaten, einschließlich:",
+      "items": [
+        "Besuchte Seiten und Zeitstempel",
+        "Übertragenes Datenvolumen",
+        "Verweisquelle und Browser-Informationen",
+        "Betriebssystemdetails",
+        "Anonymisierte IP-Adressen"
+      ],
+      "legalBasis": "Rechtsgrundlage: Art. 6(1)(f) DSGVO (berechtigtes Interesse an Website-Stabilität)"
+    },
+    "section3": {
+      "heading": "Cookie-Nutzung",
+      "text": "Die Website verwendet Sitzungs- und persistente Cookies zur Verbesserung der Benutzererfahrung und zur Vereinfachung von Bestellvorgängen. Cookies speichern Browser-Einstellungen, Standortdaten und IP-Informationen.",
+      "userControl": "Benutzerkontrolle: Besucher können Cookie-Einstellungen über die Browser-Einstellungen konfigurieren (Links für Internet Explorer, Firefox, Chrome, Safari, Opera verfügbar).",
+      "note": "Einige Cookies sind für das ordnungsgemäße Funktionieren der Plattform erforderlich. Das Deaktivieren dieser Cookies kann Ihre Fähigkeit zur Nutzung bestimmter Funktionen beeinträchtigen."
+    },
+    "section4": {
+      "heading": "Verarbeitung von Kontaktinformationen",
+      "text": "Über Kontaktformulare übermittelte personenbezogene Daten werden ausschließlich zur Beantwortung von Anfragen erfasst. Daten werden nach Abschluss der Angelegenheit unter Beachtung geltender Aufbewahrungspflichten gelöscht.",
+      "legalBasisA": "Rechtsgrundlage: Art. 6(1)(f) DSGVO",
+      "legalBasisB": "Art. 6(1)(b) DSGVO bei vertragsbezogenen Anfragen"
+    },
+    "section5": {
+      "heading": "Kundenkonten & Vertragserfüllung",
+      "text": "Kontodaten ermöglichen die Vertragserfüllung. Benutzer können Konten jederzeit durch Kontaktaufnahme mit dem Verantwortlichen löschen. Die Datenspeicherung folgt steuer- und handelsrechtlichen Anforderungen."
+    },
+    "section6": {
+      "heading": "Direktmarketingpraktiken",
+      "newsletter": {
+        "title": "Newsletter-Abonnement",
+        "items": [
+          "Double-Opt-in-Bestätigung erforderlich",
+          "Rechtsgrundlage: Art. 6(1)(a) DSGVO (Einwilligung)",
+          "IP-Adresse und Registrierungszeitstempel werden aufgezeichnet",
+          "Abmeldung über Newsletter-Link möglich"
+        ]
+      },
+      "email": {
+        "title": "E-Mail an Bestandskunden",
+        "items": [
+          "Ähnliche Produkte werden gemäß Art. 7(3) UWG vermarktet",
+          "Rechtsgrundlage: Art. 6(1)(f) DSGVO (berechtigtes Interesse)",
+          "Widerspruchsrecht jederzeit verfügbar"
+        ]
+      },
+      "postal": {
+        "title": "Postwerbung",
+        "items": [
+          "Name, Adresse und Titelinformationen werden gespeichert",
+          "Rechtsgrundlage: Art. 6(1)(f) DSGVO",
+          "Widerspruch jederzeit möglich"
+        ]
+      }
+    },
+    "section7": {
+      "heading": "Soziale Medien & Video-Integration",
+      "youtube": {
+        "title": "YouTube-Einbettung (datenschutzfreundlicher Modus)",
+        "items": [
+          "Benutzerdaten werden nur während der Videowiedergabe erfasst",
+          "Google verknüpft Daten mit angemeldeten Konten",
+          "Google analysiert Nutzung für Marketing und Forschung",
+          "Rechtsgrundlage: Art. 6(1)(f) DSGVO (berechtigte Interessen von Google)",
+          "Benutzer können der Profilerstellung widersprechen"
+        ],
+        "note": "DoubleClick-Verbindungen werden bei Website-Besuchen unabhängig von der Videowiedergabe hergestellt.",
+        "reference": "https://www.google.de/intl/de/policies/privacy"
+      }
+    },
+    "section8": {
+      "heading": "Datensicherheit",
+      "intro": "Wir implementieren geeignete technische und organisatorische Maßnahmen zum Schutz Ihrer personenbezogenen Daten vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung. Diese Maßnahmen umfassen:",
+      "encryption": {
+        "title": "Verschlüsselung",
+        "text": "Alle zwischen Ihrem Browser und unseren Servern übertragenen Daten werden mit SSL/TLS-Technologie verschlüsselt."
+      },
+      "accessControl": {
+        "title": "Zugriffskontrolle",
+        "text": "Strenge Zugriffskontrollen stellen sicher, dass nur autorisiertes Personal auf personenbezogene Daten zugreifen kann."
+      },
+      "audits": {
+        "title": "Regelmäßige Audits",
+        "text": "Wir überprüfen und aktualisieren regelmäßig unsere Sicherheitspraktiken, um die höchsten Standards aufrechtzuerhalten."
+      },
+      "storage": {
+        "title": "Sichere Speicherung",
+        "text": "Daten werden auf sicheren Servern in konformen Rechenzentren innerhalb der EU gespeichert."
+      }
+    },
+    "section9": {
+      "heading": "Ihre Rechte gemäß DSGVO",
+      "intro": "Als betroffene Person haben Sie folgende Rechte:",
+      "access": {
+        "title": "Recht auf Auskunft",
+        "text": "Fordern Sie eine Kopie der personenbezogenen Daten an, die wir über Sie gespeichert haben."
+      },
+      "rectification": {
+        "title": "Recht auf Berichtigung",
+        "text": "Fordern Sie die Korrektur unrichtiger oder unvollständiger Daten an."
+      },
+      "erasure": {
+        "title": "Recht auf Löschung",
+        "text": "Fordern Sie die Löschung Ihrer personenbezogenen Daten an (vorbehaltlich gesetzlicher Verpflichtungen)."
+      },
+      "restriction": {
+        "title": "Recht auf Einschränkung",
+        "text": "Fordern Sie die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten an."
+      },
+      "portability": {
+        "title": "Recht auf Datenübertragbarkeit",
+        "text": "Erhalten Sie Ihre Daten in einem strukturierten, gängigen Format."
+      },
+      "object": {
+        "title": "Widerspruchsrecht",
+        "text": "Widersprechen Sie der Verarbeitung Ihrer personenbezogenen Daten zu Marketingzwecken."
+      }
+    },
+    "section10": {
+      "heading": "Datenspeicherung",
+      "text": "Wir speichern Ihre personenbezogenen Daten nur so lange, wie es zur Erfüllung der in dieser Richtlinie beschriebenen Zwecke, zur Erfüllung gesetzlicher Verpflichtungen, zur Beilegung von Streitigkeiten und zur Durchsetzung unserer Vereinbarungen erforderlich ist."
+    },
+    "section11": {
+      "heading": "Drittanbieter-Dienste",
+      "text": "Wir können Ihre Daten mit vertrauenswürdigen Drittanbietern teilen, die uns beim Betrieb unserer Plattform, der Zahlungsabwicklung oder der Bereitstellung von Dienstleistungen unterstützen. Diese Parteien sind vertraglich verpflichtet, Ihre Daten zu schützen und sie nur für bestimmte Zwecke zu verwenden."
+    },
+    "section12": {
+      "heading": "Kontaktieren Sie unseren Datenschutzbeauftragten",
+      "intro": "Wenn Sie Fragen zu unseren Datenschutzpraktiken haben oder Ihre Rechte ausüben möchten, wenden Sie sich bitte an unseren Datenschutzbeauftragten:",
+      "title": "Datenschutzbeauftragter",
+      "company": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3",
+      "city": "12489 Berlin, Deutschland",
+      "emailLabel": "E-Mail"
+    },
+    "section13": {
+      "heading": "Aufsichtsbehörde",
+      "text": "Sie haben das Recht, bei Ihrer örtlichen Datenschutzaufsichtsbehörde Beschwerde einzulegen, wenn Sie der Meinung sind, dass wir Ihre personenbezogenen Daten nicht angemessen behandelt haben."
+    },
+    "section14": {
+      "heading": "Änderungen dieser Richtlinie",
+      "text": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren, um Änderungen in unseren Praktiken oder gesetzlichen Anforderungen widerzuspiegeln. Wir werden Sie über wesentliche Änderungen informieren, indem wir die neue Richtlinie auf dieser Seite veröffentlichen und das Datum 'Zuletzt aktualisiert' aktualisieren."
+    }
+  },
+  "imprint": {
+    "title": "Impressum",
+    "companyInfo": {
+      "heading": "Firmeninformationen",
+      "companyName": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3",
+      "postalCode": "12489 Berlin",
+      "country": "Deutschland"
+    },
+    "contactDetails": {
+      "heading": "Kontaktdaten",
+      "email": "info@sound-service.eu"
+    },
+    "management": {
+      "heading": "Geschäftsführung & Registrierung",
+      "ceo": "Geschäftsführer",
+      "ceoName": "Dipl.-Kfm. Joachim Stock",
+      "court": "Registergericht",
+      "courtName": "Amtsgericht Charlottenburg",
+      "registrationNumber": "Registernummer",
+      "registrationNumberValue": "HRB 20782"
+    },
+    "tax": {
+      "heading": "Steuer- & Regulierungsidentifikatoren",
+      "vatId": "Umsatzsteuer-ID",
+      "vatIdValue": "DE 136600697",
+      "wIdNr": "W-IdNr",
+      "wIdNrValue": "DE136600697-00001",
+      "weeeNumber": "WEEE-Registrierungsnummer",
+      "weeeNumberValue": "DE 18189133"
+    },
+    "responsible": {
+      "heading": "Verantwortlich für den Inhalt",
+      "text": "Verantwortlich im Sinne des § 18 Abs. 2 MStV: Joachim Stock"
+    },
+    "dispute": {
+      "heading": "Streitbeilegung",
+      "text1": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
+      "linkUrl": "https://ec.europa.eu/consumers/odr",
+      "text2": "Wir nehmen nicht an Verbraucherstreitbeilegungsverfahren teil."
+    },
+    "intellectualProperty": {
+      "heading": "Geistiges Eigentum",
+      "text": "Alle Inhalte dieser Website sind urheberrechtlich geschützt. Sound Service Musikanlagen-Vertriebsgesellschaft mbH beansprucht das Eigentum an allen selbst erstellten Inhalten und respektiert gleichzeitig Marken und Urheberrechte Dritter. Die unbefugte Vervielfältigung oder Nutzung von Inhalten ohne ausdrückliche schriftliche Zustimmung ist untersagt."
+    }
+  },
+  "returns": {
+    "pageTitle": "Retouren",
+    "temporaryMessage": "Unsere Retourendatenbank wird neu geladen und steht in Kürze wieder zur Verfügung!",
+    "contactFormMessage": "Um in der Zwischenzeit eine neue RMA zu erstellen, füllen Sie bitte unser",
+    "contactFormLink": "Kontaktformular"
+  },
+  "environment": {
+    "pageTitle": "Umwelt",
+    "electricalEquipment": {
+      "heading": "Entsorgungshinweise für Elektro-Altgeräte",
+      "paragraph1": "Entsorgen Sie Elektro-Altgeräte umweltgerecht! Elektrogeräte sind mit folgendem Symbol gekennzeichnet, das bedeutet, dass Elektro-Altgeräte nicht über den Hausmüll entsorgt werden dürfen:",
+      "paragraph2": "Elektrogeräte enthalten wertvolle Ressourcen und Schadstoffe. Jeder Verbraucher ist daher gesetzlich verpflichtet, Elektro-Altgeräte an einer zugelassenen Sammel- oder Rücknahmestelle, beispielsweise am örtlichen Wertstoffhof, abzugeben. Elektro- und Elektronik-Altgeräte werden dort kostenlos angenommen und umwelt- und ressourcenschonend recycelt.",
+      "paragraph3": "Elektro-Altgeräte mit einer Kantenlänge bis 25 cm können kostenlos überall dort zurückgegeben werden, wo vergleichbare Produkte verkauft werden – unabhängig davon, wo sie gekauft wurden und unabhängig von Marke und Typ.",
+      "paragraph4": "Voraussetzung für die Rücknahme von Elektro-Altgeräten mit einer Kantenlänge größer als 25 cm ist, dass beim Händler ein Neugerät gekauft wurde und dies durch Vorlage eines entsprechenden Kaufbelegs nachgewiesen werden kann."
+    },
+    "batteries": {
+      "heading": "Entsorgungshinweise für Batterien",
+      "paragraph1": "Entsorgen Sie Batterien und Akkus umweltgerecht. Batterien und Akkumulatoren (Akkus) sind mit folgendem Symbol gekennzeichnet, das bedeutet, dass sie nicht über den Hausmüll entsorgt werden dürfen:",
+      "paragraph2": "Batterien und Akkumulatoren (Akkus) enthalten wertvolle Ressourcen und Schadstoffe. Jeder Verbraucher ist daher gesetzlich verpflichtet, Altbatterien und Altakkumulatoren an einer zugelassenen Sammelstelle abzugeben. Dadurch wird sichergestellt, dass sie umwelt- und ressourcenschonend recycelt werden.",
+      "paragraph3": "Batterien und Akkus können kostenlos überall dort zurückgegeben werden, wo ähnliche Produkte verkauft werden, unabhängig davon, wo sie gekauft wurden und unabhängig von Marke und Typ. Bei Hochleistungsbatterien (z.B. Handy- und Laptop-Akkus) kleben Sie bitte vor der Abgabe an der Sammelstelle die Pole ab, um Kurzschlüsse zu vermeiden. Defekte Batterien können ebenfalls kostenlos bei der Schadstoffsammelstelle am örtlichen Wertstoffhof abgegeben werden."
+    },
+    "packaging": {
+      "heading": "Entsorgungshinweise für Verpackungen",
+      "paragraph1": "Alle Verpackungen sind gemäß den Bestimmungen des Verpackungsgesetzes (VerpackG) bei einem dualen System lizenziert und können daher kostenlos über das örtliche Recyclingsystem (Papiertonne, Gelbe Tonne/Gelber Sack etc.) entsorgt werden."
+    }
+  },
+  "shipping": {
+    "pageTitle": "Versandkosten",
+    "shippingMethods": {
+      "heading": "Versandmethoden",
+      "description": "Wir bieten sichere Lieferung für Bestellungen in ganz Europa - lang oder breit, groß oder klein, schwer oder leicht. Sound Service arbeitet mit vertrauenswürdigen Logistikpartnern zusammen, um sicherzustellen, dass Ihre Bestellungen sicher ankommen.",
+      "dhl": "DHL & UPS: Standardversanddienste für europäische Lieferungen",
+      "forwarding": "Spedition: Verfügbar für größere oder spezialisierte Sendungen"
+    },
+    "standardShipping": {
+      "heading": "Standardversandkosten (DHL & UPS)",
+      "zone1": {
+        "name": "Zone 1",
+        "cost": "€15,00",
+        "countries": "Österreich, Belgien, Deutschland, Dänemark, Luxemburg, Niederlande"
+      },
+      "zone2": {
+        "name": "Zone 2",
+        "cost": "€20,00",
+        "countries": "Bulgarien, Tschechien, Estland, Spanien, Finnland, Frankreich, Polen"
+      },
+      "zone3": {
+        "name": "Zone 3",
+        "cost": "€22,00 - €25,00",
+        "countries": "Schweiz, Zypern, Georgien, Griechenland, Kroatien, Ungarn, Irland, Italien, Litauen, Lettland, Monaco, Malta, Norwegen, Portugal, Rumänien, Serbien, Schweden, Slowenien, Slowakei, Vatikan",
+        "note": "Vereinigtes Königreich: €22,00"
+      },
+      "countriesLabel": "Länder:"
+    },
+    "forwardingAgency": {
+      "heading": "Speditionszuschlag",
+      "description": "Für größere oder spezialisierte Sendungen, die Speditionsdienstleistungen erfordern, gelten folgende Zuschläge pro Bestellung:",
+      "mostEuropean": "Die meisten europäischen Länder",
+      "uk": "Vereinigtes Königreich"
+    },
+    "currency": {
+      "heading": "Währungsoptionen",
+      "description": "Preise sind in mehreren Währungen für Ihre Bequemlichkeit verfügbar:",
+      "currencies": "EUR • CHF • GBP • CZK • PLN"
+    },
+    "additionalInfo": {
+      "heading": "Zusätzliche Informationen",
+      "item1": "Versandkosten werden basierend auf dem Zielland berechnet",
+      "item2": "Die endgültigen Kosten werden beim Checkout berechnet und angezeigt",
+      "item3": "Sobald Ihre Bestellung versandt wurde, erhalten Sie Tracking-Informationen per E-Mail"
+    },
+    "questions": {
+      "heading": "Fragen zum Versand?",
+      "email": "E-Mail:",
+      "phone": "Telefon:"
+    }
+  },
+  "jobs": {
+    "pageTitle": "Karriere bei Sound Service",
+    "intro": {
+      "paragraph1": "Werden Sie Teil eines der führenden europäischen Distributoren für professionelle Audio-, Licht- und Musikausrüstung. Bei Sound Service sind wir leidenschaftlich daran interessiert, unseren Kunden in ganz Europa außergewöhnliche Produkte und Dienstleistungen zu bieten.",
+      "paragraph2": "Wir suchen ständig nach talentierten Menschen, die unser wachsendes Team verstärken möchten."
+    },
+    "whyWorkWithUs": {
+      "heading": "Warum bei uns arbeiten?",
+      "teamCulture": {
+        "title": "Großartige Teamkultur",
+        "description": "Arbeiten Sie mit leidenschaftlichen Profis, die Ihre Begeisterung für Audio- und Musiktechnologie teilen."
+      },
+      "careerDevelopment": {
+        "title": "Karriereentwicklung",
+        "description": "Möglichkeiten für berufliches Wachstum und Aufstieg innerhalb unseres europäischen Netzwerks."
+      },
+      "industryLeader": {
+        "title": "Branchenführer",
+        "description": "Seien Sie Teil eines Unternehmens, das mit den weltweit anerkanntesten Audio-Marken zusammenarbeitet."
+      },
+      "benefits": {
+        "title": "Attraktive Leistungen",
+        "description": "Attraktive Gehaltspakete und umfassende Leistungen für unsere Teammitglieder."
+      }
+    },
+    "currentOpenings": {
+      "heading": "Aktuelle Stellenangebote",
+      "loading": "Stellenangebote werden geladen...",
+      "error": "Fehler",
+      "noOpenings": "Wir haben derzeit keine spezifischen Stellenangebote aufgelistet, sind aber immer daran interessiert, von talentierten Fachkräften zu hören.",
+      "location": "Standort",
+      "startDate": "Start",
+      "immediately": "Sofort",
+      "tasksHeading": "Aufgaben & Verantwortlichkeiten",
+      "profileHeading": "Kandidatenprofil",
+      "expectationsHeading": "Was Sie erwarten können",
+      "applyButton": "Auf diese Stelle bewerben"
+    },
+    "hiringAreas": {
+      "heading": "Bereiche, für die wir einstellen",
+      "sales": {
+        "title": "Vertrieb & Geschäftsentwicklung",
+        "description": "Helfen Sie uns, unsere Reichweite auf europäischen Märkten zu erweitern und starke Kundenbeziehungen aufzubauen."
+      },
+      "technical": {
+        "title": "Technischer Support",
+        "description": "Bieten Sie unseren Kunden und Partnern fachkundige technische Unterstützung."
+      },
+      "logistics": {
+        "title": "Logistik & Betrieb",
+        "description": "Sorgen Sie für effiziente Distribution und Lagerverwaltung in ganz Europa."
+      },
+      "marketing": {
+        "title": "Marketing & Kommunikation",
+        "description": "Erstellen Sie überzeugende Kampagnen und verwalten Sie unsere Markenpräsenz auf mehreren Märkten."
+      },
+      "it": {
+        "title": "IT & Entwicklung",
+        "description": "Bauen Sie die digitale Infrastruktur auf und pflegen Sie sie, die unser Geschäft antreibt."
+      }
+    },
+    "applyNow": {
+      "heading": "Jetzt bewerben",
+      "paragraph1": "Interessiert daran, unserem Team beizutreten? Wir würden gerne von Ihnen hören!",
+      "paragraph2": "Bitte senden Sie Ihren Lebenslauf und Ihr Anschreiben an:",
+      "hrDepartment": "Personalabteilung",
+      "email": "E-Mail",
+      "note": "Bitte geben Sie die Stelle, an der Sie interessiert sind, oder \"Initiativbewerbung\" in der Betreffzeile an."
+    },
+    "commitment": {
+      "heading": "Unser Engagement",
+      "text": "Sound Service ist ein Arbeitgeber für Chancengleichheit. Wir feiern Vielfalt und sind bestrebt, ein integratives Umfeld für alle Mitarbeiter zu schaffen."
+    }
+  },
+  "orders": {
+    "pageTitle": "Meine Bestellungen",
+    "showingOrdersFor": "Alle Bestellungen anzeigen für",
+    "totalOrders": "gesamt",
+    "order": "Bestellung",
+    "orders": "Bestellungen",
+    "error": "Fehler",
+    "loading": "Bestellungen werden geladen...",
+    "noOrdersYet": "Noch keine Bestellungen",
+    "startShopping": "Beginnen Sie mit dem Einkaufen, um Ihre erste Bestellung zu erstellen",
+    "browseProducts": "Produkte durchsuchen",
+    "orderNumber": "Bestellung",
+    "date": "Datum",
+    "reference": "Referenz",
+    "items": "Artikel",
+    "total": "Gesamt",
+    "orderedBy": "Bestellt von",
+    "viewDetails": "Details anzeigen",
+    "backToOrders": "Zurück zu Meine Bestellungen",
+    "placedOn": "Aufgegeben am",
+    "orderId": "Bestellnummer",
+    "yourReference": "Ihre Referenz",
+    "orderDate": "Bestelldatum",
+    "deliveryAddress": "Lieferadresse",
+    "tel": "Tel",
+    "email": "E-Mail",
+    "orderItems": "Bestellartikel",
+    "sku": "Artikelnummer",
+    "qty": "Menge",
+    "shipped": "Versandt",
+    "of": "von",
+    "courier": "Kurier",
+    "tracking": "Sendungsverfolgung",
+    "eta": "Erwartet",
+    "orderTotal": "Bestellsumme",
+    "orderNotes": "Bestellnotizen",
+    "needHelp": "Benötigen Sie Hilfe bei Ihrer Bestellung?",
+    "needHelpText": "Wenn Sie Fragen zu dieser Bestellung haben, wenden Sie sich bitte an unser Support-Team.",
+    "contactSupport": "Support kontaktieren"
+  },
+  "salesAreas": {
+    "pageTitle": "Vertriebsgebiete",
+    "intro1": "Von Berlin nach ganz Europa - Betreuung und Vertrieb exklusiver Marken in Europa. Im Folgenden finden Sie eine Übersicht, welche Marken wir in welchen Ländern vertreiben. Sie können eine Marke auswählen und die Länder anzeigen, in denen wir die Marke vertreiben. Alternativ können Sie ein Land auswählen, um zu sehen, welche Marken über Sound Service erhältlich sind.",
+    "intro2": "Haben Sie Fragen? Zögern Sie nicht,",
+    "intro2Link": "uns zu kontaktieren",
+    "intro2Continued": ". Unser Vertriebsteam ist von Montag bis Freitag von 10:00 bis 18:00 Uhr für Sie da.",
+    "loadingMap": "Karte wird geladen...",
+    "regionsByBrand": "Regionen nach Marke",
+    "availableIn": "Verfügbar in",
+    "countries": "Ländern"
+  },
+  "_translation_note": "WICHTIG: Die Abschnitte 'terms' und 'dataProtection' müssen professionell ins Deutsche übersetzt werden. Siehe messages/en.json für die englische Vorlage. Professionelle juristische Übersetzung ist für rechtliche Dokumente erforderlich.",
+  "terms": {
+    "businessTerms": {
+      "title": "Allgemeine Verkaufsbedingungen der Sound Service Musikanlagen-Vertriebsgesellschaft mbH für den unternehmerischen Verkehr",
+      "section1": {
+        "heading": "§1. Geltungsbereich",
+        "items": [
+          "Diese Verkaufsbedingungen der Sound Service Musikanlagen-Vertriebsgesellschaft mbH gelten ausschließlich gegenüber Unternehmen, juristischen Personen des öffentlichen Rechts oder öffentlich-rechtlichen Sondervermögen im Sinne von § 310 Absatz 1 BGB (nachfolgend zusammenfassend: der „Unternehmer“).",
+          "Den Einkaufsbedingungen des Unternehmers widersprechen wir. Entgegenstehende oder von unseren Verkaufsbedingungen abweichende Bedingungen des Unternehmers erkennen wir nur an, wenn wir ausdrücklich schriftlich der Geltung zustimmen. Unsere vorbehaltlose Ausführung einer Bestellung in Kenntnis entgegenstehender Einkaufsbedingungen bedeutet keine Zustimmung hierzu durch uns. Dies gilt auch dann, wenn wir auf ein Schreiben Bezug nehmen, das Geschäftsbedingungen des Unternehmers oder eines Dritten enthält oder in dem dieser ausdrücklich auf solche Geschäftsbedingungen verweist.",
+          "Diese allgemeinen Verkaufsbedingungen gelten auch für alle zukünftigen Geschäfte mit dem Unternehmer. Das gilt auch, wenn bei künftigen Bestellungen der Unternehmer nicht nochmals ausdrücklich von uns auf die Anwendung dieser Allgemeinen Verkaufsbedingungen hingewiesen wird.",
+          "Mit Ausnahme von Geschäftsführern oder Prokuristen sind unsere Mitarbeiter zur Vereinbarung mündlicher Abreden nur mit der Maßgabe (aufschiebende Bedingung) berechtigt, dass diese Abreden von uns unverzüglich und in Textform bestätigt werden."
+        ]
+      },
+      "section2": {
+        "heading": "§2. Angebot und Vertragsabschluss",
+        "text": "Unsere Angebote erfolgen stets freibleibend. Sofern der Unternehmer nicht ausdrücklich eine andere Bestimmung trifft, können wir Bestellungen, die als Angebot gemäß § 145 BGB anzusehen sind, innerhalb von zwei Wochen annehmen; die Frist beginnt mit dem Datum der Absendung des Angebots."
+      },
+      "section3": {
+        "heading": "§3. Überlassene Unterlagen",
+        "text": "An allen von uns in Zusammenhang mit den Verhandlungen über eine Auftragserteilung dem Unternehmer überlassenen Unterlagen, wie z. B. Kalkulationen, Zeichnungen etc., behalten wir uns Eigentums- und Urheberrechte vor. Diese Unterlagen dürfen Dritten nicht zugänglich gemacht werden, es sei denn, wir erteilen dazu dem Unternehmer unsere ausdrückliche Zustimmung in Textform. Diese Unterlagen sind uns im Falle des Scheiterns der Verhandlungen, in jedem Falle nach Aufforderung unverzüglich zurückzusenden und eventuell gefertigte Kopien zu vernichten, wenn sie im ordnungsgemäßen Geschäftsgang nicht mehr benötigt werden. Von uns elektronisch zur Verfügung gestellte Daten, die zum Zwecke üblicher Datensicherung gesichert wurden, müssen nicht vernichtet werden."
+      },
+      "section4": {
+        "heading": "§4. Preise, Zahlung, Fälligkeit",
+        "items": [
+          "Sofern nichts Abweichendes in Textform vereinbart wird, gelten die Preise aus unserer Preisliste, die zum Zeitpunkt der Abgabe der Bestellung gültig ist. Steigen danach bis zur Lieferung die Kosten, so sind wir berechtigt, den Preis angemessen entsprechend der Kostensteigerungen zu erhöhen. Diese Erhöhung kann insbesondere aufgrund Erhöhung der Lieferpreise, Materialkosten, Löhne oder marktmäßiger Einstandspreise, die wir dem Besteller auf Verlangen nachweisen, erfolgen. Alle unsere Preise verstehen sich – vorbehaltlich einer abweichenden Regelung in Textform – ab unserem Geschäftssitz ausschließlich Versand-, Versicherungs- und Entsorgungspauschale und zuzüglich Mehrwertsteuer in jeweils gültiger Höhe. Kosten für Versand sowie für Versicherung, Verpackung und Entsorgung (VVE-Pauschale) werden anteilig gesondert in Rechnung gestellt.",
+          "Die Zahlung des Kaufpreises hat ausschließlich auf das in der Rechnung genannte Konto zu erfolgen. Der Abzug von Skonto ist nur bei besonderer Vereinbarung in Textform zulässig.",
+          "Sofern nichts anderes vereinbart wird, ist der Kaufpreis innerhalb von 7 Tagen nach Rechnungsstellung zu zahlen. Ist der Unternehmer Kaufmann und leistet er bei Fälligkeit nicht, so sind die ausstehenden Beträge ab dem Tag der Fälligkeit mit 5 % p.a. zu verzinsen. Verzugszinsen werden in Höhe von 9 % über dem jeweiligen Basiszinssatz p.a. berechnet. Die Geltendmachung eines höheren Verzugsschadens bleibt vorbehalten.",
+          "Wir sind berechtigt, noch ausstehende Lieferungen oder Leistungen nur gegen Vorauszahlung oder Sicherheitsleistung auszuführen oder zu erbringen, wenn uns nach Abschluss des Vertrages Umstände bekannt werden, welche die Kreditwürdigkeit des Unternehmers wesentlich zu mindern geeignet sind und durch welche die Bezahlung unserer offenen Forderungen durch den Unternehmer aus dem jeweiligen Vertragsverhältnis (einschließlich aus anderen Einzelaufträgen, für die derselbe Rahmenvertrag gilt) gefährdet wird. In diesem Falle können wir zudem sämtliche noch offenen Forderungen sofort fällig stellen."
+        ]
+      },
+      "section5": {
+        "heading": "§5. Aufrechnung und Zurückbehaltungsrechte",
+        "text": "Dem Unternehmer steht das Recht zur Aufrechnung nur zu, wenn seine Gegenansprüche rechtskräftig festgestellt, entscheidungsreif oder unbestritten sind. Zur Ausübung eines Zurückbehaltungsrechts ist der Unternehmer nur insoweit befugt, als sein Gegenanspruch auf dem gleichen Vertragsverhältnis beruht."
+      },
+      "section6": {
+        "heading": "§6. Lieferzeit",
+        "items": [
+          "Die von uns in Aussicht gestellten Lieferfristen und -termine gelten stets nur annähernd, es sei denn, dass wir ausdrücklich eine feste Frist oder einen festen Termin zugesagt haben. Zudem setzt der Beginn der von uns angegebenen Lieferzeit die rechtzeitige und ordnungsgemäße Erfüllung der Verpflichtungen des Unternehmers voraus. Die Einrede des nicht erfüllten Vertrages in Ansehung sämtlicher unserer Forderungen bleibt vorbehalten.",
+          "Wir haften nicht für Unmöglichkeit der Lieferung oder für Lieferverzögerungen, soweit diese durch höhere Gewalt oder sonstige, zum Zeitpunkt des Vertragsabschlusses nicht vorhersehbare Ereignisse (z.B. Betriebsstörungen aller Art, Schwierigkeiten in der Material- oder Energiebeschaffung, Transportverzögerungen, Streiks, rechtmäßige Aussperrungen, Mangel an Arbeitskräften, Energie oder Rohstoffen, Schwierigkeiten bei der Beschaffung von notwendigen behördlichen Genehmigungen, Pandemien oder Epidemien, behördliche Maßnahmen oder die ausbleibende, nicht richtige oder nicht rechtzeitige Belieferung durch Lieferanten trotz eines von uns geschlossenen kongruenten Deckungsgeschäfts) verursacht worden sind, die wir nicht zu vertreten haben. Sofern uns solche Ereignisse die Lieferung oder Leistung wesentlich erschweren oder unmöglich machen und die Behinderung nicht nur von vorübergehender Dauer ist, sind wir zum Rücktritt vom Vertrag berechtigt. Bei Hindernissen vorübergehender Dauer verlängern sich die Liefer- oder Leistungsfristen oder verschieben sich die Liefer- oder Leistungstermine um den Zeitraum der Behinderung zzgl. einer angemessenen Anlauffrist. Soweit dem Unternehmer infolge der Verzögerung die Abnahme der Lieferung oder Leistung nicht zuzumuten ist, kann er durch unverzügliche schriftliche Erklärung vom Vertrag zurücktreten.",
+          "Kommt der Unternehmer in Annahmeverzug oder verletzt er schuldhaft sonstige Mitwirkungspflichten, so sind wir berechtigt, den uns insoweit entstehenden Schaden einschließlich etwaiger Mehraufwendungen ersetzt zu verlangen. Weitergehende Ansprüche bleiben vorbehalten. Sofern vorstehende Voraussetzungen vorliegen, geht die Gefahr eines zufälligen Untergangs oder einer zufälligen Verschlechterung der Ware in dem Zeitpunkt auf den Unternehmer über, in dem dieser in Annahme- oder Schuldnerverzug geraten ist.",
+          {
+            "text": "Teillieferungen durch uns sind zulässig, wenn",
+            "subitems": [
+              "die Teillieferung für den Unternehmer im Rahmen des vertraglichen Bestimmungszwecks verwendbar ist",
+              "die Lieferung der restlichen bestellten Ware sichergestellt ist und",
+              "dem Unternehmer hierdurch kein erheblicher Mehraufwand oder zusätzliche Kosten entstehen (es sei denn, wir erklären uns zur Übernahme dieser Kosten bereit)."
+            ]
+          }
+        ]
+      },
+      "section7": {
+        "heading": "§7. Gefahrübergang bei Versendung",
+        "items": [
+          "Wird die Ware auf Wunsch des Unternehmers an diesen versandt, so geht mit der Absendung an den Unternehmer, spätestens mit Verlassen des Lagers die Gefahr des zufälligen Untergangs oder der zufälligen Verschlechterung der Ware auf den Unternehmer über. Dies gilt unabhängig davon, ob die Versendung der Ware vom Erfüllungsort erfolgt oder wer die Frachtkosten trägt.",
+          "Die Sendung wird von uns nur auf ausdrücklichen Wunsch des Unternehmers und auf dessen Kosten gegen Diebstahl, Bruch, Transport-, Feuer- und Wasserschäden oder sonstige versicherbare Risiken versichert."
+        ]
+      },
+      "section8": {
+        "heading": "§8. Eigentumsvorbehalt",
+        "items": [
+          "Wir behalten uns das Eigentum an der jeweils gelieferten Ware bis zur vollständigen Zahlung sämtlicher Forderungen aus der Geschäftsbeziehung vor (Vorbehaltsware). Dies gilt auch für alle zukünftigen Lieferungen, auch wenn wir uns nicht stets ausdrücklich hierauf berufen. Wir sind berechtigt, die jeweilige Vorbehaltsware an uns zu nehmen, wenn der Unternehmer sich vertragswidrig verhält.",
+          "Der Unternehmer ist verpflichtet, die Vorbehaltsware, solange das Eigentum noch nicht auf ihn übergegangen ist, pfleglich zu behandeln. Insbesondere ist er verpflichtet, diese auf eigene Kosten gegen Diebstahl-, Feuer-, und Wasserschäden ausreichend zum Neuwert zu versichern. Müssen Wartungs- und Inspektionsarbeiten durchgeführt werden, hat der Unternehmer diese auf eigene Kosten rechtzeitig auszuführen. Solange das Eigentum noch nicht übergegangen ist, hat uns der Unternehmer unverzüglich schriftlich zu benachrichtigen, wenn die gelieferte Vorbehaltsware verloren geht, gepfändet wird oder sonstigen Eingriffen Dritter ausgesetzt ist. Soweit der Dritte nicht in der Lage ist, uns die gerichtlichen und außergerichtlichen Kosten einer Klage gemäß § 771 ZPO zu erstatten, haftet der Unternehmer für den uns entstandenen Ausfall.",
+          "Der Unternehmer ist zur Weiterveräußerung der Vorbehaltsware im normalen Geschäftsverkehr berechtigt. Andere Verfügungen, insbesondere die Verpfändung oder Sicherungsübereignung, sind nicht gestattet. Solange der jeweilige Eigentumsvorbehalt besteht, darf die von uns innerhalb des Gebiets des Bundesrepublik Deutschland gelieferte Vorbehaltsware nicht ohne unsere vorherige schriftliche Zustimmung aus dem Gebiet der Bundesrepublik Deutschland ausgeführt werden.",
+          "Die Forderungen des Unternehmers aus der Weiterveräußerung der Vorbehaltsware tritt der Unternehmer schon jetzt an uns in Höhe des mit uns vereinbarten Faktura-Endbetrages (einschließlich Mehrwertsteuer) ab. Wir nehmen die jeweilige Abtretung an. Diese Abtretung gilt unabhängig davon, ob die Vorbehaltsware ohne oder nach Verarbeitung weiterverkauft worden ist. Der Unternehmer bleibt zur Einziehung der Forderung auch nach der Abtretung ermächtigt. Unsere Befugnis, die Forderung selbst einzuziehen, bleibt davon unberührt. Wir werden jedoch die Forderung nicht einziehen, solange der Unternehmer seinen Zahlungsverpflichtungen aus den vereinnahmten Erlösen nachkommt, nicht in Zahlungsverzug ist und insbesondere kein Antrag auf Eröffnung eines Insolvenzverfahrens gestellt ist oder Zahlungseinstellung oder Überschuldung vorliegt.",
+          "Für den Fall des Zahlungsverzugs wird die Forderung gegen den Dritten zusätzlich über den Betrag des Kaufpreises hinaus weiter bis zum dem zusätzlichen Betrag unseres Verzugsschadens hiermit an uns abgetreten. Wir nehmen die Abtretung an. Im Verzugsfall sind wir berechtigt, dem Dritten sofort die Forderungsabtretung bekannt zu geben und einzuziehen. Im Falle des Zahlungsverzuges sind wir berechtigt, auch ohne Ausübung unseres Rücktrittsrechts und ohne Nachfristsetzung auf Kosten des Unternehmers die einstweilige Herausgabe der in unserem Eigentum stehenden Waren zu verlangen. In unserem Herausgabeverlangen liegt kein Rücktritt vom Vertrag, es sei denn, wir hätten den Rücktritt ausdrücklich erklärt. Wir sind berechtigt, über die herausverlangte Lieferung nach Ankündigung anderweitig zu verfügen und den Unternehmer nach Zahlung neu zu beliefern.",
+          "Die Be- und Verarbeitung oder Umbildung der Vorbehaltsware durch den Unternehmer erfolgt stets Namens und im Auftrag für uns. In diesem Fall setzt sich das Anwartschaftsrecht des Unternehmers an der Vorbehaltsware an der umgebildeten Sache fort. Sofern die Vorbehaltsware mit anderen, uns nicht gehörenden Gegenständen verarbeitet wird, erwerben wir das Miteigentum an der neuen Sache im Verhältnis des objektiven Wertes unserer Vorbehaltsware zu den anderen bearbeiteten Gegenständen zur Zeit der Verarbeitung. Dasselbe gilt für den Fall der Vermischung. Sofern die Vermischung in der Weise erfolgt, dass die Sache des Unternehmers als Hauptsache anzusehen ist, gilt als vereinbart, dass der Unternehmer uns anteilmäßig Miteigentum überträgt und das so entstandene Alleineigentum oder Miteigentum für uns verwahrt. Zur Sicherung unserer Forderungen gegen den Unternehmer tritt der Unternehmer auch solche Forderungen an uns ab, die ihm durch die Verbindung der Vorbehaltsware mit einem Grundstück gegen einen Dritten erwachsen; wir nehmen diese Abtretung schon jetzt an.",
+          "Wir verpflichten uns, die uns zustehenden Sicherheiten auf Verlangen des Unternehmers freizugeben, soweit ihr Wert die zu sichernden Forderungen um mehr als 50 % übersteigt."
+        ]
+      },
+      "section9": {
+        "heading": "§9. Mängelhaftung, Mängelrüge sowie Rückgriff / Herstellerregress",
+        "items": [
+          "Der Unternehmer hat die Ware unverzüglich, spätestens jedoch innerhalb von 7 Tagen nach Erhalt der Ware auf Vollständigkeit und Mängel zu untersuchen. Sämtliche offenen Mängel muss der Unternehmer unverzüglich rügen. Jeden verdeckten Mangel muss der Unternehmer unverzüglich, spätestens jedoch 5 Tage nach seiner Entdeckung, rügen. Jede Mängelrüge des Unternehmers hat in Textform zu erfolgen. Die Mängelrüge des Unternehmers muss die jeweilige Ware sowie den jeweiligen Mangel der Ware bezeichnen. Maßgeblich für die Fristwahrung ist der Zugang der Mängelrüge bei uns. Ist der Unternehmer Kaufmann, ist bei Verletzung der vorstehenden fristgerechten Untersuchungs- und Rügepflichten unsere Mängelgewährleistungshaftung ausgeschlossen und die gelieferte Ware gilt als vertragsgemäß.",
+          "Unsere Angaben zum Gegenstand der Lieferung oder Leistung (z.B. Gewichte, Maße, Gebrauchswerte, Belastbarkeit, Toleranzen und technische Daten) sowie Darstellungen desselben (z.B. Zeichnungen und Abbildungen) sind nur annähernd maßgeblich, soweit nicht die Verwendbarkeit zum vertraglich vorgesehenen Zweck eine genaue Übereinstimmung voraussetzt. Mängelansprüche bestehen ferner nicht bei nur unerheblicher Beeinträchtigung der Brauchbarkeit, bei natürlicher Abnutzung oder Verschleiß sowie bei Schäden, die nach dem Gefahrübergang infolge fehlerhafter oder nachlässiger Behandlung, übermäßiger Beanspruchung, ungeeigneter Betriebsmittel oder aufgrund besonderer äußerer Einflüsse entstehen, die nach dem Vertrag nicht vorausgesetzt sind. Werden vom Unternehmer oder Dritten unsachgemäß Instandsetzungsarbeiten oder Änderungen vorgenommen, so bestehen deswegen und die daraus entstehenden Folgen ebenfalls keine Mängelansprüche. Bei Waren mit digitalen Elementen oder sonstigen digitalen Inhalten schulden wir eine Bereitstellung und ggf. eine Aktualisierung der digitalen Inhalte nur, soweit sich dies ausdrücklich aus einer Beschaffenheitsvereinbarung ergibt. Für öffentliche Äußerungen des Herstellers und sonstiger Dritter übernehmen wir insoweit keine Haftung.",
+          "Sind wir zur Gewährleistung verpflichtet, so werden wir die Ware zunächst nach unserer Wahl nachbessern oder Ersatzware liefern. Es ist uns stets Gelegenheit zur Nacherfüllung innerhalb angemessener Frist zu geben. Die Nacherfüllung gilt erst nach dem dritten gescheiterten Versuch als fehlgeschlagen. Vor etwaiger Rücksendung der Ware ist stets unsere Zustimmung einzuholen.",
+          "Schlägt die Nacherfüllung fehl, kann der Unternehmer – unbeschadet etwaiger Schadensersatzansprüche – vom Vertrag zurücktreten oder den Kaufpreis mindern.",
+          "Ansprüche des Unternehmers wegen der zum Zweck der Nacherfüllung erforderlichen Aufwendungen, insbesondere Transport-, Wege-, Arbeits- und Materialkosten, sind ausgeschlossen, soweit die Aufwendungen sich erhöhen, weil die von uns gelieferte Ware nachträglich an einen anderen Ort als die Niederlassung des Unternehmers verbracht worden ist, es sei denn, die Verbringung entspricht ihrem bestimmungsgemäßen Gebrauch.",
+          "In allen Fällen unberührt bleiben jedoch die gesetzlichen Sondervorschriften zum Lieferantenregress gem. §§ 478, 445a, 445b bzw. §§ 445c, 327u, 327 Abs. 4 BGB, jedoch mit der Maßgabe, dass wir nicht für Vereinbarungen haften, die der Unternehmer mit seinem Abnehmer über die gesetzlich zwingenden Mängelansprüche hinausgetroffen hat. Für den Umfang des Rückgriffsanspruches des Unternehmers gilt ferner § 9 Absatz 6 entsprechend.",
+          "Im Falle des arglistigen Verschweigens eines Mangels oder im Falle der Übernahme einer Garantie für die Beschaffenheit der Ware zum Zeitpunkt des Gefahrübergangs im Sinne von § 444 BGB (Erklärung des Verkäufers, dass der Kaufgegenstand bei Gefahrübergang eine bestimmte Eigenschaft hat und dass der Verkäufer verschuldensunabhängig für alle Folgen ihres Fehlens einstehen will) richten sich die Rechte des Unternehmers in jedem Falle ausschließlich nach den gesetzlichen Bestimmungen. Im Übrigen ist jedoch bei dem Verkauf gebrauchter Ware die Mängelhaftung ausgeschlossen.",
+          "Wir geben gegenüber dem Unternehmer keine über die gesetzliche Mängelhaftung hinausgehende Garantie, es sei denn, eine Garantie ist ausdrücklich durch uns als solche bezeichnet. Garantien gegenüber dritten Endabnehmern stellen keine Garantien gegenüber dem Unternehmer dar."
+        ]
+      },
+      "section10": {
+        "heading": "§10. Haftung",
+        "items": [
+          "Wir haften nach den gesetzlichen Vorschriften soweit wir – gleich aus welchem Grunde – wegen der Verletzung des Lebens, des Körpers, der Gesundheit oder aus der Verletzung wesentlicher Vertragspflichten in Anspruch genommen werden. Wesentliche Vertragspflichten sind solche, deren Erfüllung zur Erreichung des Ziels des Vertrags notwendig ist, wie z.B. die Verpflichtung zur rechtzeitigen Lieferung und Installation des Liefergegenstands, dessen Freiheit von Rechtsmängeln sowie solchen Sachmängeln, die seine Funktionsfähigkeit oder Gebrauchstauglichkeit mehr als nur unerheblich beeinträchtigen, sowie Beratungs-, Schutz- und Obhutspflichten, die dem Unternehmer die vertragsgemäße Verwendung des Liefergegenstands ermöglichen sollen oder den Schutz von Leib oder Leben von Personal des Unternehmers oder den Schutz von dessen Eigentum vor erheblichen Schäden bezwecken.",
+          "Bei der Verletzung wesentlicher Vertragspflichten haften wir nur auf den vertragstypischen, vorhersehbaren Schaden. Dieser ist in jedem Falle auf einen Höchstbetrag von EUR 50.000,- EUR beschränkt.",
+          "Im Übrigen sind sämtliche Ansprüche des Unternehmers auf Schadensersatz ausgeschlossen, es sei denn die Haftung beruht auf einer vorsätzlichen oder grob-fahrlässigen Pflichtverletzung unserer gesetzlichen Vertreter, Arbeitnehmer und Erfüllungsgehilfen. In diesem Falle haften wir stets nach den gesetzlichen Vorschriften.",
+          "Die Einschränkungen der Abs. 1 und 2 gelten auch zugunsten der gesetzlichen Vertreter und Erfüllungsgehilfen von uns, wenn Ansprüche direkt gegen diese geltend gemacht werden.",
+          {
+            "text": "Werden wir von einem Dritten hinsichtlich der Lieferung/Leistung auf Schadensersatz in Anspruch genommen, stellt der Unternehmer uns, unsere gesetzlichen Vertreter, Arbeitnehmer und Erfüllungsgehilfen umfassend (einschließlich angemessener Rechtsverfolgungs- und Rechtsverteidigungskosten, Auslagen, Gebühren, Steuern usw. sowie angemessener Vorschüsse) frei, wenn die Ursachen der Inanspruchnahme (im Verhältnis zu uns) im Herrschafts- und Organisationsbereich des Unternehmers gesetzt sind. Die gleiche Freistellungspflicht gilt für Schäden Dritter, die in irgendeiner Weise auf Versäumnisse bei der Lieferung/Leistung in unserem Herrschafts- und Organisationsbereich gestützt werden, es sei denn, unsere Haftung beruhte auf",
+            "subitems": [
+              "der schuldhaften Verletzung des Lebens, des Körpers oder der Gesundheit",
+              "Vorsatz oder grober Fahrlässigkeit oder",
+              "der Verletzung wesentlicher Vertragspflichten"
+            ]
+          },
+          "Soweit Schadensersatzansprüche Dritter in irgendeiner Weise auf eine lediglich leicht fahrlässige Verletzung dieser wesentlichen Vertragspflichten gestützt werden und den in § 10 Abs. 2 definierten vertragstypischen, vorhersehbaren Schaden übersteigen, trifft den Unternehmer die vorstehende Freistellungspflicht hinsichtlich des übersteigenden Betrages.",
+          "Die Vorschriften des Produkthaftungsgesetzes bleiben unberührt."
+        ]
+      },
+      "section11": {
+        "heading": "§ 11 Sonstiges",
+        "items": [
+          "Dieser Vertrag und die gesamten Rechtsbeziehungen der Parteien unterliegen ausschließlich dem Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts (CISG).",
+          "Erfüllungsort und ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag ist unser Geschäftssitz, sofern nicht in Textform etwas anderes vereinbart wurde.",
+          "Änderungen und Ergänzungen dieses Vertrages bedürfen der Textform. Dies gilt auch für Änderungen dieser Textformklausel. Mündliche Nebenabreden wurden nicht getroffen."
+        ]
+      }
+    },
+    "consumerTerms": {
+      "title": "Allgemeine Verkaufsbedingungen für den nicht-kaufmännischen Verkehr (Käufer ist Verbraucher)",
+      "article1": {
+        "heading": "Art. 1 Angebot und Vertragsabschluss",
+        "text": "Die vom Besteller unterzeichnete Bestellung ist ein bindendes Angebot. Wir können dieses Angebot innerhalb von zwei Wochen durch Zusendung einer Auftragsbestätigung annehmen oder innerhalb dieser Frist die bestellte Ware zusenden."
+      },
+      "article2": {
+        "heading": "Art. 2 Überlassene Unterlagen",
+        "text": "An allen im Zusammenhang mit der Auftragserteilung dem Besteller überlassenen Unterlagen, wie z.B. Kalkulationen, Zeichnungen etc., behalten wir uns das Eigentums- und Urheberrecht vor. Diese Unterlagen dürfen Dritten nicht zugänglich gemacht werden, es sei denn, wir erteilen dem Besteller unsere ausdrückliche schriftliche Zustimmung. Soweit wir das Angebot des Bestellers nicht innerhalb der Frist von § 1 annehmen, sind diese Unterlagen uns unverzüglich zurückzusenden."
+      },
+      "article3": {
+        "heading": "Art. 3 Preise und Zahlung",
+        "items": [
+          "Die Zahlung des Kaufpreises hat ausschließlich auf das in der Rechnung genannte Konto zu erfolgen. Der Abzug von Skonto ist nur bei schriftlicher besonderer Vereinbarung zulässig",
+          "Sofern nichts anderes vereinbart wird, ist der Kaufpreis innerhalb von 7 Tagen nach Rechnungstellung zu zahlen. Verzugszinsen werden in Höhe von 5 % über dem jeweiligen Basiszinssatz p.a. berechnet. Die Geltendmachung eines höheren Verzugsschadens bleibt vorbehalten. Für den Fall, dass wir einen höheren Verzugsschaden geltend machen, hat der Besteller die Möglichkeit, uns nachzuweisen, dass der geltend gemachte Verzugsschaden überhaupt nicht oder in zumindest wesentlich niedrigerer Höhe angefallen ist."
+        ]
+      },
+      "article4": {
+        "heading": "Art. 4 Aufrechnung und Zurückbehaltungsrechte",
+        "text": "Dem Besteller steht das Recht zur Aufrechung nur zu, wenn seine Gegenansprüche rechtskräftig festgestellt oder unbestritten sind. Zur Ausübung eines Zurückbehaltungsrechts ist der Besteller nur insoweit befugt, als sein Gegenanspruch auf dem gleichen Vertragsverhältnis beruht."
+      },
+      "article5": {
+        "heading": "Art. 5 Lieferzeit",
+        "items": [
+          "Der Beginn der von uns angegebenen Lieferzeit setzt die rechtzeitige und ordnungsgemäße Erfüllung der Verpflichtungen des Bestellers voraus. Die Einrede des nicht erfüllten Vertrages bleibt vorbehalten.",
+          "Kommt der Besteller in Annahmeverzug oder verletzt er schuldhaft sonstige Mitwirkungen, so sind wir berechtigt, den unshierdurch entstehenden Schaden einschließlich etwaiger Mehraufwendungen ersetzt zu verlangen. Weitergehende Ansprüche bleiben vorbehalten. Dem Besteller bleibt seinerseits vorbehalten nachzuweisen, dass ein Schaden in der verlangten Höhe überhaupt nicht oder zumindest wesentlich niedriger entstanden ist. Die Gefahr eines zufälligen Untergangs oder einer zufälligen Verschlechterung der Kaufsache geht in dem Zeitpunkt auf den Besteller über, in dem dieser in Annahme- oder Schuldnerverzug gerät.",
+          "Wir haften nicht im Fall des von uns nicht vorsätzlich oder grob fahrlässig herbeigeführten Lieferverzugs.",
+          "Weitere gesetzliche Ansprüche und Rechte des Bestellers wegen eines Lieferverzuges bleiben unberührt."
+        ]
+      },
+      "article6": {
+        "heading": "Art. 6 Eigentumsvorbehalt",
+        "items": [
+          "Wir behalten uns das Eigentum an der gelieferten Sache bis zur vollständigen Zahlung sämtlicher Forderungen aus dem Liefervertrag vor.",
+          "Der Besteller ist verpflichtet, solange das Eigentum noch nicht auf ihn übergegangen ist, die Kaufsache pfleglich zu behandeln. Insbesondere ist er verpflichtet, diese auf eigene Kosten gegen Diebstahl-, Feuer- und Wasserschäden ausreichend zum Neuwert zu versichern. Müssen Wartungs- und Inspektionsarbeiten durchgeführt werden, hat der Besteller diese auf eigene Kosten rechtzeitig auszuführen. Solange das Eigentum noch nicht übergegangen ist, hat uns der Besteller unverzüglich schriftlich zu benachrichtigen, wenn der gelieferte Gegenstand gepfändet oder sonstigen Eingriffen Dritter ausgesetzt ist. Soweit der Dritte nicht in der Lage ist, uns die gerichtlichen und außergerichtlichen Kosten einer Klage gemäß § 771 ZPO zu erstatten, haftet der Besteller für den uns entstandenen Ausfall.",
+          "Die Be- und Verarbeitung oder Umbildung der Kaufsache durch den Besteller erfolgt stets Namens und im Auftrag für uns. In diesem Fall setzt sich das Anwartschaftsrecht des Bestellers an der Kaufsache an der umgebildeten Sache fort. Sofern die Kaufsache mit anderen, uns nicht gehörenden Gegenständen verarbeitet wird, erwerben wir das Miteigentum an der neuen Sache im Verhältnis des objektiven Wertes unserer Kaufsache zu den anderen bearbeiteten Gegenständen zur Zeit der Verarbeitung. Dasselbe gilt für den Fall der Vermischung. Sofern die Vermischung in der Weise erfolgt, dass die Sache des Bestellers als Hauptsache anzusehen ist, gilt als vereinbart, dass der Besteller uns anteilmäßig Miteigentum übertr.gt und das so entstandene Alleineigentum oder Miteigentum für uns verwahrt. Zur Sicherung unserer Forderungen gegen den Besteller tritt der Besteller auch solche Forderungen an uns ab, die ihm durch die Verbindung der Vorbehaltsware mit einem Grundstück gegen einen Dritten erwachsen; wir nehmen diese Abtretung schon jetzt an.",
+          "Wir verpflichten uns, die uns zustehenden Sicherheiten auf Verlangen des Bestellers freizugeben, soweit ihr Wert die zu sichernden Forderungen um mehr als 20 % übersteigt."
+        ]
+      },
+      "article7": {
+        "heading": "Art. 7 Gewährleistung und Mängelrüge",
+        "items": [
+          "Offensichtliche Mängel sind vom Käufer innerhalb von 14 Tagen ab Lieferung des Vertragsgegenstandes schriftlich uns gegenüber zu rügen.",
+          "Der Besteller hat zunächst die Wahl, ob die Nacherfüllung durch Nachbesserung oder Ersatzlieferung erfolgen soll. Wir sind jedoch berechtigt, die vom Besteller gewählte Art der Nacherfüllung zu verweigern, wenn sie nur mit unverhältnismäßigen Kosten möglich ist und die andere Art der Nacherfüllung ohne erhebliche Nachteile für den Besteller bleibt. Während der Nacherfüllung sind die Herabsetzung des Kaufpreises oder der Rücktritt vom Vertrag durch den Besteller ausgeschlossen. Eine Nachbesserung gilt mit dem erfolglosen zweiten Versuch als fehlgeschlagen, wenn sich nicht insbesondere aus der Art der Sache oder des Mangels oder den sonstigen Umständen etwas anderes ergibt. Ist die Nacherfüllung fehlgeschlagen oder haben wir die Nacherfüllung insgesamt verweigert, kann der Besteller nach seiner Wahl Herabsetzung des Kaufpreises (Minderung) verlangen oder den Rücktritt vom Vertrag erklären.",
+          "Schadensersatzansprüche zu den nachfolgenden Bedingungen wegen des Mangels kann der Besteller erst geltend machen, wenn die Nacherfüllung fehlgeschlagen ist oder wir die Nacherfüllung verweigert haben. Das Recht des Bestellers zur Geltendmachung von weitergehenden Schadensersatzansprüchen zu den nachfolgenden Bedingungen bleibt davon unberührt.",
+          "Wir haften unbeschadet vorstehender Regelungen und der nachfolgenden Haftungsbeschränkungen uneingeschränkt für Schäden an Leben, Körper und Gesundheit, die auf einer fahrlässigen oder vorsätzlichen Pflichtverletzung unserer gesetzlichen Vertreter oder unserer Erfüllungsgehilfen beruhen, sowie für Schäden, die von der Haftung nach dem Produkthaftungsgesetz umfasst werden, sowie für alle Schäden, die auf vorsätzlichen oder grob fahrlässigen Vertragsverletzungen sowie Arglist unserer gesetzlichen Vertreter oder unserer Erfüllungsgehilfen beruhen. Soweit wir bezüglich der Ware oder Teile derselben eine Beschaffenheits- und/ oder Haltbarkeitsgarantie abgegeben haben, haften wir auch im Rahmen dieser Garantie. Für Schäden, die auf dem Fehlen der garantierten Beschaffenheit oder Haltbarkeit beruhen, aber nicht unmittelbar an der Ware eintreten, haften wir allerdings nur dann, wenn das Risiko eines solchen Schadens ersichtlich von der Beschaffenheits- und Haltbarkeitsgarantie erfasst ist.",
+          "Wir haften auch für Schäden, die durch einfache Fahrlässigkeit verursacht werden, soweit diese Fahrlässigkeit die Verletzung solcher Vertragspflichten betrifft, deren Einhaltung für die Erreichung des Vertragszwecks von besonderer Bedeutung ist (Kardinalpflichten). Wir haften jedoch nur, soweit die Schäden in typischer Weise mit dem Vertrag verbunden und vorhersehbar sind. Bei einfachen fahrlässigen Übrigen nicht. Die in den Sätzen 1 – 3 enthaltenen Haftungsbeschränkungen gelten auch, soweit die Haftung für die gesetzlichen Vertreter, leitenden Angestellten und sonstigen Erfüllungsgehilfen betroffen ist.",
+          "Eine weitergehende Haftung ist ohne Rücksicht auf die Rechtsnatur des geltend gemachten Anspruchs ausgeschlossen. Soweit unsere Haftung ausgeschlossen oder beschränkt ist, gilt dies auch für die persönliche Haftung unserer Angestellten, Arbeitnehmer, Mitarbeiter, Vertreter und Erfüllungsgehilfen.",
+          "Die Gewährleistungsfrist beträgt 2 Jahre, gerechnet ab Gefahrübergang (bei gebrauchten Sachen ein Jahr, gerechnet ab Gefahrübergang). Diese Frist gilt auch für Ansprüche auf Ersatz von Mangelfolgeschäden, soweit keine Ansprüche aus unerlaubter Handlung geltend gemacht werden."
+        ]
+      },
+      "article8": {
+        "heading": "Art. 8 Streitbeilegungsverfahren",
+        "items": [
+          "Wir nehmen nicht an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil. Die EU-Kommission stellt eine Online-Plattform zur Streitbeilegung („OS-Plattform“) zur Verfügung, die über den Link http://ec.europa.eu/odr erreichbar ist. Sofern der Kunde ein in der europäischen Union wohnhafter Verbraucher ist, besteht die Möglichkeit, zur außergerichtlichen Beilegung von Streitigkeiten über vertragliche Verpflichtungen aus Online-Kaufverträgen diese Plattform zu nutzen. In diesem Zusammenhang informieren wir über unsere Email-Adresse: bestellung@sound-service.eu.",
+          "Dieser Vertrag und die gesamten Rechtsbeziehungen der Parteien unterliegen dem Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts (CISG).",
+          "Die Vertragssprache ist deutsch.",
+          "Sollten einzelne Bestimmungen dieses Vertrages unwirksam sein oder werden oder eine Lücke enthalten, so bleiben die übrigen Bestimmungen hiervon unberührt."
+        ]
+      },
+      "article9": {
+        "heading": "Art. 9 Sonstiges",
+        "items": [
+          "Dieser Vertrag und die gesamten Rechtsbeziehungen der Parteien unterliegen dem Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts (CISG).",
+          "Sollten einzelne Bestimmungen dieses Vertrages unwirksam sein oder werden oder eine Lücke enthalten, so bleiben die übrigen Bestimmungen hiervon unberührt."
+        ]
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcomeBack": "Willkommen zurück, {name}!",
+    "logout": "Abmelden",
+    "loading": "Lädt...",
+    "pendingApproval": {
+      "title": "Konto wartet auf Genehmigung",
+      "message": "Vielen Dank für Ihre Registrierung! Ihr Konto wird derzeit von unserem Team überprüft. Sie erhalten vollen Zugriff auf unsere Plattform, sobald ein Sound Service-Administrator Ihr Konto genehmigt hat.",
+      "contact": "Bei Fragen wenden Sie sich bitte an unser Vertriebsteam unter"
+    },
+    "stats": {
+      "recentOrders": "Letzte Bestellungen",
+      "last30Days": "Letzte 30 Tage",
+      "activeCart": "Aktiver Warenkorb",
+      "item": "Artikel",
+      "items": "Artikel",
+      "accountStatus": "Kontostatus",
+      "pending": "Ausstehend",
+      "active": "Aktiv"
+    },
+    "accountInfo": {
+      "title": "Kontoinformationen",
+      "name": "Name",
+      "email": "E-Mail",
+      "companyName": "Firmenname",
+      "accountCode": "Kundennummer"
+    },
+    "quickActions": {
+      "title": "Schnellzugriff",
+      "browseCatalog": "Katalog durchsuchen",
+      "browseCatalogDesc": "Entdecken Sie unsere Produkte",
+      "viewOrders": "Bestellungen anzeigen",
+      "viewOrdersDesc": "Verfolgen Sie Ihre Käufe",
+      "contactSupport": "Support kontaktieren",
+      "contactSupportDesc": "Erhalten Sie Hilfe von unserem Team"
+    }
+  },
+  "register": {
+    "title": "Konto erstellen",
+    "description": "Registrieren Sie sich für den vollen Zugriff auf den Sound Service Webshop. Ein Administrator wird Ihr Konto prüfen und freischalten, sobald Ihre Registrierung eingegangen ist.",
+    "disclaimer": "Bitte beachten Sie, dass diese Website ausschließlich für Geschäftskunden bestimmt ist. Endkunden wenden sich bitte an ihren autorisierten Händler.",
+    "fields": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "company": "Firmenname",
+      "phone": "Telefonnummer",
+      "password": "Passwort",
+      "confirmPassword": "Passwort bestätigen",
+      "passwordHint": "Mindestens 8 Zeichen"
+    },
+    "placeholders": {
+      "name": "Max Mustermann",
+      "email": "ihre@email.de",
+      "company": "Ihre Firma",
+      "phone": "+49 123 456 7890"
+    },
+    "buttons": {
+      "submit": "Konto erstellen",
+      "creating": "Konto wird erstellt..."
+    },
+    "errors": {
+      "passwordMismatch": "Passwörter stimmen nicht überein",
+      "verificationRequired": "Bitte vervollständigen Sie die Verifizierung",
+      "verificationFailed": "Verifizierung fehlgeschlagen. Bitte versuchen Sie es erneut."
+    },
+    "alreadyHaveAccount": "Bereits ein Konto?",
+    "loginLink": "Anmelden"
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "navigation": {
+    "brands": "Marques",
+    "aboutUs": "À propos",
+    "news": "Actualités",
+    "salesAreas": "Zones de vente",
+    "returns": "Retours",
+    "search": "Rechercher des produits...",
+    "account": "Compte",
+    "basket": "Panier",
+    "noBrandsYet": "Pas encore de marques",
+    "loading": "Chargement..."
+  },
+  "home": {
+    "welcome": "Bienvenue chez Sound Service",
+    "homepageContent": "Le contenu de la page d'accueil va ici",
+    "mainTitle": "Sound Service Distribution Européenne de Musique",
+    "mainSubtitle": "Soutien et marketing de produits exclusifs",
+    "heading1": "Excellent stockage, logistique de pointe",
+    "heading2": "et une équipe internationale de vente et de service bien formée.",
+    "paragraph1": "Après la création de l'entreprise en 1983, nous nous sommes concentrés chez Sound Service sur les activités de vente en Allemagne, en Autriche et au Benelux. Entre-temps, notre zone de vente couvre toute l'Europe et Sound Service est devenu l'un des principaux distributeurs européens d'instruments de musique, d'équipements de sonorisation et d'éclairage et de matériel DJ.",
+    "paragraph2": "Nous travaillons toujours selon la devise de soutenir tous nos partenaires à 100% dans tous les domaines : un soutien à 360° est la norme pour nous, il n'y a rien à redire. Ensemble, nous construisons votre marque en Europe.",
+    "paragraph3": "Grâce également à notre situation centrale au cœur de l'Europe, nous pouvons offrir à nos partenaires commerciaux des canaux de distribution optimaux pour nos marques et produits. À cette fin, nous avons développé d'excellentes méthodes de stockage, nous nous appuyons sur des processus logistiques de pointe et impressionnons par notre fiabilité exceptionnelle.",
+    "paragraph4": "La passion et l'engagement pour nos marques et nos partenaires commerciaux constituent la base de notre travail, même après les heures de travail. Nous jouons nos marques, nous les connaissons dans les moindres détails et savons donc exactement de quoi nous parlons.",
+    "paragraph5": "Pour assurer votre succès, nous développons des campagnes marketing détaillées pour votre marque et votre produit. Grâce à des échanges constants avec nos détaillants, nous savons exactement comment atteindre au mieux votre groupe cible et soutenons nos détaillants avec du matériel marketing parfaitement adapté au groupe cible.",
+    "paragraph6": "Il n'y a pas de service comme Sound Service !",
+    "latestNews": "Dernières Nouvelles",
+    "checkmarks": {
+      "leadingInEurope": "Leader en Europe",
+      "excellentStock": "Excellente disponibilité des stocks",
+      "modernLogistics": "Logistique moderne",
+      "internationalSales": "Ventes internationales",
+      "serviceTeams": "Équipes de service",
+      "exclusiveProducts": "Produits exclusifs"
+    },
+    "aboutUs": {
+      "modernLogistics": {
+        "title": "Logistique Moderne",
+        "text": "Excellent stockage pour toute l'Europe. Nous connaissons nos marques et nous connaissons vos clients. Avec des méthodes d'entreposage et de logistique de pointe, nous distribuons vos produits jusqu'aux coins les plus reculés de l'Europe - et à une vitesse fulgurante."
+      },
+      "heartOfEurope": {
+        "title": "Au Cœur De L'Europe",
+        "text": "Basés dans la ville cosmopolite de Berlin, nous prenons en charge les besoins musicaux des détaillants dans toute l'Europe. Ce faisant, nous attachons une grande importance à fournir à chaque détaillant un soutien à 360°. Nous résolvons tous les problèmes !"
+      },
+      "salesServiceTeams": {
+        "title": "Équipes De Vente & Service",
+        "text": "En matière de son, nous savons de quoi nous parlons. Notre personnel international est hautement qualifié et reçoit une formation régulière. Nous savons comment construire des marques : Ensemble et avec passion."
+      }
+    }
+  },
+  "about": {
+    "title": "À propos",
+    "paragraph1": "Fondée en 1983, Sound Service, basée à Berlin, est passée d'un distributeur d'un seul produit (MFB Fricke, la première boîte à rythmes numérique au monde à moins de 1000 $) à l'une des principales sociétés de distribution allemandes indépendantes d'équipements MI, audio professionnel, CE et sonorisation. Au cours des dernières années, Sound Service s'est progressivement développée pour devenir une société de distribution internationale avec un portefeuille de produits extrêmement large, composé d'une grande variété de marques offrant un large assortiment de produits nouveaux et innovants.",
+    "paragraph2": "Avec des capacités de stockage extraordinaires et un personnel de vente et de service bien formé au centre de l'Europe, nous sommes en mesure d'offrir un maximum de disponibilité et de service à nos clients.",
+    "paragraph3": "Il n'y a pas de service comme Sound Service !"
+  },
+  "footer": {
+    "company": "Entreprise",
+    "aboutUs": "À propos",
+    "careerOpportunities": "Opportunités de Carrière",
+    "service": "Service",
+    "contact": "Contact",
+    "shipping": "Expédition",
+    "returns": "Retours",
+    "information": "Information",
+    "terms": "Termes et Conditions",
+    "imprint": "Mentions Légales",
+    "dataProtection": "Protection des Données",
+    "environment": "Environnement",
+    "copyright": "Copyright © 2025 Sound-Service Musikanlagen-Vertriebsgesellschaft mbH, Tous droits réservés."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Notre équipe répondra à votre demande dans les plus brefs délais."
+  },
+  "cookieBanner": {
+    "title": "Nous respectons votre vie privée",
+    "description": "Nous utilisons des cookies pour améliorer votre expérience de navigation, proposer du contenu personnalisé et analyser notre trafic. En cliquant sur 'Tout accepter', vous consentez à l'utilisation de cookies.",
+    "accept": "Tout accepter",
+    "reject": "Tout rejeter",
+    "learnMore": "En savoir plus"
+  },
+  "dataProtection": {
+    "title": "Protection des Données & Politique de Confidentialité",
+    "intro": "Sound Service Europe s'engage à protéger vos données personnelles et à respecter votre vie privée. Cette politique explique comment nous collectons, utilisons et protégeons vos informations conformément au Règlement Général sur la Protection des Données (RGPD).",
+    "lastUpdated": "Dernière mise à jour",
+    "section1": {
+      "heading": "Responsable & Informations de Contact",
+      "company": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3, 12489 Berlin, Allemagne",
+      "phone": "Téléphone",
+      "fax": "Fax",
+      "email": "E-mail",
+      "dpoTitle": "Délégué à la Protection des Données",
+      "dpoName": "Konrad Hartsch",
+      "dpoContact": "datenschutz@sound-service.eu"
+    },
+    "section2": {
+      "heading": "Collecte de Données de Visite du Site",
+      "intro": "Lors de la visite à des fins d'information, le site collecte des données de journal de serveur, notamment:",
+      "items": [
+        "Pages visitées et horodatages",
+        "Volume de données transféré",
+        "Source de référence et informations sur le navigateur",
+        "Détails du système d'exploitation",
+        "Adresses IP anonymisées"
+      ],
+      "legalBasis": "Base juridique: Article 6(1)(f) RGPD (intérêt légitime pour la stabilité du site)"
+    },
+    "section3": {
+      "heading": "Utilisation des Cookies",
+      "text": "Le site utilise des cookies de session et persistants pour améliorer l'expérience utilisateur et simplifier les processus de commande. Les cookies stockent les paramètres du navigateur, les données de localisation et les informations IP.",
+      "userControl": "Contrôle utilisateur: Les visiteurs peuvent configurer les préférences de cookies via les paramètres du navigateur (liens disponibles pour Internet Explorer, Firefox, Chrome, Safari, Opera).",
+      "note": "Certains cookies sont essentiels au bon fonctionnement de la plateforme. La désactivation de ces cookies peut affecter votre capacité à utiliser certaines fonctionnalités."
+    },
+    "section4": {
+      "heading": "Traitement des Informations de Contact",
+      "text": "Les données personnelles soumises via les formulaires de contact sont collectées uniquement pour répondre aux demandes. Les données sont supprimées après la résolution de la question, dans le respect des exigences de conservation applicables.",
+      "legalBasisA": "Base juridique: Article 6(1)(f) RGPD",
+      "legalBasisB": "Article 6(1)(b) RGPD si lié au contrat"
+    },
+    "section5": {
+      "heading": "Comptes Clients & Exécution des Contrats",
+      "text": "Les données de compte permettent l'exécution du contrat. Les utilisateurs peuvent supprimer leurs comptes à tout moment en contactant le responsable. La conservation des données suit les exigences fiscales et commerciales."
+    },
+    "section6": {
+      "heading": "Pratiques de Marketing Direct",
+      "newsletter": {
+        "title": "Abonnement à la newsletter",
+        "items": [
+          "Confirmation double opt-in requise",
+          "Base juridique: Article 6(1)(a) RGPD (consentement)",
+          "Adresse IP et horodatage d'inscription enregistrés",
+          "Désabonnement disponible via le lien de la newsletter"
+        ]
+      },
+      "email": {
+        "title": "E-mail aux clients existants",
+        "items": [
+          "Produits similaires commercialisés selon l'Article 7(3) UWG",
+          "Base juridique: Article 6(1)(f) RGPD (intérêt légitime)",
+          "Droits d'opposition disponibles à tout moment"
+        ]
+      },
+      "postal": {
+        "title": "Marketing postal",
+        "items": [
+          "Nom, adresse et informations de titre conservés",
+          "Base juridique: Article 6(1)(f) RGPD",
+          "Opposition autorisée à tout moment"
+        ]
+      }
+    },
+    "section7": {
+      "heading": "Réseaux Sociaux & Intégration Vidéo",
+      "youtube": {
+        "title": "Intégration YouTube (mode de confidentialité amélioré)",
+        "items": [
+          "Données utilisateur collectées uniquement pendant la lecture vidéo",
+          "Google associe les données aux comptes connectés",
+          "Google analyse l'utilisation pour le marketing et la recherche",
+          "Base juridique: Article 6(1)(f) RGPD (intérêts légitimes de Google)",
+          "Les utilisateurs peuvent s'opposer à la création de profil"
+        ],
+        "note": "Les connexions DoubleClick s'établissent lors des visites de site indépendamment de la lecture vidéo.",
+        "reference": "https://www.google.de/intl/de/policies/privacy"
+      }
+    },
+    "section8": {
+      "heading": "Sécurité des Données",
+      "intro": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre l'accès non autorisé, la modification, la divulgation ou la destruction. Ces mesures comprennent:",
+      "encryption": {
+        "title": "Chiffrement",
+        "text": "Toutes les données transmises entre votre navigateur et nos serveurs sont chiffrées à l'aide de la technologie SSL/TLS."
+      },
+      "accessControl": {
+        "title": "Contrôle d'Accès",
+        "text": "Des contrôles d'accès stricts garantissent que seul le personnel autorisé peut accéder aux données personnelles."
+      },
+      "audits": {
+        "title": "Audits Réguliers",
+        "text": "Nous révisons et mettons à jour régulièrement nos pratiques de sécurité pour maintenir les normes les plus élevées."
+      },
+      "storage": {
+        "title": "Stockage Sécurisé",
+        "text": "Les données sont stockées sur des serveurs sécurisés dans des centres de données conformes au sein de l'UE."
+      }
+    },
+    "section9": {
+      "heading": "Vos Droits selon le RGPD",
+      "intro": "En tant que personne concernée, vous disposez des droits suivants:",
+      "access": {
+        "title": "Droit d'Accès",
+        "text": "Demandez une copie des données personnelles que nous détenons sur vous."
+      },
+      "rectification": {
+        "title": "Droit de Rectification",
+        "text": "Demandez la correction de données inexactes ou incomplètes."
+      },
+      "erasure": {
+        "title": "Droit à l'Effacement",
+        "text": "Demandez la suppression de vos données personnelles (sous réserve des obligations légales)."
+      },
+      "restriction": {
+        "title": "Droit à la Limitation",
+        "text": "Demandez la limitation du traitement de vos données personnelles."
+      },
+      "portability": {
+        "title": "Droit à la Portabilité des Données",
+        "text": "Recevez vos données dans un format structuré et couramment utilisé."
+      },
+      "object": {
+        "title": "Droit d'Opposition",
+        "text": "Opposez-vous au traitement de vos données personnelles à des fins de marketing."
+      }
+    },
+    "section10": {
+      "heading": "Conservation des Données",
+      "text": "Nous ne conservons vos données personnelles que le temps nécessaire pour atteindre les objectifs décrits dans cette politique, nous conformer aux obligations légales, résoudre les litiges et faire respecter nos accords."
+    },
+    "section11": {
+      "heading": "Services Tiers",
+      "text": "Nous pouvons partager vos données avec des prestataires de services tiers de confiance qui nous aident à exploiter notre plateforme, à traiter les paiements ou à fournir des services. Ces parties sont contractuellement tenues de protéger vos données et de les utiliser uniquement à des fins spécifiées."
+    },
+    "section12": {
+      "heading": "Contacter Notre Délégué à la Protection des Données",
+      "intro": "Si vous avez des questions sur nos pratiques de protection des données ou souhaitez exercer vos droits, veuillez contacter notre Délégué à la Protection des Données:",
+      "title": "Délégué à la Protection des Données",
+      "company": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3",
+      "city": "12489 Berlin, Allemagne",
+      "emailLabel": "E-mail"
+    },
+    "section13": {
+      "heading": "Autorité de Contrôle",
+      "text": "Vous avez le droit de déposer une plainte auprès de votre autorité locale de protection des données si vous estimez que nous n'avons pas traité vos données personnelles de manière appropriée."
+    },
+    "section14": {
+      "heading": "Modifications de Cette Politique",
+      "text": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre pour refléter les changements dans nos pratiques ou les exigences légales. Nous vous informerons de tout changement important en publiant la nouvelle politique sur cette page et en mettant à jour la date 'Dernière mise à jour'."
+    }
+  }
+}

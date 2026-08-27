@@ -1,0 +1,243 @@
+{
+  "navigation": {
+    "brands": "Merken",
+    "aboutUs": "Over ons",
+    "news": "Nieuws",
+    "salesAreas": "Verkoopgebieden",
+    "returns": "Retouren",
+    "search": "Zoek naar producten...",
+    "account": "Account",
+    "basket": "Winkelmandje",
+    "noBrandsYet": "Nog geen merken",
+    "loading": "Laden..."
+  },
+  "home": {
+    "welcome": "Welkom bij Sound Service",
+    "homepageContent": "Homepage-inhoud komt hier",
+    "mainTitle": "Sound Service Europese Muziekdistributie",
+    "mainSubtitle": "Ondersteuning en marketing van exclusieve producten",
+    "heading1": "Uitstekende voorraad, ultramoderne logistiek",
+    "heading2": "en een goed opgeleid internationaal verkoop- en serviceteam.",
+    "paragraph1": "Na de oprichting van het bedrijf in 1983 concentreerden wij ons bij Sound Service op verkoopactiviteiten in Duitsland, Oostenrijk en Benelux. Inmiddels beslaat ons verkoopgebied heel Europa en is Sound Service uitgegroeid tot een van de toonaangevende Europese distributeurs van muziekinstrumenten, geluids- en lichtapparatuur en DJ-benodigdheden.",
+    "paragraph2": "Wij werken altijd volgens het motto om al onze partners 100% te ondersteunen in alle zaken: 360° alomvattende ondersteuning is voor ons de standaard, daar valt niets aan te schudden. Samen bouwen we uw merk op in Europa.",
+    "paragraph3": "Ook dankzij onze centrale ligging in het hart van Europa kunnen wij onze zakelijke partners optimale distributiekanalen voor onze merken en producten bieden. Daartoe hebben wij uitstekende opslagmethoden ontwikkeld, vertrouwen wij op ultramoderne logistieke processen en maken wij indruk met onze uitzonderlijke betrouwbaarheid.",
+    "paragraph4": "Passie en toewijding voor onze merken en onze zakelijke partners vormen de basis van ons werk, ook na werktijd. Wij spelen onze merken, leren ze tot in het kleinste detail kennen en weten dus precies waar we het over hebben.",
+    "paragraph5": "Om uw succes te garanderen, ontwikkelen wij gedetailleerde marketingcampagnes voor uw merk en uw product. Door constante uitwisseling met onze retailers weten wij precies hoe wij uw doelgroep het beste kunnen bereiken en ondersteunen wij onze retailers met marketingmateriaal dat optimaal is afgestemd op de doelgroep.",
+    "paragraph6": "Er is geen service zoals Sound Service!",
+    "latestNews": "Laatste Nieuws",
+    "checkmarks": {
+      "leadingInEurope": "Leidend in Europa",
+      "excellentStock": "Uitstekende voorraadbeschikbaarheid",
+      "modernLogistics": "Moderne logistiek",
+      "internationalSales": "Internationale verkoop",
+      "serviceTeams": "Serviceteams",
+      "exclusiveProducts": "Exclusieve producten"
+    },
+    "aboutUs": {
+      "modernLogistics": {
+        "title": "Moderne Logistiek",
+        "text": "Uitstekende voorraad voor heel Europa. Wij kennen onze merken en wij kennen uw klanten. Met ultramoderne opslag- en logistieke methoden distribueren wij uw producten naar zelfs de meest afgelegen uithoeken van Europa - en dat bliksemsnl."
+      },
+      "heartOfEurope": {
+        "title": "In Het Hart Van Europa",
+        "text": "Vanuit de wereldstad Berlijn zorgen wij voor de muzikale behoeften van retailers in heel Europa. Daarbij hechten wij groot belang aan het bieden van 360° alomvattende ondersteuning aan elke retailer. Wij lossen elk probleem op!"
+      },
+      "salesServiceTeams": {
+        "title": "Verkoop- & Serviceteams",
+        "text": "Als het om geluid gaat, weten wij waar we het over hebben. Ons internationaal personeel is hoogopgeleid en krijgt regelmatig training. Wij weten hoe we merken moeten opbouwen: Samen en met passie."
+      }
+    }
+  },
+  "about": {
+    "title": "Over ons",
+    "paragraph1": "Opgericht in 1983, is het in Berlijn gevestigde Sound Service gestaag gegroeid van een distributeur van één product (MFB Fricke, 's werelds eerste digitale drummachine onder $1000) tot een van de belangrijkste onafhankelijke Duitse distributiebedrijven voor MI-, professionele audio-, CE- en geluidsapparatuur. In de afgelopen jaren is Sound Service gestaag gegroeid tot een internationaal distributiebedrijf met een extreem breed productportfolio, bestaande uit een grote verscheidenheid aan merken die een geweldig assortiment nieuwe en innovatieve producten aanbieden.",
+    "paragraph2": "Met buitengewone opslagcapaciteiten en goed opgeleid verkoop- en servicepersoneel in het centrum van Europa zijn wij in staat om een maximum aan beschikbaarheid en service aan onze klanten te bieden.",
+    "paragraph3": "Er is geen service zoals Sound Service!"
+  },
+  "footer": {
+    "company": "Bedrijf",
+    "aboutUs": "Over ons",
+    "careerOpportunities": "Carrièremogelijkheden",
+    "service": "Service",
+    "contact": "Contact",
+    "shipping": "Verzending",
+    "returns": "Retouren",
+    "information": "Informatie",
+    "terms": "Algemene Voorwaarden",
+    "imprint": "Colofon",
+    "dataProtection": "Gegevensbescherming",
+    "environment": "Milieu",
+    "copyright": "Copyright © 2025 Sound-Service Musikanlagen-Vertriebsgesellschaft mbH, Alle rechten voorbehouden."
+  },
+  "contact": {
+    "title": "Neem contact met ons op",
+    "subtitle": "Ons team zal zo snel mogelijk op uw vraag reageren."
+  },
+  "cookieBanner": {
+    "title": "Wij respecteren uw privacy",
+    "description": "We gebruiken cookies om uw browse-ervaring te verbeteren, gepersonaliseerde inhoud te bieden en ons verkeer te analyseren. Door op 'Alles accepteren' te klikken, stemt u in met ons gebruik van cookies.",
+    "accept": "Alles accepteren",
+    "reject": "Alles weigeren",
+    "learnMore": "Meer informatie"
+  },
+  "dataProtection": {
+    "title": "Gegevensbescherming & Privacybeleid",
+    "intro": "Sound Service Europe zet zich in voor de bescherming van uw persoonlijke gegevens en het respecteren van uw privacy. Dit beleid legt uit hoe wij uw informatie verzamelen, gebruiken en beschermen in overeenstemming met de Algemene Verordening Gegevensbescherming (AVG).",
+    "lastUpdated": "Laatst bijgewerkt",
+    "section1": {
+      "heading": "Verwerkingsverantwoordelijke & Contactinformatie",
+      "company": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3, 12489 Berlijn, Duitsland",
+      "phone": "Telefoon",
+      "fax": "Fax",
+      "email": "E-mail",
+      "dpoTitle": "Functionaris voor Gegevensbescherming",
+      "dpoName": "Konrad Hartsch",
+      "dpoContact": "datenschutz@sound-service.eu"
+    },
+    "section2": {
+      "heading": "Verzameling van Websitebezoekgegevens",
+      "intro": "Bij het bezoeken voor informatie verzamelt de site serverloggegevens, waaronder:",
+      "items": [
+        "Bezochte pagina's en tijdstempels",
+        "Overgedragen gegevensvolume",
+        "Verwijzingsbron en browserinformatie",
+        "Details van besturingssysteem",
+        "Geanonimiseerde IP-adressen"
+      ],
+      "legalBasis": "Rechtsgrondslag: Artikel 6(1)(f) AVG (gerechtvaardigd belang bij website-stabiliteit)"
+    },
+    "section3": {
+      "heading": "Cookie-gebruik",
+      "text": "De site gebruikt sessie- en persistente cookies om de gebruikerservaring te verbeteren en bestelprocessen te vereenvoudigen. Cookies slaan browserinstellingen, locatiegegevens en IP-informatie op.",
+      "userControl": "Gebruikerscontrole: Bezoekers kunnen cookievoorkeuren configureren via browserinstellingen (links beschikbaar voor Internet Explorer, Firefox, Chrome, Safari, Opera).",
+      "note": "Sommige cookies zijn essentieel voor het correct functioneren van het platform. Het uitschakelen van deze cookies kan uw vermogen om bepaalde functies te gebruiken beïnvloeden."
+    },
+    "section4": {
+      "heading": "Verwerking van Contactinformatie",
+      "text": "Persoonlijke gegevens die via contactformulieren worden ingediend, worden uitsluitend verzameld om vragen te beantwoorden. Gegevens worden verwijderd na afronding van de zaak, met inachtneming van toepasselijke bewaarvereisten.",
+      "legalBasisA": "Rechtsgrondslag: Artikel 6(1)(f) AVG",
+      "legalBasisB": "Artikel 6(1)(b) AVG indien contractgerelateerd"
+    },
+    "section5": {
+      "heading": "Klantaccounts & Contractuitvoering",
+      "text": "Accountgegevens maken contractuitvoering mogelijk. Gebruikers kunnen accounts op elk moment verwijderen door contact op te nemen met de verwerkingsverantwoordelijke. Gegevensbewaring volgt fiscale en commerciële wetsvereisten."
+    },
+    "section6": {
+      "heading": "Direct Marketingpraktijken",
+      "newsletter": {
+        "title": "Nieuwsbrief abonnement",
+        "items": [
+          "Dubbele opt-in bevestiging vereist",
+          "Rechtsgrondslag: Artikel 6(1)(a) AVG (toestemming)",
+          "IP-adres en registratietijdstempel vastgelegd",
+          "Uitschrijven beschikbaar via nieuwsbrieflink"
+        ]
+      },
+      "email": {
+        "title": "E-mail naar bestaande klanten",
+        "items": [
+          "Vergelijkbare producten gemarket volgens Artikel 7(3) UWG",
+          "Rechtsgrondslag: Artikel 6(1)(f) AVG (gerechtvaardigd belang)",
+          "Bezwaarrechten te allen tijde beschikbaar"
+        ]
+      },
+      "postal": {
+        "title": "Postmarketing",
+        "items": [
+          "Naam, adres en titelinformatie bewaard",
+          "Rechtsgrondslag: Artikel 6(1)(f) AVG",
+          "Bezwaar op elk moment toegestaan"
+        ]
+      }
+    },
+    "section7": {
+      "heading": "Sociale Media & Video-integratie",
+      "youtube": {
+        "title": "YouTube-integratie (privacyverbeterde modus)",
+        "items": [
+          "Gebruikersgegevens alleen verzameld tijdens video-afspelen",
+          "Google koppelt gegevens aan aangemelde accounts",
+          "Google analyseert gebruik voor marketing en onderzoek",
+          "Rechtsgrondslag: Artikel 6(1)(f) AVG (gerechtvaardigde belangen van Google)",
+          "Gebruikers kunnen bezwaar maken tegen profielcreatie"
+        ],
+        "note": "DoubleClick-verbindingen worden tot stand gebracht tijdens websitebezoeken ongeacht video-afspelen.",
+        "reference": "https://www.google.de/intl/de/policies/privacy"
+      }
+    },
+    "section8": {
+      "heading": "Gegevensbeveiliging",
+      "intro": "Wij implementeren passende technische en organisatorische maatregelen om uw persoonlijke gegevens te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging. Deze maatregelen omvatten:",
+      "encryption": {
+        "title": "Versleuteling",
+        "text": "Alle gegevens die tussen uw browser en onze servers worden overgedragen, worden versleuteld met SSL/TLS-technologie."
+      },
+      "accessControl": {
+        "title": "Toegangscontrole",
+        "text": "Strikte toegangscontroles zorgen ervoor dat alleen geautoriseerd personeel toegang heeft tot persoonlijke gegevens."
+      },
+      "audits": {
+        "title": "Regelmatige Audits",
+        "text": "Wij beoordelen en actualiseren regelmatig onze beveiligingspraktijken om de hoogste normen te handhaven."
+      },
+      "storage": {
+        "title": "Veilige Opslag",
+        "text": "Gegevens worden opgeslagen op beveiligde servers in conforme datacenters binnen de EU."
+      }
+    },
+    "section9": {
+      "heading": "Uw Rechten onder de AVG",
+      "intro": "Als betrokkene heeft u de volgende rechten:",
+      "access": {
+        "title": "Recht op Inzage",
+        "text": "Vraag een kopie op van de persoonlijke gegevens die wij over u bewaren."
+      },
+      "rectification": {
+        "title": "Recht op Rectificatie",
+        "text": "Vraag correctie van onjuiste of onvolledige gegevens."
+      },
+      "erasure": {
+        "title": "Recht op Wissing",
+        "text": "Vraag verwijdering van uw persoonlijke gegevens (onder voorbehoud van wettelijke verplichtingen)."
+      },
+      "restriction": {
+        "title": "Recht op Beperking",
+        "text": "Vraag beperking van de verwerking van uw persoonlijke gegevens."
+      },
+      "portability": {
+        "title": "Recht op Gegevensoverdracht",
+        "text": "Ontvang uw gegevens in een gestructureerd, gangbaar formaat."
+      },
+      "object": {
+        "title": "Recht van Bezwaar",
+        "text": "Maak bezwaar tegen de verwerking van uw persoonlijke gegevens voor marketingdoeleinden."
+      }
+    },
+    "section10": {
+      "heading": "Gegevensbewaring",
+      "text": "Wij bewaren uw persoonlijke gegevens alleen zo lang als nodig is om de in dit beleid beschreven doeleinden te vervullen, te voldoen aan wettelijke verplichtingen, geschillen op te lossen en onze overeenkomsten af te dwingen."
+    },
+    "section11": {
+      "heading": "Diensten van Derden",
+      "text": "Wij kunnen uw gegevens delen met vertrouwde externe dienstverleners die ons helpen bij het exploiteren van ons platform, het verwerken van betalingen of het leveren van diensten. Deze partijen zijn contractueel verplicht uw gegevens te beschermen en deze alleen voor specifieke doeleinden te gebruiken."
+    },
+    "section12": {
+      "heading": "Neem Contact Op met Onze Functionaris voor Gegevensbescherming",
+      "intro": "Als u vragen heeft over onze gegevensbeschermingspraktijken of uw rechten wilt uitoefenen, neem dan contact op met onze Functionaris voor Gegevensbescherming:",
+      "title": "Functionaris voor Gegevensbescherming",
+      "company": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3",
+      "city": "12489 Berlijn, Duitsland",
+      "emailLabel": "E-mail"
+    },
+    "section13": {
+      "heading": "Toezichthoudende Autoriteit",
+      "text": "U heeft het recht om een klacht in te dienen bij uw lokale gegevensbeschermingsautoriteit als u van mening bent dat wij uw persoonlijke gegevens niet op de juiste manier hebben behandeld."
+    },
+    "section14": {
+      "heading": "Wijzigingen in Dit Beleid",
+      "text": "Wij kunnen dit privacybeleid van tijd tot tijd bijwerken om wijzigingen in onze praktijken of wettelijke vereisten weer te geven. Wij zullen u op de hoogte stellen van significante wijzigingen door het nieuwe beleid op deze pagina te plaatsen en de datum 'Laatst bijgewerkt' bij te werken."
+    }
+  }
+}

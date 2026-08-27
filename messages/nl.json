@@ -1,0 +1,767 @@
+{
+  "navigation": {
+    "brands": "Merken",
+    "aboutUs": "Over ons",
+    "news": "Nieuws",
+    "salesAreas": "Verkoopgebieden",
+    "returns": "Retouren",
+    "search": "Zoek naar producten...",
+    "contact": "Contact",
+    "account": "Account",
+    "basket": "Winkelmandje",
+    "noBrandsYet": "Nog geen merken",
+    "loading": "Laden..."
+  },
+  "heroSlider": {
+    "findOutMore": "Meer informatie",
+    "loading": "Laden..."
+  },
+  "product": {
+    "addToCart": "Toevoegen aan winkelwagen",
+    "addedToCart": "✓ Toegevoegd aan winkelwagen",
+    "quantity": "Aantal:",
+    "loginToAddToCart": "Log in om artikelen aan de winkelwagen toe te voegen",
+    "accountPendingApproval": "Uw account wacht op goedkeuring",
+    "originOfArticle": "Artikel Oorsprong",
+    "logIn": "Inloggen",
+    "manufacturer": "Fabrikant",
+    "importer": "Importeur",
+    "responsibleEntity": "Verantwoordelijke instantie",
+    "contactSales": "Contact opnemen met verkoop",
+    "loading": "Laden...",
+    "bstockAvailable": "B-voorraad beschikbaar",
+    "bstockDescription": "Geopende of gereviseerde exemplaren beschikbaar met korting. Dezelfde garantie is van toepassing.",
+    "save": "Bespaar",
+    "inStock": "op voorraad",
+    "addBstockToCart": "B-voorraad toevoegen",
+    "embargoTitle": "Embargo product",
+    "embargoNotice": "Dit product is nog niet vrijgegeven voor publicatie. U kunt al een bestelling plaatsen, maar dit product mag nog niet openbaar worden geadverteerd."
+  },
+  "cart": {
+    "title": "Winkelwagen",
+    "loginPrompt": "Log in om uw winkelwagen te bekijken",
+    "logIn": "Inloggen",
+    "accessRestricted": "Toegang beperkt",
+    "notAvailableForAdmin": "Winkelwagen is niet beschikbaar voor beheerders.",
+    "goToAdminDashboard": "Ga naar beheerdersdashboard",
+    "emptyCart": "Uw winkelwagen is leeg",
+    "continueShopping": "Verder winkelen",
+    "clearCart": "Winkelwagen legen",
+    "noImage": "Geen afbeelding",
+    "sku": "Artikelnummer:",
+    "orderSummary": "Besteloverzicht",
+    "items": "Artikelen:",
+    "total": "Totaal:",
+    "proceedToCheckout": "Naar de kassa"
+  },
+  "checkout": {
+    "loading": "Laden...",
+    "title": "Kassa",
+    "accountInformation": "Accountinformatie",
+    "account": "Account:",
+    "accountCode": "Accountcode:",
+    "email": "E-mail:",
+    "deliveryAddress": "Bezorgadres",
+    "default": "Standaard",
+    "orderReference": "Bestelreferentie",
+    "yourOrderReference": "Uw bestelreferentienummer",
+    "optional": "(Optioneel)",
+    "enterPONumber": "Voer uw inkoopordernummer of referentie in",
+    "poNumberHelp": "Voeg uw interne inkooporder- of referentienummer toe voor tracking",
+    "orderNotes": "Bestelnotities",
+    "specialInstructions": "Speciale instructies of notities voor deze bestelling",
+    "characters": "tekens",
+    "orderItems": "Bestelartikelen",
+    "noImage": "Geen afbeelding",
+    "sku": "Artikelnummer:",
+    "orderSummary": "Besteloverzicht",
+    "items": "Artikelen:",
+    "subtotal": "Subtotaal:",
+    "total": "Totaal:",
+    "placingOrder": "Bestelling plaatsen...",
+    "placeOrder": "Bestelling plaatsen",
+    "backToCart": "Terug naar winkelwagen",
+    "mustBeLoggedIn": "U moet ingelogd zijn om een bestelling te plaatsen",
+    "accountNotApproved": "Uw account moet worden goedgekeurd om bestellingen te plaatsen",
+    "selectAddress": "Selecteer een bezorgadres",
+    "poReferenceRequired": "Voer uw inkooporderreferentienummer in",
+    "orderFailed": "Bestelling indienen mislukt. Probeer het opnieuw."
+  },
+  "orderConfirmation": {
+    "loadingOrder": "Bestellingsgegevens laden...",
+    "orderNotFound": "Bestelling niet gevonden",
+    "unableToFind": "Kan bestellingsgegevens niet vinden",
+    "noOrderId": "Geen bestellingsnummer opgegeven",
+    "failedToLoad": "Bestellingsgegevens laden mislukt",
+    "returnHome": "Terug naar home",
+    "orderConfirmed": "Bestelling bevestigd!",
+    "thankYou": "Bedankt voor uw bestelling. We verwerken deze binnenkort.",
+    "orderDetails": "Bestellingsgegevens",
+    "orderNumber": "Bestellingsnummer:",
+    "orderDate": "Besteldatum:",
+    "yourPONumber": "Uw inkoopordernummer:",
+    "status": "Status:",
+    "account": "Account:",
+    "totalAmount": "Totaalbedrag:",
+    "orderNotes": "Bestelnotities:",
+    "orderItems": "Bestelartikelen",
+    "noImage": "Geen afbeelding",
+    "sku": "Artikelnummer:",
+    "whatHappensNext": "Wat gebeurt er nu?",
+    "step1": "U ontvangt binnenkort een orderbevestiging per e-mail",
+    "step2": "Ons team zal uw bestelling beoordelen en verwerken",
+    "step3": "U ontvangt updates over uw bestellingsstatus per e-mail",
+    "step4": "Als u vragen heeft, neem dan contact op met ons verkoopteam",
+    "continueShopping": "Verder winkelen",
+    "viewDashboard": "Dashboard bekijken"
+  },
+  "home": {
+    "welcome": "Welkom bij Sound Service",
+    "homepageContent": "Homepage-inhoud komt hier",
+    "mainTitle": "Sound Service Europese Muziekdistributie",
+    "mainSubtitle": "Ondersteuning en marketing van exclusieve producten",
+    "heading1": "Uitstekende voorraad, ultramoderne logistiek",
+    "heading2": "en een goed opgeleid internationaal verkoop- en serviceteam.",
+    "paragraph1": "Na de oprichting van het bedrijf in 1983 concentreerden wij ons bij Sound Service op verkoopactiviteiten in Duitsland, Oostenrijk en Benelux. Inmiddels beslaat ons verkoopgebied heel Europa en is Sound Service uitgegroeid tot een van de toonaangevende Europese distributeurs van muziekinstrumenten, geluids- en lichtapparatuur en DJ-benodigdheden.",
+    "paragraph2": "Wij werken altijd volgens het motto om al onze partners 100% te ondersteunen in alle zaken: 360° alomvattende ondersteuning is voor ons de standaard, daar valt niets aan te schudden. Samen bouwen we uw merk op in Europa.",
+    "paragraph3": "Ook dankzij onze centrale ligging in het hart van Europa kunnen wij onze zakelijke partners optimale distributiekanalen voor onze merken en producten bieden. Daartoe hebben wij uitstekende opslagmethoden ontwikkeld, vertrouwen wij op ultramoderne logistieke processen en maken wij indruk met onze uitzonderlijke betrouwbaarheid.",
+    "paragraph4": "Passie en toewijding voor onze merken en onze zakelijke partners vormen de basis van ons werk, ook na werktijd. Wij spelen onze merken, leren ze tot in het kleinste detail kennen en weten dus precies waar we het over hebben.",
+    "paragraph5": "Om uw succes te garanderen, ontwikkelen wij gedetailleerde marketingcampagnes voor uw merk en uw product. Door constante uitwisseling met onze retailers weten wij precies hoe wij uw doelgroep het beste kunnen bereiken en ondersteunen wij onze retailers met marketingmateriaal dat optimaal is afgestemd op de doelgroep.",
+    "paragraph6": "Er is geen service zoals Sound Service!",
+    "latestNews": "Laatste Nieuws",
+    "checkmarks": {
+      "leadingInEurope": "Leidend in Europa",
+      "excellentStock": "Uitstekende voorraadbeschikbaarheid",
+      "modernLogistics": "Moderne logistiek",
+      "internationalSales": "Internationale verkoop",
+      "serviceTeams": "Serviceteams",
+      "exclusiveProducts": "Exclusieve producten"
+    },
+    "aboutUs": {
+      "modernLogistics": {
+        "title": "Moderne Logistiek",
+        "text": "Uitstekende voorraad voor heel Europa. Wij kennen onze merken en wij kennen uw klanten. Met ultramoderne opslag- en logistieke methoden distribueren wij uw producten naar zelfs de meest afgelegen uithoeken van Europa - en dat bliksemsnl."
+      },
+      "heartOfEurope": {
+        "title": "In Het Hart Van Europa",
+        "text": "Vanuit de wereldstad Berlijn zorgen wij voor de muzikale behoeften van retailers in heel Europa. Daarbij hechten wij groot belang aan het bieden van 360° alomvattende ondersteuning aan elke retailer. Wij lossen elk probleem op!"
+      },
+      "salesServiceTeams": {
+        "title": "Verkoop- & Serviceteams",
+        "text": "Als het om geluid gaat, weten wij waar we het over hebben. Ons internationaal personeel is hoogopgeleid en krijgt regelmatig training. Wij weten hoe we merken moeten opbouwen: Samen en met passie."
+      }
+    }
+  },
+  "about": {
+    "title": "Over ons",
+    "paragraph1": "Opgericht in 1983, is het in Berlijn gevestigde Sound Service gestaag gegroeid van een distributeur van één product (MFB Fricke, 's werelds eerste digitale drummachine onder $1000) tot een van de belangrijkste onafhankelijke Duitse distributiebedrijven voor MI-, professionele audio-, CE- en geluidsapparatuur. In de afgelopen jaren is Sound Service gestaag gegroeid tot een internationaal distributiebedrijf met een extreem breed productportfolio, bestaande uit een grote verscheidenheid aan merken die een geweldig assortiment nieuwe en innovatieve producten aanbieden.",
+    "paragraph2": "Met buitengewone opslagcapaciteiten en goed opgeleid verkoop- en servicepersoneel in het centrum van Europa zijn wij in staat om een maximum aan beschikbaarheid en service aan onze klanten te bieden.",
+    "paragraph3": "Er is geen service zoals Sound Service!"
+  },
+  "footer": {
+    "company": "Bedrijf",
+    "aboutUs": "Over ons",
+    "careerOpportunities": "Carrièremogelijkheden",
+    "service": "Service",
+    "contact": "Contact",
+    "shipping": "Verzending",
+    "returns": "Retouren",
+    "information": "Informatie",
+    "terms": "Algemene Voorwaarden",
+    "imprint": "Colofon",
+    "dataProtection": "Gegevensbescherming",
+    "environment": "Milieu",
+    "copyright": "Copyright © 2025 Sound-Service Musikanlagen-Vertriebsgesellschaft mbH, Alle rechten voorbehouden."
+  },
+  "contact": {
+    "title": "Neem contact met ons op",
+    "subtitle": "Ons team zal zo snel mogelijk op uw vraag reageren."
+  },
+  "cookieBanner": {
+    "title": "Wij respecteren uw privacy",
+    "description": "We gebruiken cookies om uw browse-ervaring te verbeteren, gepersonaliseerde inhoud te bieden en ons verkeer te analyseren. Door op 'Alles accepteren' te klikken, stemt u in met ons gebruik van cookies.",
+    "accept": "Alles accepteren",
+    "reject": "Alles weigeren",
+    "learnMore": "Meer informatie"
+  },
+  "dataProtection": {
+    "title": "Gegevensbescherming & Privacybeleid",
+    "intro": "Sound Service Europe zet zich in voor de bescherming van uw persoonlijke gegevens en het respecteren van uw privacy. Dit beleid legt uit hoe wij uw informatie verzamelen, gebruiken en beschermen in overeenstemming met de Algemene Verordening Gegevensbescherming (AVG).",
+    "lastUpdated": "Laatst bijgewerkt",
+    "section1": {
+      "heading": "Verwerkingsverantwoordelijke & Contactinformatie",
+      "company": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3, 12489 Berlijn, Duitsland",
+      "phone": "Telefoon",
+      "fax": "Fax",
+      "email": "E-mail",
+      "dpoTitle": "Functionaris voor Gegevensbescherming",
+      "dpoName": "Konrad Hartsch",
+      "dpoContact": "datenschutz@sound-service.eu"
+    },
+    "section2": {
+      "heading": "Verzameling van Websitebezoekgegevens",
+      "intro": "Bij het bezoeken voor informatie verzamelt de site serverloggegevens, waaronder:",
+      "items": [
+        "Bezochte pagina's en tijdstempels",
+        "Overgedragen gegevensvolume",
+        "Verwijzingsbron en browserinformatie",
+        "Details van besturingssysteem",
+        "Geanonimiseerde IP-adressen"
+      ],
+      "legalBasis": "Rechtsgrondslag: Artikel 6(1)(f) AVG (gerechtvaardigd belang bij website-stabiliteit)"
+    },
+    "section3": {
+      "heading": "Cookie-gebruik",
+      "text": "De site gebruikt sessie- en persistente cookies om de gebruikerservaring te verbeteren en bestelprocessen te vereenvoudigen. Cookies slaan browserinstellingen, locatiegegevens en IP-informatie op.",
+      "userControl": "Gebruikerscontrole: Bezoekers kunnen cookievoorkeuren configureren via browserinstellingen (links beschikbaar voor Internet Explorer, Firefox, Chrome, Safari, Opera).",
+      "note": "Sommige cookies zijn essentieel voor het correct functioneren van het platform. Het uitschakelen van deze cookies kan uw vermogen om bepaalde functies te gebruiken beïnvloeden."
+    },
+    "section4": {
+      "heading": "Verwerking van Contactinformatie",
+      "text": "Persoonlijke gegevens die via contactformulieren worden ingediend, worden uitsluitend verzameld om vragen te beantwoorden. Gegevens worden verwijderd na afronding van de zaak, met inachtneming van toepasselijke bewaarvereisten.",
+      "legalBasisA": "Rechtsgrondslag: Artikel 6(1)(f) AVG",
+      "legalBasisB": "Artikel 6(1)(b) AVG indien contractgerelateerd"
+    },
+    "section5": {
+      "heading": "Klantaccounts & Contractuitvoering",
+      "text": "Accountgegevens maken contractuitvoering mogelijk. Gebruikers kunnen accounts op elk moment verwijderen door contact op te nemen met de verwerkingsverantwoordelijke. Gegevensbewaring volgt fiscale en commerciële wetsvereisten."
+    },
+    "section6": {
+      "heading": "Direct Marketingpraktijken",
+      "newsletter": {
+        "title": "Nieuwsbrief abonnement",
+        "items": [
+          "Dubbele opt-in bevestiging vereist",
+          "Rechtsgrondslag: Artikel 6(1)(a) AVG (toestemming)",
+          "IP-adres en registratietijdstempel vastgelegd",
+          "Uitschrijven beschikbaar via nieuwsbrieflink"
+        ]
+      },
+      "email": {
+        "title": "E-mail naar bestaande klanten",
+        "items": [
+          "Vergelijkbare producten gemarket volgens Artikel 7(3) UWG",
+          "Rechtsgrondslag: Artikel 6(1)(f) AVG (gerechtvaardigd belang)",
+          "Bezwaarrechten te allen tijde beschikbaar"
+        ]
+      },
+      "postal": {
+        "title": "Postmarketing",
+        "items": [
+          "Naam, adres en titelinformatie bewaard",
+          "Rechtsgrondslag: Artikel 6(1)(f) AVG",
+          "Bezwaar op elk moment toegestaan"
+        ]
+      }
+    },
+    "section7": {
+      "heading": "Sociale Media & Video-integratie",
+      "youtube": {
+        "title": "YouTube-integratie (privacyverbeterde modus)",
+        "items": [
+          "Gebruikersgegevens alleen verzameld tijdens video-afspelen",
+          "Google koppelt gegevens aan aangemelde accounts",
+          "Google analyseert gebruik voor marketing en onderzoek",
+          "Rechtsgrondslag: Artikel 6(1)(f) AVG (gerechtvaardigde belangen van Google)",
+          "Gebruikers kunnen bezwaar maken tegen profielcreatie"
+        ],
+        "note": "DoubleClick-verbindingen worden tot stand gebracht tijdens websitebezoeken ongeacht video-afspelen.",
+        "reference": "https://www.google.de/intl/de/policies/privacy"
+      }
+    },
+    "section8": {
+      "heading": "Gegevensbeveiliging",
+      "intro": "Wij implementeren passende technische en organisatorische maatregelen om uw persoonlijke gegevens te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging. Deze maatregelen omvatten:",
+      "encryption": {
+        "title": "Versleuteling",
+        "text": "Alle gegevens die tussen uw browser en onze servers worden overgedragen, worden versleuteld met SSL/TLS-technologie."
+      },
+      "accessControl": {
+        "title": "Toegangscontrole",
+        "text": "Strikte toegangscontroles zorgen ervoor dat alleen geautoriseerd personeel toegang heeft tot persoonlijke gegevens."
+      },
+      "audits": {
+        "title": "Regelmatige Audits",
+        "text": "Wij beoordelen en actualiseren regelmatig onze beveiligingspraktijken om de hoogste normen te handhaven."
+      },
+      "storage": {
+        "title": "Veilige Opslag",
+        "text": "Gegevens worden opgeslagen op beveiligde servers in conforme datacenters binnen de EU."
+      }
+    },
+    "section9": {
+      "heading": "Uw Rechten onder de AVG",
+      "intro": "Als betrokkene heeft u de volgende rechten:",
+      "access": {
+        "title": "Recht op Inzage",
+        "text": "Vraag een kopie op van de persoonlijke gegevens die wij over u bewaren."
+      },
+      "rectification": {
+        "title": "Recht op Rectificatie",
+        "text": "Vraag correctie van onjuiste of onvolledige gegevens."
+      },
+      "erasure": {
+        "title": "Recht op Wissing",
+        "text": "Vraag verwijdering van uw persoonlijke gegevens (onder voorbehoud van wettelijke verplichtingen)."
+      },
+      "restriction": {
+        "title": "Recht op Beperking",
+        "text": "Vraag beperking van de verwerking van uw persoonlijke gegevens."
+      },
+      "portability": {
+        "title": "Recht op Gegevensoverdracht",
+        "text": "Ontvang uw gegevens in een gestructureerd, gangbaar formaat."
+      },
+      "object": {
+        "title": "Recht van Bezwaar",
+        "text": "Maak bezwaar tegen de verwerking van uw persoonlijke gegevens voor marketingdoeleinden."
+      }
+    },
+    "section10": {
+      "heading": "Gegevensbewaring",
+      "text": "Wij bewaren uw persoonlijke gegevens alleen zo lang als nodig is om de in dit beleid beschreven doeleinden te vervullen, te voldoen aan wettelijke verplichtingen, geschillen op te lossen en onze overeenkomsten af te dwingen."
+    },
+    "section11": {
+      "heading": "Diensten van Derden",
+      "text": "Wij kunnen uw gegevens delen met vertrouwde externe dienstverleners die ons helpen bij het exploiteren van ons platform, het verwerken van betalingen of het leveren van diensten. Deze partijen zijn contractueel verplicht uw gegevens te beschermen en deze alleen voor specifieke doeleinden te gebruiken."
+    },
+    "section12": {
+      "heading": "Neem Contact Op met Onze Functionaris voor Gegevensbescherming",
+      "intro": "Als u vragen heeft over onze gegevensbeschermingspraktijken of uw rechten wilt uitoefenen, neem dan contact op met onze Functionaris voor Gegevensbescherming:",
+      "title": "Functionaris voor Gegevensbescherming",
+      "company": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3",
+      "city": "12489 Berlijn, Duitsland",
+      "emailLabel": "E-mail"
+    },
+    "section13": {
+      "heading": "Toezichthoudende Autoriteit",
+      "text": "U heeft het recht om een klacht in te dienen bij uw lokale gegevensbeschermingsautoriteit als u van mening bent dat wij uw persoonlijke gegevens niet op de juiste manier hebben behandeld."
+    },
+    "section14": {
+      "heading": "Wijzigingen in Dit Beleid",
+      "text": "Wij kunnen dit privacybeleid van tijd tot tijd bijwerken om wijzigingen in onze praktijken of wettelijke vereisten weer te geven. Wij zullen u op de hoogte stellen van significante wijzigingen door het nieuwe beleid op deze pagina te plaatsen en de datum 'Laatst bijgewerkt' bij te werken."
+    }
+  },
+  "imprint": {
+    "title": "Colofon",
+    "companyInfo": {
+      "heading": "Bedrijfsinformatie",
+      "companyName": "Sound Service Musikanlagen-Vertriebsgesellschaft mbH",
+      "address": "Moriz-Seeler-Straße 3",
+      "postalCode": "12489 Berlijn",
+      "country": "Duitsland"
+    },
+    "contactDetails": {
+      "heading": "Contactgegevens",
+      "email": "info@sound-service.eu"
+    },
+    "management": {
+      "heading": "Directie & Registratie",
+      "ceo": "CEO",
+      "ceoName": "Dipl.-Kfm. Joachim Stock",
+      "court": "Handelsregister",
+      "courtName": "Lokale rechtbank Charlottenburg",
+      "registrationNumber": "Registratienummer",
+      "registrationNumberValue": "HRB 20782"
+    },
+    "tax": {
+      "heading": "Fiscale & Regulerende Identificatienummers",
+      "vatId": "BTW-nummer",
+      "vatIdValue": "DE 136600697",
+      "wIdNr": "W-IdNr",
+      "wIdNrValue": "DE136600697-00001",
+      "weeeNumber": "AEEA-registratienummer",
+      "weeeNumberValue": "DE 18189133"
+    },
+    "responsible": {
+      "heading": "Verantwoordelijk voor de inhoud",
+      "text": "Verantwoordelijke partij in de zin van § 18 lid 2 MStV: Joachim Stock"
+    },
+    "dispute": {
+      "heading": "Geschillenbeslechting",
+      "text1": "De Europese Commissie biedt een platform voor online geschillenbeslechting (ODR):",
+      "linkUrl": "https://ec.europa.eu/consumers/odr",
+      "text2": "Wij nemen niet deel aan consumentengeschillenprocedures."
+    },
+    "intellectualProperty": {
+      "heading": "Intellectueel eigendom",
+      "text": "Alle inhoud op deze website is auteursrechtelijk beschermd. Sound Service Musikanlagen-Vertriebsgesellschaft mbH claimt het eigendom van alle zelf gecreëerde inhoud, terwijl het handelsmerken en auteursrechten van derden respecteert. Ongeautoriseerde duplicatie of gebruik van enige inhoud zonder uitdrukkelijke schriftelijke toestemming is verboden."
+    }
+  },
+  "returns": {
+    "pageTitle": "Retourzendingen"
+  },
+  "environment": {
+    "pageTitle": "Milieu",
+    "electricalEquipment": {
+      "heading": "Afvalverwijderingsinstructies voor elektrische apparatuur",
+      "paragraph1": "Gooi oude elektrische apparaten op een milieuvriendelijke manier weg! Elektrische apparaten zijn gemarkeerd met het volgende symbool, wat betekent dat oude elektrische apparaten niet met het huisvuil mogen worden weggegooid:",
+      "paragraph2": "Elektrische apparaten bevatten waardevolle hulpbronnen en schadelijke stoffen. Elke consument is daarom wettelijk verplicht om oude elektrische apparaten in te leveren bij een erkend inzamel- of innamepunt, bijvoorbeeld bij het plaatselijke recyclingcentrum. Afgedankte elektrische en elektronische apparatuur wordt daar gratis aangenomen en milieuvriendelijk en hulpbronnenbesparend gerecycled.",
+      "paragraph3": "Oude elektrische apparaten met een randlengte tot 25 cm kunnen gratis worden ingeleverd waar vergelijkbare producten worden verkocht - ongeacht waar ze zijn gekocht en ongeacht merk en type.",
+      "paragraph4": "De voorwaarde voor het innemen van oude elektrische apparaten met een randlengte groter dan 25 cm is dat er een nieuw apparaat bij de detailhandelaar is gekocht en dat dit kan worden bewezen door een bijbehorend aankoopbewijs te overleggen."
+    },
+    "batteries": {
+      "heading": "Afvalverwijderingsinstructies voor batterijen",
+      "paragraph1": "Gooi batterijen en oplaadbare batterijen op een milieuvriendelijke manier weg. Batterijen en accu's (oplaadbare batterijen) zijn gemarkeerd met het volgende symbool, wat betekent dat ze niet met het huisvuil mogen worden weggegooid:",
+      "paragraph2": "Batterijen en accu's (oplaadbare batterijen) bevatten waardevolle hulpbronnen en schadelijke stoffen. Elke consument is daarom wettelijk verplicht om gebruikte batterijen en accu's in te leveren bij een erkend inzamelpunt. Dit zorgt ervoor dat ze milieuvriendelijk en hulpbronnenbesparend worden gerecycled.",
+      "paragraph3": "Batterijen en oplaadbare batterijen kunnen gratis worden ingeleverd waar soortgelijke producten worden verkocht, ongeacht waar ze zijn gekocht en ongeacht merk en type. In het geval van krachtige batterijen (bijv. mobiele telefoon- en laptopbatterijen), plak de polen af voordat u ze inlevert bij het inzamelpunt om kortsluiting te voorkomen. Defecte batterijen kunnen ook gratis worden ingeleverd bij het inzamelpunt voor gevaarlijk afval bij het plaatselijke recyclingcentrum."
+    },
+    "packaging": {
+      "heading": "Afvalverwijderingsinstructies voor verpakkingen",
+      "paragraph1": "Alle verpakkingen zijn gelicentieerd met een duaal systeem in overeenstemming met de bepalingen van de Duitse verpakkingswet (VerpackG) en kunnen daarom gratis via het plaatselijke recyclinginzamelsysteem worden gerecycled (papierbak, gele bak/gele zak, enz.)."
+    }
+  },
+  "shipping": {
+    "pageTitle": "Verzendkosten",
+    "shippingMethods": {
+      "heading": "Verzendmethoden",
+      "description": "We bieden veilige levering voor bestellingen in heel Europa - lang of breed, groot of klein, zwaar of licht. Sound Service werkt samen met vertrouwde logistieke partners om ervoor te zorgen dat uw bestellingen veilig aankomen.",
+      "dhl": "DHL & UPS: Standaard vervoerdersdiensten voor Europese levering",
+      "forwarding": "Expeditiebedrijf: Beschikbaar voor grotere of gespecialiseerde zendingen"
+    },
+    "standardShipping": {
+      "heading": "Standaard verzendkosten (DHL & UPS)",
+      "zone1": {
+        "name": "Zone 1",
+        "cost": "€15.00",
+        "countries": "Oostenrijk, België, Duitsland, Denemarken, Luxemburg, Nederland"
+      },
+      "zone2": {
+        "name": "Zone 2",
+        "cost": "€20.00",
+        "countries": "Bulgarije, Tsjechië, Estland, Spanje, Finland, Frankrijk, Polen"
+      },
+      "zone3": {
+        "name": "Zone 3",
+        "cost": "€22.00 - €25.00",
+        "countries": "Zwitserland, Cyprus, Georgië, Griekenland, Kroatië, Hongarije, Ierland, Italië, Litouwen, Letland, Monaco, Malta, Noorwegen, Portugal, Roemenië, Servië, Zweden, Slovenië, Slowakije, Vaticaan",
+        "note": "Verenigd Koninkrijk: €22.00"
+      },
+      "countriesLabel": "Landen:"
+    },
+    "forwardingAgency": {
+      "heading": "Expeditiebedrijf toeslag",
+      "description": "Voor grotere of gespecialiseerde zendingen die expeditiediensten vereisen, gelden de volgende toeslagen per bestelling:",
+      "mostEuropean": "De meeste Europese landen",
+      "uk": "Verenigd Koninkrijk"
+    },
+    "currency": {
+      "heading": "Valutaopties",
+      "description": "Prijzen zijn beschikbaar in meerdere valuta's voor uw gemak:",
+      "currencies": "EUR • CHF • GBP • CZK • PLN"
+    },
+    "additionalInfo": {
+      "heading": "Aanvullende informatie",
+      "item1": "Verzendkosten worden berekend op basis van het bestemmingsland",
+      "item2": "Definitieve kosten worden berekend en weergegeven tijdens het afrekenen",
+      "item3": "Zodra uw bestelling is verzonden, ontvangt u trackinginformatie per e-mail"
+    },
+    "questions": {
+      "heading": "Vragen over verzending?",
+      "email": "E-mail:",
+      "phone": "Telefoon:"
+    }
+  },
+  "jobs": {
+    "pageTitle": "Carrière bij Sound Service",
+    "intro": {
+      "paragraph1": "Word lid van een van Europa's toonaangevende distributeurs van professionele audio-, verlichtings- en muziekapparatuur. Bij Sound Service zijn we gepassioneerd over het leveren van uitzonderlijke producten en service aan onze klanten in heel Europa.",
+      "paragraph2": "We zijn altijd op zoek naar getalenteerde mensen om ons groeiende team te versterken."
+    },
+    "whyWorkWithUs": {
+      "heading": "Waarom bij ons werken?",
+      "teamCulture": {
+        "title": "Geweldige teamcultuur",
+        "description": "Werk met gepassioneerde professionals die uw enthousiasme voor audio- en muziektechnologie delen."
+      },
+      "careerDevelopment": {
+        "title": "Carrièreontwikkeling",
+        "description": "Mogelijkheden voor professionele groei en vooruitgang binnen ons Europese netwerk."
+      },
+      "industryLeader": {
+        "title": "Marktleider",
+        "description": "Maak deel uit van een bedrijf dat samenwerkt met 's werelds meest erkende audiomerken."
+      },
+      "benefits": {
+        "title": "Concurrerende voordelen",
+        "description": "Aantrekkelijke salarispakketten en uitgebreide voordelen voor onze teamleden."
+      }
+    },
+    "currentOpenings": {
+      "heading": "Huidige vacatures",
+      "loading": "Vacatures laden...",
+      "error": "Fout",
+      "noOpenings": "We hebben momenteel geen specifieke vacatures vermeld, maar we zijn altijd geïnteresseerd om van getalenteerde professionals te horen.",
+      "location": "Locatie",
+      "startDate": "Start",
+      "immediately": "Onmiddellijk",
+      "tasksHeading": "Taken & verantwoordelijkheden",
+      "profileHeading": "Kandidaatprofiel",
+      "expectationsHeading": "Wat u kunt verwachten",
+      "applyButton": "Solliciteer voor deze functie"
+    },
+    "hiringAreas": {
+      "heading": "Gebieden waar we voor werven",
+      "sales": {
+        "title": "Verkoop & bedrijfsontwikkeling",
+        "description": "Help ons ons bereik op Europese markten uit te breiden en sterke klantrelaties op te bouwen."
+      },
+      "technical": {
+        "title": "Technische ondersteuning",
+        "description": "Bied deskundige technische assistentie aan onze klanten en partners."
+      },
+      "logistics": {
+        "title": "Logistiek & operaties",
+        "description": "Zorg voor efficiënte distributie en magazijnbeheer in heel Europa."
+      },
+      "marketing": {
+        "title": "Marketing & communicatie",
+        "description": "Creëer overtuigende campagnes en beheer onze merkpresentie op meerdere markten."
+      },
+      "it": {
+        "title": "IT & ontwikkeling",
+        "description": "Bouw en onderhoud de digitale infrastructuur die ons bedrijf aandrijft."
+      }
+    },
+    "applyNow": {
+      "heading": "Nu solliciteren",
+      "paragraph1": "Geïnteresseerd om lid te worden van ons team? We horen graag van u!",
+      "paragraph2": "Stuur uw CV en motivatiebrief naar:",
+      "hrDepartment": "HR-afdeling",
+      "email": "E-mail",
+      "note": "Vermeld de functie waarin u geïnteresseerd bent of \"Open sollicitatie\" in de onderwerpregel."
+    },
+    "commitment": {
+      "heading": "Onze toewijding",
+      "text": "Sound Service is een werkgever die gelijke kansen biedt. We vieren diversiteit en zijn toegewijd aan het creëren van een inclusieve omgeving voor alle medewerkers."
+    }
+  },
+  "orders": {
+    "pageTitle": "Mijn bestellingen",
+    "showingOrdersFor": "Alle bestellingen tonen voor",
+    "totalOrders": "totaal",
+    "order": "bestelling",
+    "orders": "bestellingen",
+    "error": "Fout",
+    "loading": "Bestellingen laden...",
+    "noOrdersYet": "Nog geen bestellingen",
+    "startShopping": "Begin met winkelen om uw eerste bestelling te maken",
+    "browseProducts": "Producten bekijken",
+    "orderNumber": "Bestelling",
+    "date": "Datum",
+    "reference": "Referentie",
+    "items": "Artikelen",
+    "total": "Totaal",
+    "orderedBy": "Besteld door",
+    "viewDetails": "Details bekijken",
+    "backToOrders": "Terug naar Mijn bestellingen",
+    "placedOn": "Geplaatst op",
+    "orderId": "Bestelnummer",
+    "yourReference": "Uw referentie",
+    "orderDate": "Besteldatum",
+    "deliveryAddress": "Bezorgadres",
+    "tel": "Tel",
+    "email": "E-mail",
+    "orderItems": "Bestelartikelen",
+    "sku": "Artikelnr",
+    "qty": "Aantal",
+    "shipped": "Verzonden",
+    "of": "van",
+    "courier": "Koerier",
+    "tracking": "Tracking",
+    "eta": "Verwacht",
+    "orderTotal": "Besteltotaal",
+    "orderNotes": "Bestelnotities",
+    "needHelp": "Hulp nodig bij uw bestelling?",
+    "needHelpText": "Als u vragen heeft over deze bestelling, neem dan contact op met ons supportteam.",
+    "contactSupport": "Contact opnemen met support"
+  },
+  "salesAreas": {
+    "pageTitle": "Verkoopgebieden",
+    "intro1": "Van Berlijn naar heel Europa - ondersteuning en verkoop van exclusieve merken in Europa. Hieronder vindt u een overzicht van welke merken we in welke landen verkopen. U kunt een merk selecteren en de landen weergeven waarin we het merk distribueren. Als alternatief kunt u een land selecteren om te zien welke merken beschikbaar zijn via Sound Service.",
+    "intro2": "Heeft u vragen? Aarzel niet om",
+    "intro2Link": "contact met ons op te nemen",
+    "intro2Continued": ". Ons verkoopteam staat maandag tot en met vrijdag van 10:00 tot 18:00 uur voor u klaar.",
+    "loadingMap": "Kaart laden...",
+    "regionsByBrand": "Regio's per merk",
+    "availableIn": "Beschikbaar in",
+    "countries": "landen"
+  },
+  "terms": {
+    "businessTerms": {
+      "title": "General Terms and Conditions of Sale of Sound Service Musianlagen-Vertriebsgesellschaft mbH for Business Traffic",
+      "section1": {
+        "heading": "§1. Scope",
+        "items": [
+          "These Terms and Conditions of Sale of Sound Service Musianlagen-Vertriebsgesellschaft mbH apply exclusively to companies, legal entities under public law or special funds under public law within the meaning of Section 310 (1) of the German Civil Code (BGB) (hereinafter referred to as the \"Entrepreneur\").",
+          "We object to the Entrepreneur's terms and conditions of purchase. We only accept terms and conditions of the Entrepreneur that contradict or deviate from our Terms and Conditions of Sale if we expressly agree to their validity in writing. Our unconditional execution of an order in the knowledge of conflicting terms and conditions of purchase does not constitute our acceptance thereof. This also applies if we refer back to a letter containing the terms and conditions of the Entrepreneur or a third party or in which the Entrepreneur expressly refers to such terms and conditions.",
+          "These General Terms and Conditions of Sale also apply to all future business transactions with the Entrepreneur. This also applies even if we do not expressly refer to the application of these General Terms and Conditions of Sale in the event of future orders by the Entrepreneur.",
+          "With the exception of managing directors or authorised representatives, our employees are only authorised to make verbal agreements provided that, as a condition precedent, these agreements are confirmed by us immediately and in text form."
+        ]
+      },
+      "section2": {
+        "heading": "§2. Offer and conculsion of contract",
+        "text": "Our offers are always subject to change. Unless the Entrepreneur expressly stipulates otherwise, we may accept orders which are to be regarded as an offer pursuant to Section 145 BGB within two weeks; this period shall commence on the date the offer is sent."
+      },
+      "section3": {
+        "heading": "§3. Documents provided",
+        "text": "We reserve the property rights and copyrights to all documents provided by us to the Entrepreneur in connection with the negotiations on the placement of an order, such as estimates, drawings, etc. These documents must not be made available to third parties unless we give the Entrepreneur our express consent to this in text form. These documents must be returned to us immediately in the event that negotiations fail, and in any case upon request, and any copies made must be destroyed if they are no longer required in the ordinary course of business. Data provided by us electronically that has been backed up for the purpose of normal data security does not have to be destroyed."
+      },
+      "section4": {
+        "heading": "§4. Prices, payment, due date",
+        "items": [
+          "Unless otherwise agreed in text form, the prices in our price list valid at the time the order is placed shall apply. If costs increase thereafter any time before delivery, we shall be entitled to increase the price appropriately in accordance with the cost increase. This increase may be due to increases in delivery prices, material costs, wages or market cost prices. We shall provide evidence of this to the customer on request. Unless otherwise agreed in text form, all our prices are quoted from our place of business excluding flat-rate shipping, insurance and disposal charges. Value added tax at the applicable rate is not included in the prices. Costs for shipping as well as insurance, packaging and disposal (flat rate) shall be invoiced separately on a pro rata basis.",
+          "Payment of the purchase price shall be made exclusively to the account specified in the invoice. The deduction of a cash discount is only permissible with a special agreement in text form.",
+          "Unless otherwise agreed, the purchase price shall be paid within 7 days after invoicing. If the entrepreneur is a merchant and does not make payment when due, the outstanding amounts shall accrue interest at 5% p.a. from the due date. Interest on arrears shall be charged at a rate of 9% above the respective base rate p.a. We reserve the right to claim higher damages for delay.",
+          "We are entitled to perform or render outstanding deliveries or services only against advance payment or the provision of a deposit if, after the conclusion of the contract, we become aware of circumstances which are likely to substantially reduce the creditworthiness of the Entrepreneur and as a result of which the Entrepreneur's payment of our outstanding claims from the respective contractual relationship (including from other individual orders to which the same framework contract applies) is jeopardised. In this case, we may also demand immediate payment of all outstanding claims."
+        ]
+      },
+      "section5": {
+        "heading": "§5. Offsetting and rights of retention",
+        "text": "The Entrepreneur only has the right to offset if its counterclaims have been legally established, are ready for a decision or are undisputed. The Entrepreneur is only entitled to exercise a right of retention if its counterclaim is based on the same contractual relationship."
+      },
+      "section6": {
+        "heading": "§6. Delivery time",
+        "items": [
+          "Our delivery deadlines and dates are always only approximate, unless we have expressly promised a fixed deadline or date. Furthermore, the commencement of the delivery time specified by us presupposes the timely and proper fulfilment of the Entrepreneur's obligations. We reserve the right of the defence alleging non-performance of the contract in respect of all our claims.",
+          "We shall not be liable for impossible delivery or for delays in delivery if these are caused by force majeure or other events that were unforeseeable at the time of conclusion of the contract (e.g., operational disruptions of any kind, difficulties in procuring materials or energy, transport delays, strikes, lawful lockouts, shortages of labour, energy or raw materials, difficulties in obtaining the necessary official permits, pandemics or epidemics, official measures or the non-delivery, incorrect delivery or late delivery by suppliers despite a congruent hedging transaction concluded by us) for which we are not responsible. If such events make it considerably more difficult or impossible for us to deliver or provide the service and the obstacle is not only of a temporary nature, we are entitled to withdraw from the contract. In the event of obstacles of temporary duration, the delivery or service deadlines shall be extended or postponed by the period of the obstacle plus a reasonable restarting period. If the Entrepreneur cannot reasonably be expected to accept the delivery or service as a result of the delay, it may withdraw from the contract by means of an immediate written declaration.",
+          "If the Entrepreneur delays acceptance or culpably violates other duties of cooperation, we will be entitled to demand compensation for the damage incurred by us in this respect, including any additional expenses. We reserve the right to assert further claims. If the aforementioned conditions are met, the risk of accidental loss or accidental deterioration of the goods shall pass to the Entrepreneur at the time when the delay in acceptance or payment begins.",
+          {
+            "text": "Partial deliveries by us are permissible if",
+            "subitems": [
+              "the partial delivery can be used by the Entrepreneur within the scope of the contractual intended purpose,",
+              "the delivery of the remaining ordered goods is ensured and",
+              "the Entrepreneur does not incur any significant additional expense or costs as a result (unless we agree to bear these costs)"
+            ]
+          }
+        ]
+      },
+      "section7": {
+        "heading": "§7. Transfer of risk upon shipment",
+        "items": [
+          "If the goods are dispatched to the Entrepreneur at its request, the risk of accidental loss or accidental deterioration of the goods shall pass to the Entrepreneur upon dispatch to the Entrepreneur, at the latest upon leaving the warehouse. This applies irrespective of whether the goods are dispatched from the place of performance or who pays the freight costs.",
+          "We shall only insure the consignment against theft, breakage, transport, fire and water damage or other insurable risks at the express request of the Entrepreneur and at the Entrepreneur's expense."
+        ]
+      },
+      "section8": {
+        "heading": "§8. Reservation of title",
+        "items": [
+          "We shall retain title to the goods delivered until all claims arising from the business relationship have been paid in full (reserved goods). This also applies to all future deliveries, even if we do not always expressly refer to this. We are entitled to take possession of the reserved goods if the Entrepreneur behaves contrary to the terms of the contract.",
+          "The Entrepreneur is obliged to treat the reserved goods with care as long as ownership has not yet passed to it. In particular, the Entrepreneur is obliged to insure them adequately against theft, fire damage and water damage at its own expense, with the insured sum being adequate to cover the replacement value. If maintenance and inspection work has to be carried out, the Entrepreneur must carry this out in good time at its own expense. As long as ownership has not yet been transferred, the Entrepreneur must inform us immediately in writing if the delivered reserved goods are lost, seized or exposed to other interventions by third parties. If the third party is not in a position to reimburse us for the judicial and extrajudicial costs of a lawsuit pursuant to Section 771 of the German Code of Civil Procedure (ZPO), the Entrepreneur will be liable for the loss incurred by us.",
+          "The Entrepreneur is entitled to resell the reserved goods in the normal course of business. No other dispositions, in particular pledging or transfer of ownership by way of security, are permitted. As long as the respective reservation of title exists, the reserved goods delivered by us within the territory of the Federal Republic of Germany may not be exported from the territory of the Federal Republic of Germany without our prior written consent.",
+          "The Entrepreneur shall assign to us its claims from the resale of the reserved goods in the amount of the final invoice amount agreed with us (including VAT). We hereby accept this assignment. This assignment shall apply irrespective of whether the reserved goods have been resold without or after processing. The Entrepreneur remains authorised to collect the claim even after the assignment. Our authority to collect the claim ourselves remains unaffected by this. However, we shall not collect the claim as long as the Entrepreneur meets its payment obligations from the proceeds collected, is not in arrears with payment and, in particular, no application has been filed for the opening of insolvency proceedings and the Entrepreneur is not overindebted or has not ceased payments.",
+          "If payment is delayed, the claim against the third party is hereby additionally assigned to us beyond the amount of the purchase price up to the additional amount of our damages resulting from the delay. We hereby accept the assignment. In case of delay, we shall be entitled to immediately notify the third party of the assignment of the claim and to collect it. If payment is delayed, we shall be entitled, even without exercising our right of withdrawal and without setting a grace period, to demand the provisional surrender of the goods owned by us at the Entrepreneur's expense. Our demand for the surrender of goods does not constitute a withdrawal from the contract unless we have expressly declared the withdrawal. We are entitled to dispose of the demanded delivery in some other manner after giving notice and to supply the Entrepreneur again after payment.",
+          "The handling, processing or transformation of the reserved goods by the Entrepreneur shall always be carried out in our name and on our behalf. In this case, the Entrepreneur's expectant right to the reserved goods will continue in the transformed item. If the reserved goods are processed with other objects not belonging to us, we will acquire co-ownership of the new object in the ratio of the objective value of our reserved goods to the other objects handled at the time of processing. The same applies in the event of mixing. If the mixing takes place in such a way that the Entrepreneur's item is to be regarded as the main item, it is deemed to be agreed that the Entrepreneur will transfer co-ownership to us on a pro rata basis and shall keep the sole ownership or co-ownership thus created on our behalf. In order to secure our claims against the Entrepreneur, the Entrepreneur will also assign to us any claims against third parties that arise for the Entrepreneur as a result of the combination of the reserved goods with real estate; we hereby accept this assignment.",
+          "We undertake to release the securities to which we are entitled at the request of the Entrepreneur if their value exceeds the claims to be secured by more than 50%."
+        ]
+      },
+      "section9": {
+        "heading": "§9. Liability for defects, notice of defects and recourse / manufacturer's recourse",
+        "items": [
+          "The Entrepreneur must inspect the goods immediately, but no later than within 7 days after receipt of the goods, to determine whether they are complete and free of defects. The Entrepreneur must give notice of all outstanding defects immediately. The Entrepreneur must give notice of any concealed defect immediately, but no later than 5 days after its discovery. Any notice of defects by the Entrepreneur must be made in text form. The Entrepreneur's notice of defects must specify the particular goods and the particular defect in the goods. The date we receive the notification of defects shall be authoritative for observance of the time limit. If the Entrepreneur is a merchant, our liability for defects shall be excluded in the event of a breach of duties of inspection and complaint notification and the delivered goods shall be deemed to be in conformity with the contract.",
+          "Our information on the subject matter of the delivery or service (e.g. weights, dimensions, utility values, load-bearing capacity, tolerances and technical data) as well as representations of the same (e.g. drawings and illustrations) are only approximately authoritative unless usability for the contractually intended purpose requires exact conformity. Furthermore, claims for defects shall not exist in the case of only insignificant impairment of the usability, in the case of natural wear and tear as well as in the case of damage which occurs after the transfer of risk as a result of incorrect or negligent handling, excessive stress, unsuitable operating resources or due to special external influences which are not assumed under the contract. If the Entrepreneur or a third party carries out improper repair work or modifications, no claims for defects shall exist for this reason or for the resulting consequences. In the case of goods with digital elements or other digital content, we are only obliged to provide and, if necessary, update the digital content if this is expressly stipulated in a quality agreement. We accept no liability in this respect for public statements made by the manufacturer and other third parties.",
+          "If we are obliged to provide a warranty, we shall first repair the goods or supply replacement goods at our discretion. We shall always be given the opportunity to remedy the defect within a reasonable period of time. The remedial work shall only be deemed to have failed after the third failed attempt. Our consent must always be obtained before any goods are returned.",
+          "If we fail to remedy the defect, the Entrepreneur may withdraw from the contract or reduce the purchase price, irrespective of any claims for damages.",
+          "Claims by the Entrepreneur for expenses incurred for the purpose of remedial work, in particular transport, travel, labour and material costs, shall be excluded if the expenses increase because the goods delivered by us have subsequently been taken to a place other than the Entrepreneur's place of business, unless the transfer is in accordance with their intended use.",
+          "In all cases, however, the special statutory provisions on supplier recourse pursuant to Sections 478, 445a, 445b or Sections 445c, 327u, 327 (4) BGB shall remain unaffected, provided that we are not liable for agreements which the Entrepreneur has entered into with its customer in excess of the statutory mandatory claims for defects. Furthermore, § 9 (6) shall apply correspondingly to the scope of the Entrepreneur's right of recourse.",
+          "In the event of fraudulent concealment of a defect or in the event of the assumption of a guarantee for the quality of the goods at the time of the transfer of risk within the meaning of Section 444 BGB (declaration by the seller that the object of purchase has a certain quality at the time of the transfer of risk and that the seller intends to be responsible for all consequences of its absence irrespective of fault), the rights of the Entrepreneur shall always be governed exclusively by the statutory provisions. In all other respects, however, liability for defects is excluded in the case of the sale of used goods.",
+          "We do not give any guarantee to the Entrepreneur that goes beyond the statutory liability for defects, unless a guarantee is expressly designated as such by us. Guarantees to third-party end users do not constitute guarantees to the Entrepreneur."
+        ]
+      },
+      "section10": {
+        "heading": "§10. Liability",
+        "items": [
+          "We shall be liable in accordance with the statutory provisions insofar as we are held liable – for whatever reason – due to injury to life, limb or health or due to the breach of essential contractual obligations. Material contractual obligations are those whose fulfilment is necessary to achieve the objective of the contract, such as the obligation to deliver and install the delivery item in good time, to ensure that it is free from defects of title and such material defects that impair its functionality or usability more than insignificantly, as well as advisory, protective and care obligations that are intended to enable the Entrepreneur to use the delivery item in accordance with the contract or are intended to protect the life and limb of the Entrepreneur's personnel or to protect the Entrepreneur's property from significant damage.",
+          "In the event of a breach of material contractual obligations, we are only liable for the foreseeable damage typical for the contract. This is limited in any case to a maximum amount of EUR 50,000.",
+          "In all other respects, all of the Entrepreneur's claims for damages are excluded, unless the liability is based on an intentional or grossly negligent breach of duty on the part of our legal representatives, employees and vicarious agents. In this case, we will always be liable in accordance with the statutory provisions.",
+          "The restrictions of paragraphs 1 and 2 also apply in favour of our legal representatives and vicarious agents if claims are asserted directly against them.",
+          {
+            "text": "If a claim for damages is made against us by a third party with regard to the delivery/service, the Entrepreneur shall indemnify us, our legal representatives, employees and vicarious agents comprehensively (including reasonable legal prosecution and defence costs, expenses, fees, taxes etc. as well as reasonable advance payments) if the causes of the claim (in relation to us) are within the Entrepreneur's sphere of control and organisation. The same indemnity obligation applies to damages of third parties which are in any way based on failures in the delivery/service in our sphere of control and organisation, unless our liability is based on",
+            "subitems": [
+              "culpable injury to life, body or health,",
+              "intent or gross negligence, or",
+              "the violation of essential contractual obligations."
+            ]
+          },
+          "Insofar as claims for damages by third parties are based in any way on only minor negligence in the breach of these essential contractual obligations and exceed the foreseeable damage typical for the contract as defined in § 10 (2), the Entrepreneur shall be subject to the aforementioned indemnification obligation with regard to the exceeding amount.",
+          "The provisions of the German Product Liability Act shall remain unaffected."
+        ]
+      },
+      "section11": {
+        "heading": "§ 11 Miscellaneous",
+        "items": [
+          "This contract and the entire legal relationship between the parties shall be governed exclusively by the laws of the Federal Republic of Germany to the exclusion of the UN Convention on Contracts for the International Sale of Goods (CISG).",
+          "The place of performance and exclusive place of jurisdiction for all disputes arising from this contract is our registered office, unless otherwise agreed in text form.",
+          "Amendments and additions to this contract must be made in text form. This also applies to amendments to this text form clause. No verbal agreements have been made."
+        ]
+      }
+    },
+    "consumerTerms": {
+      "title": "General terms of sale of Sound Service Musikanlagen-Vertriebsgesellschaft mbH for transactions with non-entrepreneurs (buyer is a consumer)",
+      "article1": {
+        "heading": "Art. 1 Offer and conclusion of a contract",
+        "text": "The order signed by the consumer is a binding offer. We may accept this offer within two weeks by sending an order confirmation or by sending the ordered goods within this term."
+      },
+      "article2": {
+        "heading": "Art. 2 Provided documents",
+        "text": "We reserve ownership and copyrights to all documents provided to the consumer in the context of placement of an order such as calculations, drawings, etc. Such documents may not be made accessible to third parties unless we give the consumer our express written consent. If we do not accept the consumer's offer within the term specified in Art. 1, these documents shall be returned to us without delay."
+      },
+      "article3": {
+        "heading": "Art. 3 Prices and Payment",
+        "items": [
+          "The purchase price shall be paid exclusively to the account specified in the invoice. The deduction of a discount shall only be permissible where specifically agreed to in writing.",
+          "Unless otherwise agreed, the purchase price shall be payable within 7 days of the invoice date. Default interest shall be charged at a rate of 5 per cent over the respective base interest rate p.a. We reserve the right to claim higher default damages. In the event that we claim higher default damages, the consumer has the possibility to prove that the claimed default damages did not arise at all or arose in an at least substantially lesser extent."
+        ]
+      },
+      "article4": {
+        "heading": "Art. 4 Rights of set-off and retention",
+        "text": "The consumer shall only have the right to set off claims, if his counterclaims are confirmed by a final judgment or undisputed. The consumer shall only be entitled to exercise a right of retention insofar as his counterclaim is based on the same contract."
+      },
+      "article5": {
+        "heading": "Art. 5 Delivery term",
+        "items": [
+          "The delivery term specified by us shall only commence once the consumer has duly and properly fulfilled his obligations. We reserve the defence of non-performance of the contract.",
+          "If the consumer defaults on acceptance or culpably violates other co-operation duties, we shall be entitled to demand compensation for any resulting damage incurred to us including any extra expenses. We reserve the right to assert further claims. The consumer shall, for his part, have the right to prove that the damages did not arise in the claimed amount at all or arose in an at least substantially lesser extent. The risk of accidental loss or accidental deterioration of the goods shall pass to the consumer at the point in time when the consumer defaults on acceptance or payment of debts.",
+          "We shall not be liable for a delay in delivery that is not caused by a wilful act or gross negligence on our part.",
+          "Any further statutory claims and rights of the consumer due to a delay in delivery shall not be affected."
+        ]
+      },
+      "article6": {
+        "heading": "Art. 6 Retention of title",
+        "items": [
+          "We shall retain title to the delivered goods until the full payment of all receivables owed to us under the transaction (reserved goods).",
+          "The consumer shall treat the reserved goods with care until title passes to him. In particular, he shall insure them at his own expense against damage by theft, fire and water, the insured sum being adequate to cover the replacement value. Should maintenance and inspection work be necessary, it shall be performed by the consumer in due time and at his own expense. Until title passes, the consumer shall notify us without delay in writing if the delivered reserved goods are lost, seized or are exposed to other interventions by third parties. Insofar as the third party is not in a position to reimburse us for the judicial and extrajudicial costs of legal action according to section 771 of the Code of Civil Procedure (Zivilprozessordnung – ZPO), the consumer shall be liable for the loss sustained by us.",
+          "Any treatment, processing, or modification of the reserved goods by the consumer shall always be effected in our name and on our behalf. In this case, the consumer's expectant right to the reserved goods shall be carried over to the remodelled item. If the reserved goods are processed together with other items not owned by us, we shall acquire co-ownership of the new item in the ratio of the objective value of our reserved goods to the other processed items at the time of processing. The same shall apply if the reserved goods are mixed with others. If they are mixed in such a manner that the reserved good of the consumer is to be regarded as the main item, it shall be agreed that the consumer shall assign proportionate co-ownership to us and shall keep the thus created sole property or joint property in safe custody for us. To secure our claims against the consumer, the consumer shall also assign to us any claims against third parties that arise to the consumer as a result of the incorporation of the reserved goods in real property; we hereby already accept this assignment.",
+          "We commit to release the securities we are entitled to if their value exceeds that of the claims to be secured by more than 20 per cent at the consumer's request."
+        ]
+      },
+      "article7": {
+        "heading": "Art. 7 Liability for defects and Notice of defects",
+        "items": [
+          "The buyer must notify us of any obvious defects within 14 days from delivery of the contractual object in writing.",
+          "The consumer may choose whether subsequent performance is to be effected by rectification or delivery of a replacement. However, we shall have the right to refuse the manner of subsequent performance chosen by the consumer, if it is only possible at an unreasonable expense and the other manner of subsequent performance remains without significant disadvantages for the consumer. During subsequent performance any reduction of the purchase price or cancellation of the contract by the consumer shall be ruled out. A rectification shall be deemed unsuccessful after a failed second attempt, if nothing to the contrary arises based on the nature of the item or defect or other circumstances in particular. If the subsequent performance is unsuccessful or if we have refused subsequent performance altogether, the consumer may, at his discretion, demand a reduction of the purchase price (reduction) or declare his cancellation of the contract.",
+          "The consumer may only claim damages based on the defect if the subsequent performance has been unsuccessful or if we have refused subsequent performance. The right of the consumer to assert further claims for damages subject to the conditions below shall not be affected.",
+          "The warranty period shall be 2 years, starting from the passage of risk (in the case of used items one year, starting from the passage of risk). This period shall also apply to compensation claims for consequential damages caused by a defect, as long as no claims are asserted due to unlawful acts."
+        ]
+      },
+      "article8": {
+        "heading": "Art. 8 Liability",
+        "items": [
+          "Claims for damages asserted by the consumer shall be ruled out. This shall not include claims of the consumer for damages arising from injury to life, body or health or the violation of major contractual obligations as well as liability for other damages caused by a wilful or grossly negligent violation of obligations by us, our legal representatives or vicarious agents. Major contractual obligations are those of which the fulfilment is necessary to achieve the purpose of the contract.",
+          "Claims for damages for the violation of major contractual obligations shall, however, be limited to contract-typical, predictable damages caused by ordinary negligence, unless the consumer claims damages arising from injury to life, body or health.",
+          "The restrictions in paragraphs (1) and (2) shall also apply in favour of our legal representatives and vicarious agents, if claims are asserted directly against them.",
+          "The provisions of the Product Liability Act (Produkthaftungsgesetz) shall not be affected."
+        ]
+      },
+      "article9": {
+        "heading": "Art. 9 Miscellaneous",
+        "items": [
+          "This contract and the entire legal relationship between the parties shall be governed exclusively by the law of the Federal Republic of Germany under exclusion of the UN Convention on Contracts for the International Sale of Goods (CISG).",
+          "If any provision hereof should be or become ineffective or contain a loophole, this shall not affect the validity of the remaining provisions."
+        ]
+      }
+    }
+  }
+}
