@@ -22,23 +22,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sound Service European Music Distribution",
-  description: "Sound Service has grown steadily from a one-product-distributor (MFB Fricke, the world´s first digital drum-machine under $1000) to one of the major independent German distribution companies for MI-, pro audio-, CE- and public address equipment. Over the past years Sound Service has steadily grown to an international distribution company with an extremely wide product portfolio, consisting of a large variety of brands offering a great assortment of new and innovative products.",
+  title: "iMAD AG International Marketing and Distribution",
+  description: "Willkommen bei iMAD, Ihrem Schweizer Vertrieb für Musikinstrumente und -elektronik.",
   icons: {
-    icon: '//media.sound-service.eu/images/touch-icon-32.png',
-    shortcut: '//media.sound-service.eu/images/touch-icon-32.png',
+    icon: '//media.sound-service.eu/imad/images/imad-touch-icon-32.png',
+    shortcut: '//media.sound-service.eu/imad/images/imad-touch-icon-32.png',
     apple: [
-      { url: '//media.sound-service.eu/images/touch-icon-57.png', sizes: '57x57' },
-      { url: '//media.sound-service.eu/images/touch-icon-72.png', sizes: '72x72' },
-      { url: '//media.sound-service.eu/images/touch-icon-114.png', sizes: '114x114' },
-      { url: '//media.sound-service.eu/images/touch-icon-144.png', sizes: '144x144' },
+      { url: '//media.sound-service.eu/imad/images/imad-touch-icon-57.png', sizes: '57x57' },
+      { url: '//media.sound-service.eu/imad/images/imad-touch-icon-72.png', sizes: '72x72' },
+      { url: '//media.sound-service.eu/imad/images/imad-touch-icon-114.png', sizes: '114x114' },
+      { url: '//media.sound-service.eu/imad/images/imad-touch-icon-144.png', sizes: '144x144' },
     ],
   },
   alternates: {
-    canonical: 'https://sound-service.eu/',
+    canonical: 'https://imadag.com/',
     languages: {
-      'en': 'https://sound-service.eu/',
-      'de': 'https://sound-service.eu/de',
+      'de': 'https://imadag.com/de',
+      'fr': 'https://imadag.com/fr',
     },
   },
 };

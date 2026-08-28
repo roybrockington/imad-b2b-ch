@@ -151,7 +151,7 @@
     "topBrands": "Top-Marken bei Sound Service",
     "latestNews": "Aktuelles Direkt aus dem Blog",
     "checkmarks": {
-      "leadingInEurope": "Führend in Europa",
+      "leadingInEurope": "Führend in der Schweiz",
       "excellentStock": "Exzellente Bevorratung",
       "modernLogistics": "Moderne Logistik",
       "internationalSales": "Internationaler Vertrieb",
@@ -160,16 +160,16 @@
     },
     "aboutUs": {
       "modernLogistics": {
-        "title": "Moderne Logistik",
-        "text": "Exzellente Bevorratung für ganz Europa. Wir kennen unsere Marken und wir kennen Ihre Kunden. Mit modernsten Lager- und Logistik-Methoden verteilen wir Ihre Produkte auch in die abgelegensten Ecken Europas - und das blitzschnell."
+        "title": "Wir nehmen’s persönlich.",
+        "text": "Wir geben alles, damit unsere Kunden im Musikfachhandel die gewünschten Produkte schnell und preisgünstig erhalten können - wir kennen unsere Marken und Produkte, und wir kennen die Bedürfnisse Ihrer Kunden. Schnelligkeit und Flexibilität sind unsere Stärken!"
       },
       "heartOfEurope": {
-        "title": "Im Zentrum Europas",
-        "text": "Aus der Weltstadt Berlin heraus kümmern wir uns um die musikalischen Belange von Einzelhändlern in ganz Europa. Dabei legen wir größten Wert darauf, jedem Einzelhändler eine 360° Rundum-Betreuung zukommen zu lassen. Wir lösen jedes Problem!"
+        "title": "Zentrale Lage",
+        "text": "Zwischen Zürich und Zug gelegen kümmern wir uns um die musikalischen Belange von Einzelhändlern in der ganzen Schweiz. Dabei legen wir grössten Wert darauf, jedem Einzelhändler eine 360° Rundum-Betreuung zukommen zu lassen. Wir lösen jedes Problem!"
       },
       "salesServiceTeams": {
-        "title": "Vertriebs- & Service-Teams",
-        "text": "Wenn es um Sound geht, wissen wir wovon wir sprechen. Unsere internationalen Mitarbeiter sind bestens ausgebildet und werden regelmäßig geschult. Wir wissen, wie man Marken aufbaut: Gemeinsam und mit Leidenschaft."
+        "title": "SERVICE - gross geschrieben",
+        "text": "Als Importeur und Distributor sind wir für unsere Kunden vor allem auch dann da, wenn es ein Problem gibt: wir sind kompetenter Ansprechpartner und helfen rasch und unkompliziert."
       }
     }
   },
@@ -489,7 +489,7 @@
     }
   },
   "jobs": {
-    "pageTitle": "Karriere bei Sound Service",
+    "pageTitle": "Karriere bei iMAD",
     "intro": {
       "paragraph1": "Werden Sie Teil eines der führenden europäischen Distributoren für professionelle Audio-, Licht- und Musikausrüstung. Bei Sound Service sind wir leidenschaftlich daran interessiert, unseren Kunden in ganz Europa außergewöhnliche Produkte und Dienstleistungen zu bieten.",
       "paragraph2": "Wir suchen ständig nach talentierten Menschen, die unser wachsendes Team verstärken möchten."

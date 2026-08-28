@@ -301,15 +301,15 @@ export default function Navigation() {
             <Link href="/">
               {/* Mobile logo - compact version */}
               <img
-                src="https://media.sound-service.eu/images/sound-service_logo_xs.svg"
-                alt="Sound Service"
+                src="https://media.sound-service.eu/images/imad/iMAD_logo.jpg"
+                alt="iMAD"
                 className="h-8 w-auto md:hidden"
               />
               {/* Desktop logo - full version */}
               <img
                 src="/logo.svg"
                 alt="Sound Service European Music Distribution"
-                className="hidden md:block h-8 w-auto"
+                className="hidden md:block h-12 w-auto"
               />
             </Link>
           </div>
@@ -385,9 +385,9 @@ export default function Navigation() {
                                       <>
                                         {parseFloat(
                                           currentCurrency.code === 'EUR' ? product.trade_eu :
-                                          currentCurrency.code === 'PLN' ? product.trade_pl :
-                                          currentCurrency.code === 'CZK' ? product.trade_cz :
-                                          product.trade_eu
+                                            currentCurrency.code === 'PLN' ? product.trade_pl :
+                                              currentCurrency.code === 'CZK' ? product.trade_cz :
+                                                product.trade_eu
                                         ).toFixed(2)}
                                         {' '}{currentCurrency.symbol}
                                       </>
@@ -442,9 +442,8 @@ export default function Navigation() {
                       <button
                         key={currency.code}
                         onClick={() => handleCurrencyChange(currency)}
-                        className={`w-full flex items-center justify-between px-4 py-2 hover:bg-gray-100 transition-colors ${
-                          currentCurrency.code === currency.code ? 'bg-gray-50' : ''
-                        }`}
+                        className={`w-full flex items-center justify-between px-4 py-2 hover:bg-gray-100 transition-colors ${currentCurrency.code === currency.code ? 'bg-gray-50' : ''
+                          }`}
                       >
                         <span className="text-sm text-gray-900">{currency.code}</span>
                         <span className="text-sm text-gray-500">{currency.symbol}</span>
@@ -482,9 +481,8 @@ export default function Navigation() {
                       <button
                         key={language.code}
                         onClick={() => handleLanguageChange(language)}
-                        className={`w-full flex items-center space-x-3 px-4 py-2 hover:bg-gray-100 transition-colors ${
-                          currentLanguage.code === language.code ? 'bg-gray-50' : ''
-                        }`}
+                        className={`w-full flex items-center space-x-3 px-4 py-2 hover:bg-gray-100 transition-colors ${currentLanguage.code === language.code ? 'bg-gray-50' : ''
+                          }`}
                       >
                         <img
                           src={`https://flagcdn.com/w40/${language.countryCode}.png`}
@@ -545,91 +543,91 @@ export default function Navigation() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ul className="flex items-center justify-between h-12">
             <div className="flex items-center space-x-8">
-            {/* Brands with submenu */}
-            <li className="relative">
-              <button
-                onClick={() => setIsBrandsOpen(!isBrandsOpen)}
-                onMouseEnter={() => setIsBrandsOpen(true)}
-                onMouseLeave={() => setIsBrandsOpen(false)}
-                className="hover:text-gray-200 transition-colors flex items-center"
-              >
-                {t('brands')}
-                <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {isBrandsOpen && (
-                <div
-                  className="absolute left-0 top-full mt-0 bg-white text-gray-900 shadow-lg rounded-md min-w-[1200px] p-4"
+              {/* Brands with submenu */}
+              <li className="relative">
+                <button
+                  onClick={() => setIsBrandsOpen(!isBrandsOpen)}
                   onMouseEnter={() => setIsBrandsOpen(true)}
                   onMouseLeave={() => setIsBrandsOpen(false)}
+                  className="hover:text-gray-200 transition-colors flex items-center"
                 >
-                  {brandsLoading ? (
-                    <p className="px-4 py-2 text-sm text-gray-500">{t('loading')}</p>
-                  ) : brands.length === 0 ? (
-                    <p className="px-4 py-2 text-sm text-gray-500">{t('noBrandsYet')}</p>
-                  ) : (
-                    <div className="grid grid-cols-8 gap-3">
-                      {brands.map((brand) => (
-                        <Link
-                          key={brand.id}
-                          href={`/brands/${brand.slug}`}
-                          className="flex items-center justify-center p-3 border border-gray-200 rounded-md hover:shadow-md hover:border-brand transition-all bg-white"
-                          onClick={() => setIsBrandsOpen(false)}
-                          title={brand.name}
-                        >
-                          <img
-                            src={`https://media.sound-service.eu/images/brands/${brand.code}.jpg`}
-                            alt={brand.name}
-                            className="max-w-full max-h-16 object-contain"
-                            onError={(e) => {
-                              // Fallback to text if image fails to load
-                              const target = e.target as HTMLImageElement;
-                              target.style.display = 'none';
-                              const parent = target.parentElement;
-                              if (parent && !parent.querySelector('.brand-name-fallback')) {
-                                const textNode = document.createElement('span');
-                                textNode.className = 'brand-name-fallback text-sm font-medium text-gray-900 text-center';
-                                textNode.textContent = brand.name;
-                                parent.appendChild(textNode);
-                              }
-                            }}
-                          />
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              )}
-            </li>
+                  {t('brands')}
+                  <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {isBrandsOpen && (
+                  <div
+                    className="absolute left-0 top-full mt-0 bg-white text-gray-900 shadow-lg rounded-md min-w-[1200px] p-4"
+                    onMouseEnter={() => setIsBrandsOpen(true)}
+                    onMouseLeave={() => setIsBrandsOpen(false)}
+                  >
+                    {brandsLoading ? (
+                      <p className="px-4 py-2 text-sm text-gray-500">{t('loading')}</p>
+                    ) : brands.length === 0 ? (
+                      <p className="px-4 py-2 text-sm text-gray-500">{t('noBrandsYet')}</p>
+                    ) : (
+                      <div className="grid grid-cols-8 gap-3">
+                        {brands.map((brand) => (
+                          <Link
+                            key={brand.id}
+                            href={`/brands/${brand.slug}`}
+                            className="flex items-center justify-center p-3 border border-gray-200 rounded-md hover:shadow-md hover:border-brand transition-all bg-white"
+                            onClick={() => setIsBrandsOpen(false)}
+                            title={brand.name}
+                          >
+                            <img
+                              src={`https://media.sound-service.eu/images/brands/${brand.code}.jpg`}
+                              alt={brand.name}
+                              className="max-w-full max-h-16 object-contain"
+                              onError={(e) => {
+                                // Fallback to text if image fails to load
+                                const target = e.target as HTMLImageElement;
+                                target.style.display = 'none';
+                                const parent = target.parentElement;
+                                if (parent && !parent.querySelector('.brand-name-fallback')) {
+                                  const textNode = document.createElement('span');
+                                  textNode.className = 'brand-name-fallback text-sm font-medium text-gray-900 text-center';
+                                  textNode.textContent = brand.name;
+                                  parent.appendChild(textNode);
+                                }
+                              }}
+                            />
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </li>
 
-            {/* About Us */}
-            <li>
-              <Link href="/about" className="text-white hover:text-gray-200 transition-colors">
-                {t('aboutUs')}
-              </Link>
-            </li>
+              {/* About Us */}
+              <li>
+                <Link href="/about" className="text-white hover:text-gray-200 transition-colors">
+                  {t('aboutUs')}
+                </Link>
+              </li>
 
-            {/* News */}
-            <li>
-              <a href="https://blog.sound-service.eu/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 transition-colors">
-                {t('news')}
-              </a>
-            </li>
+              {/* News */}
+              <li>
+                <a href="https://blog.sound-service.eu/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 transition-colors">
+                  {t('news')}
+                </a>
+              </li>
 
-            {/* Sales Areas */}
-            <li>
-              <Link href="/sales-areas" className="text-white hover:text-gray-200 transition-colors">
-                {t('salesAreas')}
-              </Link>
-            </li>
+              {/* Sales Areas */}
+              <li>
+                <Link href="/sales-areas" className="text-white hover:text-gray-200 transition-colors">
+                  {t('salesAreas')}
+                </Link>
+              </li>
 
-            {/* Returns */}
-            <li>
-              <Link href="/returns" className="text-white hover:text-gray-200 transition-colors">
-                {t('returns')}
-              </Link>
-            </li>
+              {/* Returns */}
+              <li>
+                <Link href="/returns" className="text-white hover:text-gray-200 transition-colors">
+                  {t('returns')}
+                </Link>
+              </li>
             </div>
 
             {/* Contact Link - Right side */}
@@ -786,9 +784,8 @@ export default function Navigation() {
                             handleCurrencyChange(currency);
                             setIsMobileMenuOpen(false);
                           }}
-                          className={`w-full flex items-center justify-between px-4 py-2 hover:bg-gray-100 rounded-md transition-colors ${
-                            currentCurrency.code === currency.code ? 'bg-gray-50' : ''
-                          }`}
+                          className={`w-full flex items-center justify-between px-4 py-2 hover:bg-gray-100 rounded-md transition-colors ${currentCurrency.code === currency.code ? 'bg-gray-50' : ''
+                            }`}
                         >
                           <span className="text-sm text-gray-900">{currency.name}</span>
                           <span className="text-sm font-medium text-gray-700">{currency.code} {currency.symbol}</span>
@@ -823,9 +820,8 @@ export default function Navigation() {
                             handleLanguageChange(language);
                             setIsMobileMenuOpen(false);
                           }}
-                          className={`w-full flex items-center space-x-3 px-4 py-2 hover:bg-gray-100 rounded-md transition-colors ${
-                            currentLanguage.code === language.code ? 'bg-gray-50' : ''
-                          }`}
+                          className={`w-full flex items-center space-x-3 px-4 py-2 hover:bg-gray-100 rounded-md transition-colors ${currentLanguage.code === language.code ? 'bg-gray-50' : ''
+                            }`}
                         >
                           <img
                             src={`https://flagcdn.com/w40/${language.countryCode}.png`}
