@@ -128,15 +128,6 @@ export default function AdminOrdersPage() {
     }
   };
 
-  const getCurrencySymbol = (currencyCode: string): string => {
-    const symbols: { [key: string]: string } = {
-      'EUR': '€',
-      'PLN': 'zł',
-      'CZK': 'Kč'
-    };
-    return symbols[currencyCode] || '€';
-  };
-
   const getStatusColor = (status: string): string => {
     const colors: { [key: string]: string } = {
       pending: 'bg-yellow-100 text-yellow-800',
@@ -323,10 +314,7 @@ export default function AdminOrdersPage() {
                           {order.items?.length || 0}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                          {new Intl.NumberFormat('de-DE', {
-                            minimumFractionDigits: 2,
-                            maximumFractionDigits: 2
-                          }).format(parseFloat(order.total))} {getCurrencySymbol(order.currency)}
+                          CHF {parseFloat(order.total).toFixed(2)}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
                           <span className={`px-2 py-1 text-xs font-semibold rounded-full capitalize ${getStatusColor(getDisplayStatus(order))}`}>

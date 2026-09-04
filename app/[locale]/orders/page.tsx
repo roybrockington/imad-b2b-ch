@@ -67,55 +67,10 @@ export default function CustomerOrdersPage() {
     fetchOrders();
   }, [currentUser, currentPage]);
 
-  const getCurrencySymbol = (currencyCode: string): string => {
-    const symbols: { [key: string]: string } = {
-      'EUR': '€',
-      'PLN': 'zł',
-      'CZK': 'Kč',
-      'GBP': '£'
-    };
-    return symbols[currencyCode] || '€';
-  };
-
-  const formatPrice = (price: string | number, currency: string): string => {
+  const formatPrice = (price: string | number): string => {
     const numPrice = typeof price === 'string' ? parseFloat(price) : price;
-
-    if (currency === 'GBP') {
-      // GBP: £1,234.56 (symbol before, dot for decimal, comma for thousands)
-      const formatted = new Intl.NumberFormat('en-GB', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      }).format(numPrice);
-      return `£${formatted}`;
-    } else if (currency === 'EUR') {
-      // EUR: 1.234,56 € (symbol after, comma for decimal, dot for thousands)
-      const formatted = new Intl.NumberFormat('de-DE', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      }).format(numPrice);
-      return `${formatted} €`;
-    } else if (currency === 'CZK') {
-      // CZK: 1 234,56 Kč (symbol after, comma for decimal, space for thousands)
-      const formatted = new Intl.NumberFormat('cs-CZ', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      }).format(numPrice);
-      return `${formatted} Kč`;
-    } else if (currency === 'PLN') {
-      // PLN: 1 234,56 zł (symbol after, comma for decimal, space for thousands)
-      const formatted = new Intl.NumberFormat('pl-PL', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      }).format(numPrice);
-      return `${formatted} zł`;
-    }
-
-    // Default to EUR format
-    const formatted = new Intl.NumberFormat('de-DE', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2
-    }).format(numPrice);
-    return `${formatted} €`;
+    if (isNaN(numPrice)) return 'CHF 0.00';
+    return `CHF ${numPrice.toFixed(2)}`;
   };
 
   const getStatusColor = (status: string): string => {
@@ -252,7 +207,7 @@ export default function CustomerOrdersPage() {
                         <div>
                           <p className="text-gray-500">{t('total')}</p>
                           <p className="font-bold text-brand">
-                            {formatPrice(order.total, order.currency)}
+                            {formatPrice(order.total)}
                           </p>
                         </div>
                       </div>

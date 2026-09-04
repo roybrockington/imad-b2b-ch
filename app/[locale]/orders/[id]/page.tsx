@@ -63,55 +63,10 @@ export default function CustomerOrderDetailPage() {
     fetchOrder();
   }, [currentUser, orderId]);
 
-  const getCurrencySymbol = (currencyCode: string): string => {
-    const symbols: { [key: string]: string } = {
-      'EUR': '€',
-      'PLN': 'zł',
-      'CZK': 'Kč',
-      'GBP': '£'
-    };
-    return symbols[currencyCode] || '€';
-  };
-
-  const formatPrice = (price: string | number, currency: string): string => {
-    const numPrice = typeof price === 'string' ? parseFloat(price.replace(/\s/g, '').replace(',', '.')) : price;
-
-    if (currency === 'GBP') {
-      // GBP: £1,234.56 (symbol before, dot for decimal, comma for thousands)
-      const formatted = new Intl.NumberFormat('en-GB', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      }).format(numPrice);
-      return `£${formatted}`;
-    } else if (currency === 'EUR') {
-      // EUR: 1.234,56 € (symbol after, comma for decimal, dot for thousands)
-      const formatted = new Intl.NumberFormat('de-DE', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      }).format(numPrice);
-      return `${formatted} €`;
-    } else if (currency === 'CZK') {
-      // CZK: 1 234,56 Kč (symbol after, comma for decimal, space for thousands)
-      const formatted = new Intl.NumberFormat('cs-CZ', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      }).format(numPrice);
-      return `${formatted} Kč`;
-    } else if (currency === 'PLN') {
-      // PLN: 1 234,56 zł (symbol after, comma for decimal, space for thousands)
-      const formatted = new Intl.NumberFormat('pl-PL', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      }).format(numPrice);
-      return `${formatted} zł`;
-    }
-
-    // Default to EUR format
-    const formatted = new Intl.NumberFormat('de-DE', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2
-    }).format(numPrice);
-    return `${formatted} €`;
+  const formatPrice = (price: string | number): string => {
+    const numPrice = typeof price === 'string' ? parseFloat(price) : price;
+    if (isNaN(numPrice)) return 'CHF 0.00';
+    return `CHF ${numPrice.toFixed(2)}`;
   };
 
   const getStatusColor = (status: string): string => {
@@ -329,7 +284,7 @@ export default function CustomerOrderDetailPage() {
                     </p>
                     <div className="flex items-center gap-4 text-sm mb-2">
                       <span className="text-gray-700">
-                        {formatPrice(item.price, item.currency)}
+                        {formatPrice(item.price)}
                       </span>
                       <span className="text-gray-500">×</span>
                       <span className="text-gray-700">{t('qty')}: {item.quantity}</span>
@@ -357,8 +312,7 @@ export default function CustomerOrderDetailPage() {
                     {Number(item.shipped || 0) < Number(item.quantity) && item.product && order.account?.region && (
                       <div className="mt-2">
                         {(() => {
-                          const regionCode = order.account.region.code?.toLowerCase();
-                          const eta = regionCode === 'uk' ? item.product.eta_uk : item.product.eta;
+                          const eta = item.product.eta;
 
                           if (eta) {
                             // Format date from ISO string to dd/mm/yy or show "Call for info" if past
@@ -397,7 +351,7 @@ export default function CustomerOrderDetailPage() {
                   {/* Item Total */}
                   <div className="text-right">
                     <p className="font-bold text-gray-900">
-                      {formatPrice(itemTotal, item.currency)}
+                      {formatPrice(itemTotal)}
                     </p>
                   </div>
                 </div>
@@ -410,14 +364,14 @@ export default function CustomerOrderDetailPage() {
             <div className="flex justify-between items-center text-sm">
               <span className="text-gray-600">{t('subtotal')}:</span>
               <span className="font-medium text-gray-900">
-                {formatPrice(order.total, order.currency)}
+                {formatPrice(order.total)}
               </span>
             </div>
             {order.insurance && parseFloat(order.insurance) > 0 && (
               <div className="flex justify-between items-center text-sm">
                 <span className="text-gray-600">Insurance:</span>
                 <span className="font-medium text-gray-900">
-                  {formatPrice(order.insurance, order.currency)}
+                  {formatPrice(order.insurance)}
                 </span>
               </div>
             )}
@@ -425,7 +379,7 @@ export default function CustomerOrderDetailPage() {
               <div className="flex justify-between items-center text-sm">
                 <span className="text-gray-600">Shipping:</span>
                 <span className="font-medium text-gray-900">
-                  {formatPrice(order.shipping, order.currency)}
+                  {formatPrice(order.shipping)}
                 </span>
               </div>
             ) : (
@@ -440,8 +394,7 @@ export default function CustomerOrderDetailPage() {
                 {formatPrice(
                   parseFloat(order.total) +
                   (order.insurance ? parseFloat(order.insurance) : 0) +
-                  (order.shipping ? parseFloat(order.shipping) : 0),
-                  order.currency
+                  (order.shipping ? parseFloat(order.shipping) : 0)
                 )}
               </span>
             </div>

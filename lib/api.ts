@@ -147,24 +147,13 @@ export interface Product {
   name: string;
   category_id: number;
   brand_id: number;
-  ssp_eu: string;
-  ssp_pl: string;
-  ssp_cz: string;
-  ssp_uk: string | null;
-  trade_eu: string;
-  trade_pl: string;
-  trade_cz: string;
-  trade_uk: string | null;
+  ssp_ch: string;
+  trade_ch: string;
   promo_start: string | null;
   promo_end: string | null;
-  qty_break: number;
-  qty_discount: string;
-  qty_break_uk: number | null;
-  qty_discount_uk: string | null;
-  promo_eu: string | null;
-  promo_pl: string;
-  promo_cz: string;
-  promo_uk: string | null;
+  qty_break_ch: number;
+  qty_discount_ch: string;
+  promo_ch: string | null;
   ean: string | null;
   available_for_sale: boolean;
   bundle: boolean;
@@ -173,9 +162,8 @@ export interface Product {
   freight: boolean;
   embargo: boolean;
   stock: number;
-  stock_uk: number | null;
+  stock_eu: number;
   eta: string | null;
-  eta_uk: string | null;
   created_at: string;
   updated_at: string;
   manufacturer_supplier_id?: number | null;
@@ -228,14 +216,8 @@ export interface Country {
   id: number;
   code: string;
   name: string;
-  shipping_eur?: string;
-  shipping_czk?: string;
-  shipping_gbp?: string;
-  shipping_pln?: string;
-  freight_eur?: string;
-  freight_czk?: string;
-  freight_gbp?: string;
-  freight_pln?: string;
+  shipping_chf?: string;
+  freight_chf?: string;
 }
 
 export interface Currency {

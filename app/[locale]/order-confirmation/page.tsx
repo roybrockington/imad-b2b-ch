@@ -39,66 +39,10 @@ export default function OrderConfirmationPage() {
     fetchOrder();
   }, [orderId]);
 
-  const getCurrencySymbol = (currencyCode: string): string => {
-    const symbols: { [key: string]: string } = {
-      'EUR': '€',
-      'PLN': 'zł',
-      'CZK': 'Kč',
-      'GBP': '£'
-    };
-    return symbols[currencyCode] || '€';
-  };
-
-  const formatPrice = (price: number | string, currencyCode: string): string => {
+  const formatPriceWithCurrency = (price: number | string): string => {
     const numPrice = typeof price === 'string' ? parseFloat(price) : price;
-
-    if (isNaN(numPrice)) return '0.00';
-
-    // Format based on currency
-    if (currencyCode === 'GBP') {
-      // British format: 1,234.56 (comma for thousands, dot for decimal)
-      return numPrice.toLocaleString('en-GB', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currencyCode === 'EUR') {
-      // European format: 1.234,56 (dot for thousands, comma for decimal)
-      return numPrice.toLocaleString('de-DE', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currencyCode === 'CZK') {
-      // Czech format: 1 234,56 (space for thousands, comma for decimal)
-      return numPrice.toLocaleString('cs-CZ', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currencyCode === 'PLN') {
-      // Polish format: 1 234,56 (space for thousands, comma for decimal)
-      return numPrice.toLocaleString('pl-PL', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    }
-
-    // Default to European format
-    return numPrice.toLocaleString('de-DE', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2
-    });
-  };
-
-  const formatPriceWithCurrency = (price: number | string, currencyCode: string): string => {
-    const formattedPrice = formatPrice(price, currencyCode);
-    const symbol = getCurrencySymbol(currencyCode);
-
-    // Currency symbol goes before the price for GBP
-    if (currencyCode === 'GBP') {
-      return `${symbol}${formattedPrice}`;
-    }
-
-    // Currency symbol goes after the price for other currencies
-    return `${formattedPrice} ${symbol}`;
+    if (isNaN(numPrice)) return 'CHF 0.00';
+    return `CHF ${numPrice.toFixed(2)}`;
   };
 
   if (loading) {
@@ -186,14 +130,14 @@ export default function OrderConfirmationPage() {
             <div>
               <p className="text-gray-600">{t('subtotal')}</p>
               <p className="font-semibold text-gray-900">
-                {formatPriceWithCurrency(order.total, order.currency)}
+                {formatPriceWithCurrency(order.total)}
               </p>
             </div>
             {order.insurance && parseFloat(order.insurance) > 0 && (
               <div>
                 <p className="text-gray-600">Insurance</p>
                 <p className="font-semibold text-gray-900">
-                  {formatPriceWithCurrency(order.insurance, order.currency)}
+                  {formatPriceWithCurrency(order.insurance)}
                 </p>
               </div>
             )}
@@ -201,7 +145,7 @@ export default function OrderConfirmationPage() {
               <div>
                 <p className="text-gray-600">Shipping</p>
                 <p className="font-semibold text-gray-900">
-                  {formatPriceWithCurrency(order.shipping, order.currency)}
+                  {formatPriceWithCurrency(order.shipping)}
                 </p>
               </div>
             )}
@@ -217,8 +161,7 @@ export default function OrderConfirmationPage() {
                 {formatPriceWithCurrency(
                   parseFloat(order.total) +
                   (order.insurance ? parseFloat(order.insurance) : 0) +
-                  (order.shipping ? parseFloat(order.shipping) : 0),
-                  order.currency
+                  (order.shipping ? parseFloat(order.shipping) : 0)
                 )}
               </p>
             </div>
@@ -270,14 +213,14 @@ export default function OrderConfirmationPage() {
                     </h3>
                     <p className="text-xs text-gray-500">{t('sku')} {item.product_code}</p>
                     <p className="text-sm text-gray-700 mt-1">
-                      {formatPriceWithCurrency(item.price, item.currency)} × {item.quantity}
+                      {formatPriceWithCurrency(item.price)} × {item.quantity}
                     </p>
                   </div>
 
                   {/* Item Total */}
                   <div className="text-right">
                     <p className="font-semibold text-gray-900">
-                      {formatPriceWithCurrency(parseFloat(item.price) * item.quantity, item.currency)}
+                      {formatPriceWithCurrency(parseFloat(item.price) * item.quantity)}
                     </p>
                   </div>
                 </div>

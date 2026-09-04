@@ -32,78 +32,14 @@ export default function CartPage() {
     fetchUser();
   }, []);
 
-  const getCurrencySymbol = (currencyCode: string): string => {
-    const symbols: { [key: string]: string } = {
-      'EUR': '€',
-      'PLN': 'zł',
-      'CZK': 'Kč',
-      'GBP': '£'
-    };
-    return symbols[currencyCode] || '€';
+  const parsePrice = (priceString: string): number => {
+    return parseFloat(priceString);
   };
 
-  const parsePrice = (priceString: string, currencyCode: string): number => {
-    if (currencyCode === 'GBP') {
-      // British format: 1,234.56 (comma is thousands, dot is decimal)
-      // Remove commas, keep dot as decimal
-      return parseFloat(priceString.replace(/,/g, ''));
-    } else {
-      // European format: 1.234,56 (dot is thousands, comma is decimal)
-      // Remove dots and spaces, replace comma with dot
-      return parseFloat(priceString.replace(/[\s.]/g, '').replace(',', '.'));
-    }
-  };
-
-  const formatPrice = (price: number | string, currencyCode: string): string => {
+  const formatPriceWithCurrency = (price: number | string): string => {
     const numPrice = typeof price === 'string' ? parseFloat(price) : price;
-
-    if (isNaN(numPrice)) return '0.00';
-
-    // Format based on currency
-    if (currencyCode === 'GBP') {
-      // British format: 1,234.56 (comma for thousands, dot for decimal)
-      return numPrice.toLocaleString('en-GB', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currencyCode === 'EUR') {
-      // European format: 1.234,56 (dot for thousands, comma for decimal)
-      return numPrice.toLocaleString('de-DE', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currencyCode === 'CZK') {
-      // Czech format: 1 234,56 (space for thousands, comma for decimal)
-      return numPrice.toLocaleString('cs-CZ', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currencyCode === 'PLN') {
-      // Polish format: 1 234,56 (space for thousands, comma for decimal)
-      return numPrice.toLocaleString('pl-PL', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    }
-
-    // Default to European format
-    return numPrice.toLocaleString('de-DE', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2
-    });
-  };
-
-  const formatPriceWithCurrency = (price: number | string, currencyCode: string): string => {
-    const formattedPrice = formatPrice(price, currencyCode);
-    const symbol = getCurrencySymbol(currencyCode);
-
-    // Currency symbol goes before the price for GBP
-    if (currencyCode === 'GBP') {
-      return `${symbol}${formattedPrice}`;
-    }
-
-    // Currency symbol goes after the price for other currencies
-    return `${formattedPrice} ${symbol}`;
+    if (isNaN(numPrice)) return 'CHF 0.00';
+    return `CHF ${numPrice.toFixed(2)}`;
   };
 
   if (!currentUser) {
@@ -148,8 +84,6 @@ export default function CartPage() {
   }
 
   const isCustomer = currentUser?.roles?.includes('Customer');
-  // Always use the currency from the user's account as the authoritative source
-  const userCurrency = currentUser?.account?.currency?.code || 'EUR';
 
   if (items.length === 0) {
     return (
@@ -161,7 +95,6 @@ export default function CartPage() {
           {/* CSV Upload for Customer role - even when cart is empty */}
           {isCustomer && (
             <CsvUpload
-              userCurrency={userCurrency}
               userAccount={currentUser?.account}
             />
           )}
@@ -181,8 +114,6 @@ export default function CartPage() {
   }
 
   const totalPrice = getTotalPrice();
-  // Use user's account currency instead of first item's currency for consistency
-  const displayCurrency = userCurrency;
 
   return (
     <div className="min-h-screen bg-white">
@@ -201,7 +132,6 @@ export default function CartPage() {
         {/* CSV Upload for Customer role */}
         {isCustomer && (
           <CsvUpload
-            userCurrency={userCurrency}
             userAccount={currentUser?.account}
           />
         )}
@@ -219,8 +149,7 @@ export default function CartPage() {
                 ? `https://media.sound-service.eu/Artikelbilder/Shopsystem/278x148/${item.product.description.image1}`
                 : null;
 
-              // Parse price based on how it was stored (item.currency)
-              const unitPrice = parsePrice(item.price, item.currency);
+              const unitPrice = parsePrice(item.price);
               const itemTotal = unitPrice * item.quantity;
 
               // Use product id + xwareCode as unique key for B-stock items
@@ -274,7 +203,7 @@ export default function CartPage() {
                       {t('sku')} {item.xwareCode || item.product.code}
                     </p>
                     <p className={`text-lg font-bold mt-2 ${item.xwareCode ? stockPriceColor : 'text-brand'}`}>
-                      {formatPriceWithCurrency(unitPrice, displayCurrency)}
+                      {formatPriceWithCurrency(unitPrice)}
                     </p>
                   </div>
 
@@ -308,7 +237,7 @@ export default function CartPage() {
                     </div>
 
                     <p className="text-sm font-semibold text-gray-900 mt-2">
-                      {formatPriceWithCurrency(itemTotal, displayCurrency)}
+                      {formatPriceWithCurrency(itemTotal)}
                     </p>
                   </div>
                 </div>
@@ -331,7 +260,7 @@ export default function CartPage() {
               <div className="flex justify-between text-lg font-bold mb-6">
                 <span>{t('total')}</span>
                 <span className="text-brand">
-                  {formatPriceWithCurrency(totalPrice, displayCurrency)}
+                  {formatPriceWithCurrency(totalPrice)}
                 </span>
               </div>
 

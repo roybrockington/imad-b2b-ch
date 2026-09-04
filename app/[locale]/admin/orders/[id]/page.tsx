@@ -96,14 +96,8 @@ export default function AdminOrderDetailPage() {
     }
   };
 
-  const formatPrice = (amount: number, currency: string): string => {
-    const locale = currency === 'GBP' ? 'en-GB' : 'de-DE';
-    return new Intl.NumberFormat(locale, {
-      style: 'currency',
-      currency,
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2
-    }).format(amount);
+  const formatPrice = (amount: number): string => {
+    return `CHF ${amount.toFixed(2)}`;
   };
 
   const getStatusColor = (status: string): string => {
@@ -217,7 +211,7 @@ export default function AdminOrderDetailPage() {
                     ? `https://media.sound-service.eu/Artikelbilder/Shopsystem/278x148/${item.product.description.image1}`
                     : null;
 
-                  const itemTotal = parseFloat(item.price.replace(/\s/g, '').replace(',', '.')) * item.quantity;
+                  const itemTotal = parseFloat(item.price) * item.quantity;
 
                   return (
                     <div
@@ -251,7 +245,7 @@ export default function AdminOrderDetailPage() {
                         </p>
                         <div className="flex items-center gap-4 text-sm mb-2">
                           <span className="text-gray-700">
-                            {formatPrice(parseFloat(item.price.replace(/\s/g, '').replace(',', '.')), item.currency)}
+                            {formatPrice(parseFloat(item.price))}
                           </span>
                           <span className="text-gray-500">×</span>
                           <span className="text-gray-700">Qty: {item.quantity}</span>
@@ -280,7 +274,7 @@ export default function AdminOrderDetailPage() {
                       {/* Item Total */}
                       <div className="text-right">
                         <p className="font-bold text-gray-900">
-                          {formatPrice(itemTotal, item.currency)}
+                          {formatPrice(itemTotal)}
                         </p>
                       </div>
                     </div>
@@ -293,14 +287,14 @@ export default function AdminOrderDetailPage() {
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-gray-600">Subtotal:</span>
                   <span className="font-medium text-gray-900">
-                    {formatPrice(parseFloat(order.total), order.currency)}
+                    {formatPrice(parseFloat(order.total))}
                   </span>
                 </div>
                 {order.insurance && parseFloat(order.insurance) > 0 && (
                   <div className="flex justify-between items-center text-sm">
                     <span className="text-gray-600">Insurance:</span>
                     <span className="font-medium text-gray-900">
-                      {formatPrice(parseFloat(order.insurance), order.currency)}
+                      {formatPrice(parseFloat(order.insurance))}
                     </span>
                   </div>
                 )}
@@ -308,7 +302,7 @@ export default function AdminOrderDetailPage() {
                   <div className="flex justify-between items-center text-sm">
                     <span className="text-gray-600">Shipping:</span>
                     <span className="font-medium text-gray-900">
-                      {formatPrice(parseFloat(order.shipping), order.currency)}
+                      {formatPrice(parseFloat(order.shipping))}
                     </span>
                   </div>
                 ) : (
@@ -323,8 +317,7 @@ export default function AdminOrderDetailPage() {
                     {formatPrice(
                       parseFloat(order.total) +
                       (order.insurance ? parseFloat(order.insurance) : 0) +
-                      (order.shipping ? parseFloat(order.shipping) : 0),
-                      order.currency
+                      (order.shipping ? parseFloat(order.shipping) : 0)
                     )}
                   </span>
                 </div>

@@ -17,20 +17,13 @@ const languages = [
   // { code: 'pl', name: 'Polski', countryCode: 'pl' },
 ];
 
-const currencies = [
-  { code: 'EUR', symbol: '€', name: 'Euro' },
-  { code: 'PLN', symbol: 'zł', name: 'Polish Złoty' },
-  { code: 'CZK', symbol: 'Kč', name: 'Czech Koruna' },
-  { code: 'GBP', symbol: '£', name: 'British Pound' },
-];
+const CURRENCY = { code: 'CHF', symbol: 'CHF', name: 'Swiss Franc' };
 
 export default function Navigation() {
   const [searchQuery, setSearchQuery] = useState('');
   const [isBrandsOpen, setIsBrandsOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-  const [isCurrencyOpen, setIsCurrencyOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [currentCurrency, setCurrentCurrency] = useState(currencies[0]); // Default to EUR
   const [isPending, startTransition] = useTransition();
   const [brands, setBrands] = useState<Brand[]>([]);
   const [brandsLoading, setBrandsLoading] = useState(false);
@@ -54,56 +47,7 @@ export default function Navigation() {
   // Track when component is mounted (client-side only)
   useEffect(() => {
     setIsMounted(true);
-
-    // Check for hash parameter to set currency (e.g., #uk or #gbp for UK customers)
-    const hash = window.location.hash.toLowerCase().replace('#', '');
-    let currencyFromHash: typeof currencies[0] | undefined;
-
-    if (hash === 'uk' || hash === 'gbp') {
-      currencyFromHash = currencies.find(c => c.code === 'GBP');
-    } else if (hash === 'eu' || hash === 'eur' || hash === 'euro') {
-      currencyFromHash = currencies.find(c => c.code === 'EUR');
-    } else if (hash === 'pl' || hash === 'pln' || hash === 'poland') {
-      currencyFromHash = currencies.find(c => c.code === 'PLN');
-    } else if (hash === 'cz' || hash === 'czk' || hash === 'czech') {
-      currencyFromHash = currencies.find(c => c.code === 'CZK');
-    }
-
-    if (currencyFromHash) {
-      // Hash parameter takes precedence
-      setCurrentCurrency(currencyFromHash);
-      localStorage.setItem('currency', currencyFromHash.code);
-      // Clear hash to avoid showing it in URL
-      window.history.replaceState(null, '', window.location.pathname + window.location.search);
-    } else {
-      // Load saved currency from localStorage
-      const savedCurrency = localStorage.getItem('currency');
-      if (savedCurrency) {
-        const currency = currencies.find(c => c.code === savedCurrency);
-        if (currency) {
-          setCurrentCurrency(currency);
-        }
-      }
-    }
   }, []);
-
-  // Auto-set currency based on user's account currency for customers
-  useEffect(() => {
-    if (currentUser && currentUser.account && currentUser.account.currency) {
-      const roles = currentUser.roles || [];
-      // Only auto-set for Customer role with assigned account
-      if (roles.includes('Customer') && currentUser.account_id) {
-        const accountCurrency = currentUser.account.currency.code;
-        const currency = currencies.find(c => c.code === accountCurrency);
-        if (currency) {
-          setCurrentCurrency(currency);
-          localStorage.setItem('currency', currency.code);
-          // Trigger storage event for same-tab updates
-          window.dispatchEvent(new Event('storage'));
-        }
-      }
-    }
-  }, [currentUser]);
 
   // Fetch current user if authenticated
   useEffect(() => {
@@ -276,13 +220,6 @@ export default function Navigation() {
     });
   };
 
-  const handleCurrencyChange = (currency: typeof currencies[0]) => {
-    setIsCurrencyOpen(false);
-    setCurrentCurrency(currency);
-    // Save to localStorage
-    localStorage.setItem('currency', currency.code);
-  };
-
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -374,24 +311,7 @@ export default function Navigation() {
                                 </p>
                                 {product.available_for_sale && (
                                   <p className="text-sm font-semibold text-brand mt-1">
-                                    {currentCurrency.code === 'GBP' ? (
-                                      // GBP: symbol before price
-                                      <>
-                                        {currentCurrency.symbol}
-                                        {parseFloat(product.trade_uk || product.trade_eu).toFixed(2)}
-                                      </>
-                                    ) : (
-                                      // Other currencies: price before symbol
-                                      <>
-                                        {parseFloat(
-                                          currentCurrency.code === 'EUR' ? product.trade_eu :
-                                            currentCurrency.code === 'PLN' ? product.trade_pl :
-                                              currentCurrency.code === 'CZK' ? product.trade_cz :
-                                                product.trade_eu
-                                        ).toFixed(2)}
-                                        {' '}{currentCurrency.symbol}
-                                      </>
-                                    )}
+                                    {parseFloat(product.trade_ch).toFixed(2)} {CURRENCY.symbol}
                                   </p>
                                 )}
                               </div>
@@ -419,39 +339,9 @@ export default function Navigation() {
 
           {/* Right section with icons */}
           <div className="flex items-center space-x-1 sm:space-x-4 flex-shrink-0">
-            {/* Currency Selector - Hidden on mobile */}
-            <div className="relative hidden sm:block">
-              <button
-                onClick={() => setIsCurrencyOpen(!isCurrencyOpen)}
-                className="flex items-center space-x-1 px-3 py-2 hover:bg-gray-100 rounded-md transition-colors"
-                aria-label="Select currency"
-              >
-                <span className="text-sm font-medium text-gray-700">{currentCurrency.code}</span>
-                <svg className="h-4 w-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {isCurrencyOpen && (
-                <>
-                  <div
-                    className="fixed inset-0 z-10"
-                    onClick={() => setIsCurrencyOpen(false)}
-                  />
-                  <div className="absolute right-0 top-full mt-2 bg-white border border-gray-200 shadow-lg rounded-md min-w-[160px] py-2 z-20">
-                    {currencies.map((currency) => (
-                      <button
-                        key={currency.code}
-                        onClick={() => handleCurrencyChange(currency)}
-                        className={`w-full flex items-center justify-between px-4 py-2 hover:bg-gray-100 transition-colors ${currentCurrency.code === currency.code ? 'bg-gray-50' : ''
-                          }`}
-                      >
-                        <span className="text-sm text-gray-900">{currency.code}</span>
-                        <span className="text-sm text-gray-500">{currency.symbol}</span>
-                      </button>
-                    ))}
-                  </div>
-                </>
-              )}
+            {/* Currency - Hidden on mobile */}
+            <div className="hidden sm:flex items-center px-3 py-2">
+              <span className="text-sm font-medium text-gray-700">{CURRENCY.code}</span>
             </div>
 
             {/* Language Selector - Hidden on mobile */}
@@ -766,33 +656,10 @@ export default function Navigation() {
 
               {/* Currency & Language Selectors */}
               <div className="mt-6 pt-6 border-t border-gray-200 space-y-4">
-                {/* Currency Selector */}
-                <div>
-                  <button
-                    onClick={() => setIsCurrencyOpen(!isCurrencyOpen)}
-                    className="w-full flex items-center justify-between px-4 py-3 text-gray-900 hover:bg-gray-100 rounded-md transition-colors"
-                  >
-                    <span className="font-medium">{t('currency')}</span>
-                    <span className="text-sm font-medium text-gray-700">{currentCurrency.code} {currentCurrency.symbol}</span>
-                  </button>
-                  {isCurrencyOpen && (
-                    <div className="mt-2 space-y-1">
-                      {currencies.map((currency) => (
-                        <button
-                          key={currency.code}
-                          onClick={() => {
-                            handleCurrencyChange(currency);
-                            setIsMobileMenuOpen(false);
-                          }}
-                          className={`w-full flex items-center justify-between px-4 py-2 hover:bg-gray-100 rounded-md transition-colors ${currentCurrency.code === currency.code ? 'bg-gray-50' : ''
-                            }`}
-                        >
-                          <span className="text-sm text-gray-900">{currency.name}</span>
-                          <span className="text-sm font-medium text-gray-700">{currency.code} {currency.symbol}</span>
-                        </button>
-                      ))}
-                    </div>
-                  )}
+                {/* Currency */}
+                <div className="w-full flex items-center justify-between px-4 py-3 text-gray-900">
+                  <span className="font-medium">{t('currency')}</span>
+                  <span className="text-sm font-medium text-gray-700">{CURRENCY.code} {CURRENCY.symbol}</span>
                 </div>
 
                 {/* Language Selector */}

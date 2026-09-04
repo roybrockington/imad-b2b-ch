@@ -26,7 +26,6 @@ export default function ProductPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImageIndex, setLightboxImageIndex] = useState(0);
-  const [currency, setCurrency] = useState('EUR');
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [quantity, setQuantity] = useState(1);
   const [addedToCart, setAddedToCart] = useState(false);
@@ -88,41 +87,6 @@ export default function ProductPage() {
 
     fetchUserAndProduct();
   }, [brandNameSlug, productNameSlug, locale, router]);
-
-  // Load currency from user account or localStorage
-  useEffect(() => {
-    const loadCurrency = () => {
-      // Prioritize account currency if user is logged in
-      if (currentUser?.account?.currency?.code) {
-        setCurrency(currentUser.account.currency.code);
-      } else {
-        // Fallback to localStorage for non-logged-in users
-        const savedCurrency = localStorage.getItem('currency');
-        setCurrency(savedCurrency || 'EUR');
-      }
-    };
-
-    // Initial load
-    loadCurrency();
-
-    // Listen for storage changes (when currency is changed in Navigation)
-    const handleStorageChange = (e: StorageEvent) => {
-      if (e.key === 'currency' && !currentUser?.account?.currency?.code) {
-        // Only use localStorage if no account currency
-        loadCurrency();
-      }
-    };
-
-    window.addEventListener('storage', handleStorageChange);
-
-    // Also poll for changes since storage event doesn't fire in same tab
-    const interval = setInterval(loadCurrency, 1000);
-
-    return () => {
-      window.removeEventListener('storage', handleStorageChange);
-      clearInterval(interval);
-    };
-  }, [currentUser]);
 
   // Get localized product name parts
   const getProductName1 = (): string => {
@@ -213,7 +177,7 @@ export default function ProductPage() {
     if (!product || !currentUser) return;
 
     const price = getPrice();
-    addItem(product, quantity, price, currency);
+    addItem(product, quantity, price, 'CHF');
     setAddedToCart(true);
 
     // Reset the added to cart message after 3 seconds
@@ -243,12 +207,7 @@ export default function ProductPage() {
     // B-stock only available for trade customers
     if (!shouldShowTradePrices()) return '0,00';
 
-    let price: string;
-    if (currency === 'EUR') price = product.trade_eu;
-    else if (currency === 'PLN') price = product.trade_pl;
-    else if (currency === 'CZK') price = product.trade_cz;
-    else if (currency === 'GBP') price = product.trade_uk || product.trade_eu;
-    else price = product.trade_eu;
+    let price: string = product.trade_ch;
 
     // Apply brand discount
     const brandDiscountPercent = getBrandDiscount(product.brand_id);
@@ -288,7 +247,7 @@ export default function ProductPage() {
     if (!product || !currentUser) return;
 
     const price = getBstockPrice(discountPercent);
-    addItem(product, bstockQuantity, price, currency, xwareCode);
+    addItem(product, bstockQuantity, price, 'CHF', xwareCode);
     setBstockAddedToCart(true);
 
     // Reset the added to cart message after 3 seconds
@@ -297,58 +256,14 @@ export default function ProductPage() {
     }, 3000);
   };
 
-  // Get currency symbol
-  const getCurrencySymbol = (currencyCode: string): string => {
-    const symbols: { [key: string]: string } = {
-      'EUR': '€',
-      'PLN': 'zł',
-      'CZK': 'Kč',
-      'GBP': '£'
-    };
-    return symbols[currencyCode] || '€';
-  };
-
-  // Format price with currency symbol in correct position
+  // Format price with the CHF symbol
   const formatPriceWithCurrency = (price: string): string => {
-    const symbol = getCurrencySymbol(currency);
-    // GBP shows symbol before price, others show after
-    if (currency === 'GBP') {
-      return `${symbol}${price}`;
-    }
-    return `${price} ${symbol}`;
+    return `CHF ${price}`;
   };
 
-  // Format price with locale-specific formatting
+  // Format price (Swiss format: dot for decimal, no thousands separator)
   const formatPrice = (price: number): string => {
-    if (isNaN(price)) return '0,00';
-
-    // Format based on currency
-    if (currency === 'EUR') {
-      // European format: 1.234,56 (dot for thousands, comma for decimal)
-      return price.toLocaleString('de-DE', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currency === 'CZK') {
-      // Czech format: 1 234,56 (space for thousands, comma for decimal)
-      return price.toLocaleString('cs-CZ', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currency === 'PLN') {
-      // Polish format: 1 234,56 (space for thousands, comma for decimal)
-      return price.toLocaleString('pl-PL', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currency === 'GBP') {
-      // British format: 1,234.56 (comma for thousands, dot for decimal)
-      return price.toLocaleString('en-GB', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    }
-
+    if (isNaN(price)) return '0.00';
     return price.toFixed(2);
   };
 
@@ -391,9 +306,9 @@ export default function ProductPage() {
     return categoryDiscount ? parseFloat(categoryDiscount.discount) : 0;
   };
 
-  // Calculate price based on selected currency
+  // Calculate price (CHF)
   const getPrice = (): string => {
-    if (!product) return '0,00';
+    if (!product) return '0.00';
 
     const useTradePrices = shouldShowTradePrices();
 
@@ -406,41 +321,16 @@ export default function ProductPage() {
     let price: string = '0';
     let isPromoPrice = false;
 
-    // Get promo or regular price based on currency
-    if (isPromoActive) {
-      // Check if promo price exists for current currency
-      if (currency === 'EUR' && product.promo_eu) {
-        price = product.promo_eu;
-        isPromoPrice = true;
-      } else if (currency === 'PLN' && product.promo_pl) {
-        price = product.promo_pl;
-        isPromoPrice = true;
-      } else if (currency === 'CZK' && product.promo_cz) {
-        price = product.promo_cz;
-        isPromoPrice = true;
-      } else if (currency === 'GBP' && product.promo_uk) {
-        price = product.promo_uk;
-        isPromoPrice = true;
-      }
+    // Get promo price if active
+    if (isPromoActive && product.promo_ch) {
+      price = product.promo_ch;
+      isPromoPrice = true;
     }
 
     // If no promo price, use regular pricing
     if (!isPromoPrice) {
-      if (useTradePrices) {
-        // Show trade prices for customers with account_id
-        if (currency === 'EUR') price = product.trade_eu;
-        else if (currency === 'PLN') price = product.trade_pl;
-        else if (currency === 'CZK') price = product.trade_cz;
-        else if (currency === 'GBP') price = product.trade_uk || product.trade_eu;
-        else price = product.trade_eu;
-      } else {
-        // Show SSP prices for everyone else
-        if (currency === 'EUR') price = product.ssp_eu;
-        else if (currency === 'PLN') price = product.ssp_pl;
-        else if (currency === 'CZK') price = product.ssp_cz;
-        else if (currency === 'GBP') price = product.ssp_uk || product.ssp_eu;
-        else price = product.ssp_eu;
-      }
+      // Show trade prices for customers with account_id, SSP for everyone else
+      price = useTradePrices ? product.trade_ch : product.ssp_ch;
     }
 
     // Apply discounts based on price type
@@ -475,17 +365,13 @@ export default function ProductPage() {
 
   // Get regular (non-promo) price for strikethrough
   const getRegularPrice = (): string => {
-    if (!product) return '0,00';
+    if (!product) return '0.00';
 
     const useTradePrices = shouldShowTradePrices();
     let price: string;
 
     if (useTradePrices) {
-      if (currency === 'EUR') price = product.trade_eu;
-      else if (currency === 'PLN') price = product.trade_pl;
-      else if (currency === 'CZK') price = product.trade_cz;
-      else if (currency === 'GBP') price = product.trade_uk || product.trade_eu;
-      else price = product.trade_eu;
+      price = product.trade_ch;
 
       // Apply brand discount
       const brandDiscountPercent = getBrandDiscount(product.brand_id);
@@ -512,11 +398,7 @@ export default function ProductPage() {
         }
       }
     } else {
-      if (currency === 'EUR') price = product.ssp_eu;
-      else if (currency === 'PLN') price = product.ssp_pl;
-      else if (currency === 'CZK') price = product.ssp_cz;
-      else if (currency === 'GBP') price = product.ssp_uk || product.ssp_eu;
-      else price = product.ssp_eu;
+      price = product.ssp_ch;
     }
 
     return formatPrice(parseFloat(price));
@@ -530,45 +412,18 @@ export default function ProductPage() {
     const promoStart = product.promo_start ? new Date(product.promo_start) : null;
     const promoEnd = product.promo_end ? new Date(product.promo_end) : null;
 
-    // Check if promo is active and there's a promo price for the current currency
-    const hasPromoPrice = (currency === 'EUR' && product.promo_eu) ||
-                          (currency === 'PLN' && product.promo_pl) ||
-                          (currency === 'CZK' && product.promo_cz) ||
-                          (currency === 'GBP' && product.promo_uk);
-
-    return !!(promoStart && promoEnd && now >= promoStart && now <= promoEnd && hasPromoPrice);
+    return !!(promoStart && promoEnd && now >= promoStart && now <= promoEnd && product.promo_ch);
   };
 
-  // Get RRP (Recommended Retail Price) based on currency
+  // Get RRP (Recommended Retail Price)
   const getRRP = (): string => {
-    if (!product) return '0,00';
-
-    let price: string;
-    if (currency === 'EUR') price = product.ssp_eu;
-    else if (currency === 'PLN') price = product.ssp_pl;
-    else if (currency === 'CZK') price = product.ssp_cz;
-    else if (currency === 'GBP') price = product.ssp_uk || product.ssp_eu;
-    else price = product.ssp_eu;
-
-    return formatPrice(parseFloat(price));
+    if (!product) return '0.00';
+    return formatPrice(parseFloat(product.ssp_ch));
   };
 
   const hasValidPrice = (): boolean => {
     if (!product) return false;
-    let price: string;
-    if (shouldShowTradePrices()) {
-      if (currency === 'EUR') price = product.trade_eu;
-      else if (currency === 'PLN') price = product.trade_pl;
-      else if (currency === 'CZK') price = product.trade_cz;
-      else if (currency === 'GBP') price = product.trade_uk || product.trade_eu;
-      else price = product.trade_eu;
-    } else {
-      if (currency === 'EUR') price = product.ssp_eu;
-      else if (currency === 'PLN') price = product.ssp_pl;
-      else if (currency === 'CZK') price = product.ssp_cz;
-      else if (currency === 'GBP') price = product.ssp_uk || product.ssp_eu;
-      else price = product.ssp_eu;
-    }
+    const price = shouldShowTradePrices() ? product.trade_ch : product.ssp_ch;
     const numPrice = parseFloat(price);
     return !isNaN(numPrice) && numPrice > 0;
   };
@@ -803,13 +658,13 @@ export default function ProductPage() {
                         RRP: {formatPriceWithCurrency(getRRP())}
                       </p>
                     )}
-                    {shouldShowTradePrices() && product.qty_break > 0 && parseFloat(product.qty_discount) > 0 && (
+                    {shouldShowTradePrices() && product.qty_break_ch > 0 && parseFloat(product.qty_discount_ch) > 0 && (
                       <div className="mt-3 bg-green-50 border border-green-200 rounded-md p-3">
                         <p className="text-sm font-semibold text-green-800">
                           Volume Discount Available
                         </p>
                         <p className="text-sm text-green-700 mt-1">
-                          Buy {product.qty_break}+ units and save {parseFloat(product.qty_discount).toFixed(0)}%
+                          Buy {product.qty_break_ch}+ units and save {parseFloat(product.qty_discount_ch).toFixed(0)}%
                         </p>
                       </div>
                     )}
@@ -820,123 +675,83 @@ export default function ProductPage() {
                 {shouldShowTradePrices() && isBrandAuthorized(product.brand_id) && isCategoryAuthorized(product.brand_id, product.category_id) && (
                   <div className="mb-6">
                     {(() => {
-                      // Check if user's account region is UK
-                      const isUKRegion = currentUser?.account?.region?.code?.toLowerCase() === 'uk';
+                      // Primary CH stock, with EU stock shown as a backup
+                      const chStock = product.stock ?? 0;
+                      const euStock = product.stock_eu ?? 0;
+                      const euEta = product.eta;
 
-                      if (isUKRegion) {
-                        // For UK customers, show both UK and EU stock
-                        const ukStock = product.stock_uk ?? 0;
-                        const euStock = product.stock;
-                        const euEta = product.eta;
+                      // If out of stock in CH but EU has stock, show 3 weeks from today as the CH ETA
+                      const threeWeeksFromToday = (() => {
+                        const d = new Date();
+                        d.setDate(d.getDate() + 21);
+                        return d.toISOString().split('T')[0];
+                      })();
+                      const chEta = (chStock === 0 && euStock > 0) ? threeWeeksFromToday : product.eta;
 
-                        // If out of stock in UK but EU has stock, show 3 weeks from today as UK ETA
-                        const threeWeeksFromToday = (() => {
-                          const d = new Date();
-                          d.setDate(d.getDate() + 21);
-                          return d.toISOString().split('T')[0];
-                        })();
-                        const ukEta = (ukStock === 0 && euStock > 0) ? threeWeeksFromToday : (product.eta_uk ?? product.eta);
+                      const chStockStatus = getStockStatus(chStock, chEta);
+                      const euStockStatus = getStockStatus(euStock, euEta);
 
-                        const ukStockStatus = getStockStatus(ukStock, ukEta);
-                        const euStockStatus = getStockStatus(euStock, euEta);
+                      return (
+                        <div className="space-y-3 flex gap-8">
+                          {/* CH Stock */}
+                          <div>
+                            <div className="text-xs font-semibold text-gray-500 mb-1">CH Availability</div>
+                            <div className={`flex items-center ${chStockStatus.color}`}>
+                              {chStockStatus.icon === 'check' && (
+                                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                </svg>
+                              )}
+                              {chStockStatus.icon === 'warning' && (
+                                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                  <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                                </svg>
+                              )}
+                              {chStockStatus.icon === 'calendar' && (
+                                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                  <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                                </svg>
+                              )}
+                              {chStockStatus.icon === 'phone' && (
+                                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                </svg>
+                              )}
+                              <span className="font-medium">{chStockStatus.text}</span>
+                            </div>
+                          </div>
 
-                        return (
-                          <div className="space-y-3 flex gap-8">
-                            {/* UK Stock */}
+                          {/* EU Stock - Only show if stock > 0 */}
+                          {euStock > 0 && (
                             <div>
-                              <div className="text-xs font-semibold text-gray-500 mb-1">UK Availability</div>
-                              <div className={`flex items-center ${ukStockStatus.color}`}>
-                                {ukStockStatus.icon === 'check' && (
+                              <div className="text-xs font-semibold text-gray-500 mb-1">EU Availability</div>
+                              <div className={`flex items-center ${euStockStatus.color}`}>
+                                {euStockStatus.icon === 'check' && (
                                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                   </svg>
                                 )}
-                                {ukStockStatus.icon === 'warning' && (
+                                {euStockStatus.icon === 'warning' && (
                                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
                                   </svg>
                                 )}
-                                {ukStockStatus.icon === 'calendar' && (
+                                {euStockStatus.icon === 'calendar' && (
                                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                                   </svg>
                                 )}
-                                {ukStockStatus.icon === 'phone' && (
+                                {euStockStatus.icon === 'phone' && (
                                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                                   </svg>
                                 )}
-                                <span className="font-medium">{ukStockStatus.text}</span>
+                                <span className="font-medium">{euStockStatus.text}</span>
                               </div>
                             </div>
-
-                            {/* EU Stock - Only show if stock > 0 */}
-                            {euStock > 0 && (
-                              <div>
-                                <div className="text-xs font-semibold text-gray-500 mb-1">EU Availability</div>
-                                <div className={`flex items-center ${euStockStatus.color}`}>
-                                  {euStockStatus.icon === 'check' && (
-                                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                                    </svg>
-                                  )}
-                                  {euStockStatus.icon === 'warning' && (
-                                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                      <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-                                    </svg>
-                                  )}
-                                  {euStockStatus.icon === 'calendar' && (
-                                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                      <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                                    </svg>
-                                  )}
-                                  {euStockStatus.icon === 'phone' && (
-                                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                                    </svg>
-                                  )}
-                                  <span className="font-medium">{euStockStatus.text}</span>
-                                </div>
-                              </div>
-                            )}
-                          </div>
-                        );
-                      } else {
-                        // For non-UK customers, show only their regional stock
-                        const stock = product.stock;
-                        const eta = product.eta;
-                        const stockStatus = getStockStatus(stock, eta);
-                        return (
-                          <div className={`flex items-center ${stockStatus.color}`}>
-                            {stockStatus.icon === 'check' && (
-                              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                              </svg>
-                            )}
-                            {stockStatus.icon === 'warning' && (
-                              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-                              </svg>
-                            )}
-                            {stockStatus.icon === 'cross' && (
-                              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                              </svg>
-                            )}
-                            {stockStatus.icon === 'calendar' && (
-                              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                              </svg>
-                            )}
-                            {stockStatus.icon === 'phone' && (
-                              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                              </svg>
-                            )}
-                            <span className="font-medium">{stockStatus.text}</span>
-                          </div>
-                        );
-                      }
+                          )}
+                        </div>
+                      );
                     })()}
                   </div>
                 )}

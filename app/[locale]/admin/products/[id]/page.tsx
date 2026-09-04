@@ -88,7 +88,7 @@ export default function AdminProductDetailPage() {
   };
 
   const formatPrice = (price: string) => {
-    return `€${parseFloat(price).toFixed(2)}`;
+    return `CHF ${parseFloat(price).toFixed(2)}`;
   };
 
   if (!currentUser) {
@@ -240,78 +240,36 @@ export default function AdminProductDetailPage() {
                     Electronic Software Distribution
                   </span>
                 )}
-                {product.qty_break > 0 && (
+                {product.qty_break_ch > 0 && (
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
-                    Quantity Break: {product.qty_break} ({product.qty_discount}% discount)
+                    Quantity Break: {product.qty_break_ch} ({product.qty_discount_ch}% discount)
                   </span>
                 )}
               </div>
-              {!product.bundle && !product.esd && product.qty_break === 0 && (
+              {!product.bundle && !product.esd && product.qty_break_ch === 0 && (
                 <p className="text-sm text-gray-500">No special attributes</p>
               )}
             </div>
 
-            {/* Pricing - EU Region */}
+            {/* Pricing - CHF */}
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
                 <Euro className="h-5 w-5 mr-2 text-gray-400" />
-                Pricing - EU Region
+                Pricing (CHF)
               </h2>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-500 mb-1">SSP (EU)</label>
-                  <p className="text-lg font-semibold text-gray-900">{formatPrice(product.ssp_eu)}</p>
+                  <label className="block text-sm font-medium text-gray-500 mb-1">SSP</label>
+                  <p className="text-lg font-semibold text-gray-900">{formatPrice(product.ssp_ch)}</p>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-500 mb-1">Trade Price (EU)</label>
-                  <p className="text-lg font-semibold text-gray-900">{formatPrice(product.trade_eu)}</p>
+                  <label className="block text-sm font-medium text-gray-500 mb-1">Trade Price</label>
+                  <p className="text-lg font-semibold text-gray-900">{formatPrice(product.trade_ch)}</p>
                 </div>
-                {product.promo_eu && (
+                {product.promo_ch && (
                   <div className="col-span-2 bg-red-50 border border-red-200 rounded-lg p-4">
-                    <label className="block text-sm font-medium text-red-700 mb-1">Promotional Price (EU)</label>
-                    <p className="text-2xl font-bold text-red-600">{formatPrice(product.promo_eu)}</p>
-                  </div>
-                )}
-              </div>
-            </div>
-
-            {/* Pricing - Poland */}
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <h2 className="text-lg font-semibold text-gray-900 mb-4">Pricing - Poland (PLN)</h2>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-500 mb-1">SSP (PL)</label>
-                  <p className="text-lg font-semibold text-gray-900">zł{formatPrice(product.ssp_pl).slice(1)}</p>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-500 mb-1">Trade Price (PL)</label>
-                  <p className="text-lg font-semibold text-gray-900">zł{formatPrice(product.trade_pl).slice(1)}</p>
-                </div>
-                {product.promo_pl && (
-                  <div className="col-span-2 bg-red-50 border border-red-200 rounded-lg p-4">
-                    <label className="block text-sm font-medium text-red-700 mb-1">Promotional Price (PL)</label>
-                    <p className="text-2xl font-bold text-red-600">zł{formatPrice(product.promo_pl).slice(1)}</p>
-                  </div>
-                )}
-              </div>
-            </div>
-
-            {/* Pricing - Czech Republic */}
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <h2 className="text-lg font-semibold text-gray-900 mb-4">Pricing - Czech Republic (CZK)</h2>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-500 mb-1">SSP (CZ)</label>
-                  <p className="text-lg font-semibold text-gray-900">Kč{formatPrice(product.ssp_cz).slice(1)}</p>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-500 mb-1">Trade Price (CZ)</label>
-                  <p className="text-lg font-semibold text-gray-900">Kč{formatPrice(product.trade_cz).slice(1)}</p>
-                </div>
-                {product.promo_cz && (
-                  <div className="col-span-2 bg-red-50 border border-red-200 rounded-lg p-4">
-                    <label className="block text-sm font-medium text-red-700 mb-1">Promotional Price (CZ)</label>
-                    <p className="text-2xl font-bold text-red-600">Kč{formatPrice(product.promo_cz).slice(1)}</p>
+                    <label className="block text-sm font-medium text-red-700 mb-1">Promotional Price</label>
+                    <p className="text-2xl font-bold text-red-600">{formatPrice(product.promo_ch)}</p>
                   </div>
                 )}
               </div>
@@ -499,7 +457,7 @@ export default function AdminProductDetailPage() {
           {/* Right Column - Sidebar Info */}
           <div className="space-y-6">
             {/* Promotional Period */}
-            {(product.promo_start || product.promo_end || product.promo_eu || product.promo_pl || product.promo_cz) && (
+            {(product.promo_start || product.promo_end || product.promo_ch) && (
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <h2 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
                   <Calendar className="h-5 w-5 mr-2 text-gray-400" />

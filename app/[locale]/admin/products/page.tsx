@@ -337,7 +337,7 @@ export default function AdminProductsPage() {
                         {getCategoryName(product.category_id)}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                        €{parseFloat(product.ssp_eu).toFixed(2)}
+                        CHF {parseFloat(product.ssp_ch).toFixed(2)}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                         <span className={product.stock > 0 ? 'text-green-600' : 'text-red-600'}>

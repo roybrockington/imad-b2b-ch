@@ -21,7 +21,6 @@ export default function SearchResultsPage() {
   const [error, setError] = useState<string | null>(null);
   const [totalPages, setTotalPages] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
-  const [currency, setCurrency] = useState('EUR');
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [inStockOnly, setInStockOnly] = useState(false);
 
@@ -40,35 +39,6 @@ export default function SearchResultsPage() {
     };
     fetchUser();
   }, []);
-
-  // Load currency from user account or localStorage
-  useEffect(() => {
-    const loadCurrency = () => {
-      // Prioritize account currency if user is logged in
-      if (currentUser?.account?.currency?.code) {
-        setCurrency(currentUser.account.currency.code);
-      } else {
-        const savedCurrency = localStorage.getItem('currency');
-        setCurrency(savedCurrency || 'EUR');
-      }
-    };
-
-    loadCurrency();
-
-    const handleStorageChange = (e: StorageEvent) => {
-      if (e.key === 'currency' && !currentUser?.account?.currency?.code) {
-        loadCurrency();
-      }
-    };
-
-    window.addEventListener('storage', handleStorageChange);
-    const interval = setInterval(loadCurrency, 1000);
-
-    return () => {
-      window.removeEventListener('storage', handleStorageChange);
-      clearInterval(interval);
-    };
-  }, [currentUser]);
 
   // Fetch search results
   useEffect(() => {
@@ -114,13 +84,8 @@ export default function SearchResultsPage() {
     setInStockOnly(prev => !prev);
   };
 
-  const isUKRegion = currentUser?.account?.region?.code?.toLowerCase() === 'uk';
-
   const displayedProducts = inStockOnly
-    ? products.filter(p => {
-        const stock = isUKRegion ? (p.stock + (p.stock_uk ?? 0)) : p.stock;
-        return stock > 0;
-      })
+    ? products.filter(p => (p.stock + (p.stock_eu ?? 0)) > 0)
     : products;
 
   // Get localized product name parts
@@ -141,42 +106,13 @@ export default function SearchResultsPage() {
     return `${getProductName1(product)} ${getProductName2(product)}`.trim();
   };
 
-  // Currency helper
-  const getCurrencySymbol = (currencyCode: string): string => {
-    const symbols: { [key: string]: string } = {
-      'EUR': '€',
-      'PLN': 'zł',
-      'CZK': 'Kč',
-      'GBP': '£'
-    };
-    return symbols[currencyCode] || '€';
-  };
-
-  // Format price with currency symbol in correct position
+  // Format price with the CHF symbol
   const formatPriceWithCurrency = (price: string): string => {
-    const symbol = getCurrencySymbol(currency);
-    if (currency === 'GBP') {
-      return `${symbol}${price}`;
-    }
-    return `${price} ${symbol}`;
+    return `CHF ${price}`;
   };
 
   const hasValidPrice = (product: Product): boolean => {
-    const useTradePrices = shouldShowTradePrices();
-    let price: string;
-    if (useTradePrices) {
-      if (currency === 'EUR') price = product.trade_eu;
-      else if (currency === 'PLN') price = product.trade_pl;
-      else if (currency === 'CZK') price = product.trade_cz;
-      else if (currency === 'GBP') price = product.trade_uk || product.trade_eu;
-      else price = product.trade_eu;
-    } else {
-      if (currency === 'EUR') price = product.ssp_eu;
-      else if (currency === 'PLN') price = product.ssp_pl;
-      else if (currency === 'CZK') price = product.ssp_cz;
-      else if (currency === 'GBP') price = product.ssp_uk || product.ssp_eu;
-      else price = product.ssp_eu;
-    }
+    const price = shouldShowTradePrices() ? product.trade_ch : product.ssp_ch;
     const numPrice = parseFloat(price);
     return !isNaN(numPrice) && numPrice > 0;
   };
@@ -242,11 +178,7 @@ export default function SearchResultsPage() {
     let price: string;
 
     if (useTradePrices) {
-      if (currency === 'EUR') price = product.trade_eu;
-      else if (currency === 'PLN') price = product.trade_pl;
-      else if (currency === 'CZK') price = product.trade_cz;
-      else if (currency === 'GBP') price = product.trade_uk || product.trade_eu;
-      else price = product.trade_eu;
+      price = product.trade_ch;
 
       // Apply brand discount
       const brandDiscountPercent = getBrandDiscount(product.brand_id);
@@ -273,37 +205,11 @@ export default function SearchResultsPage() {
         }
       }
     } else {
-      if (currency === 'EUR') price = product.ssp_eu;
-      else if (currency === 'PLN') price = product.ssp_pl;
-      else if (currency === 'CZK') price = product.ssp_cz;
-      else if (currency === 'GBP') price = product.ssp_uk || product.ssp_eu;
-      else price = product.ssp_eu;
+      price = product.ssp_ch;
     }
 
     const numPrice = parseFloat(price);
-    if (isNaN(numPrice)) return '0,00';
-
-    if (currency === 'EUR') {
-      return numPrice.toLocaleString('de-DE', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currency === 'CZK') {
-      return numPrice.toLocaleString('cs-CZ', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currency === 'PLN') {
-      return numPrice.toLocaleString('pl-PL', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currency === 'GBP') {
-      return numPrice.toLocaleString('en-GB', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    }
+    if (isNaN(numPrice)) return '0.00';
 
     return numPrice.toFixed(2);
   };
@@ -411,10 +317,9 @@ export default function SearchResultsPage() {
                     {/* Stock Status - Only show for authorized users with brand/category access */}
                     {shouldShowTradePrices() && isBrandAuthorized(product.brand_id) && isCategoryAuthorized(product.brand_id, product.category_id) && (
                       (() => {
-                        // UK customers see combined EU + UK stock; EU customers see EU stock only
-                        const stock = isUKRegion ? (product.stock + (product.stock_uk ?? 0)) : product.stock;
-                        const eta = isUKRegion ? (product.eta_uk ?? product.eta) : product.eta;
-                        const stockStatus = getStockStatus(stock, eta);
+                        // Combined CH (primary) + EU (backup) stock
+                        const stock = product.stock + (product.stock_eu ?? 0);
+                        const stockStatus = getStockStatus(stock, product.eta);
                         return (
                           <p className={`text-sm font-medium mb-2 ${stockStatus.color}`}>
                             {stockStatus.text}

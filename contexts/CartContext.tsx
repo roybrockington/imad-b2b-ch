@@ -95,17 +95,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const getTotalPrice = () => {
     return items.reduce((total, item) => {
-      // Parse price based on currency format
-      let price: number;
-      if (item.currency === 'GBP') {
-        // British format: 1,234.56 (comma is thousands, dot is decimal)
-        // Remove commas, keep dot as decimal
-        price = parseFloat(item.price.replace(/,/g, ''));
-      } else {
-        // European format: 1.234,56 (dot is thousands, comma is decimal)
-        // Remove dots and spaces, replace comma with dot
-        price = parseFloat(item.price.replace(/[\s.]/g, '').replace(',', '.'));
-      }
+      const price = parseFloat(item.price);
       return total + price * item.quantity;
     }, 0);
   };

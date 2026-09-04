@@ -107,15 +107,11 @@ export default function CheckoutPage() {
       try {
         // Fetch country data
         const country = await api.getCountry(selectedAddress.country);
-        const currency = items[0]?.currency || 'EUR';
-        const currencyLower = currency.toLowerCase();
 
         // Calculate shipping charge (if not free shipping)
         const hasFreeShipping = currentUser?.account?.freeShipping || false;
         if (!hasFreeShipping) {
-          const shippingColumn = `shipping_${currencyLower}` as keyof Country;
-          const shipping = country[shippingColumn];
-          setShippingCharge(shipping ? parseFloat(shipping as string) : 0);
+          setShippingCharge(country.shipping_chf ? parseFloat(country.shipping_chf) : 0);
         } else {
           setShippingCharge(0);
         }
@@ -123,9 +119,7 @@ export default function CheckoutPage() {
         // Calculate freight charge (if any item has freight)
         const hasFreightProduct = items.some(item => item.product.freight);
         if (hasFreightProduct) {
-          const freightColumn = `freight_${currencyLower}` as keyof Country;
-          const freight = country[freightColumn];
-          setFreightCharge(freight ? parseFloat(freight as string) : 0);
+          setFreightCharge(country.freight_chf ? parseFloat(country.freight_chf) : 0);
         } else {
           setFreightCharge(0);
         }
@@ -141,78 +135,14 @@ export default function CheckoutPage() {
     calculateCharges();
   }, [selectedAddressId, addresses, currentUser, items]);
 
-  const getCurrencySymbol = (currencyCode: string): string => {
-    const symbols: { [key: string]: string } = {
-      'EUR': '€',
-      'PLN': 'zł',
-      'CZK': 'Kč',
-      'GBP': '£'
-    };
-    return symbols[currencyCode] || '€';
+  const parsePrice = (priceString: string): number => {
+    return parseFloat(priceString);
   };
 
-  const parsePrice = (priceString: string, currencyCode: string): number => {
-    if (currencyCode === 'GBP') {
-      // British format: 1,234.56 (comma is thousands, dot is decimal)
-      // Remove commas, keep dot as decimal
-      return parseFloat(priceString.replace(/,/g, ''));
-    } else {
-      // European format: 1.234,56 (dot is thousands, comma is decimal)
-      // Remove dots and spaces, replace comma with dot
-      return parseFloat(priceString.replace(/[\s.]/g, '').replace(',', '.'));
-    }
-  };
-
-  const formatPrice = (price: number | string, currencyCode: string): string => {
+  const formatPriceWithCurrency = (price: number | string): string => {
     const numPrice = typeof price === 'string' ? parseFloat(price) : price;
-
-    if (isNaN(numPrice)) return '0.00';
-
-    // Format based on currency
-    if (currencyCode === 'GBP') {
-      // British format: 1,234.56 (comma for thousands, dot for decimal)
-      return numPrice.toLocaleString('en-GB', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currencyCode === 'EUR') {
-      // European format: 1.234,56 (dot for thousands, comma for decimal)
-      return numPrice.toLocaleString('de-DE', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currencyCode === 'CZK') {
-      // Czech format: 1 234,56 (space for thousands, comma for decimal)
-      return numPrice.toLocaleString('cs-CZ', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    } else if (currencyCode === 'PLN') {
-      // Polish format: 1 234,56 (space for thousands, comma for decimal)
-      return numPrice.toLocaleString('pl-PL', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      });
-    }
-
-    // Default to European format
-    return numPrice.toLocaleString('de-DE', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2
-    });
-  };
-
-  const formatPriceWithCurrency = (price: number | string, currencyCode: string): string => {
-    const formattedPrice = formatPrice(price, currencyCode);
-    const symbol = getCurrencySymbol(currencyCode);
-
-    // Currency symbol goes before the price for GBP
-    if (currencyCode === 'GBP') {
-      return `${symbol}${formattedPrice}`;
-    }
-
-    // Currency symbol goes after the price for other currencies
-    return `${formattedPrice} ${symbol}`;
+    if (isNaN(numPrice)) return 'CHF 0.00';
+    return `CHF ${numPrice.toFixed(2)}`;
   };
 
   const handleSubmitOrder = async (e: React.FormEvent) => {
@@ -250,7 +180,7 @@ export default function CheckoutPage() {
       notes: notes.trim(),
       items: items.map(item => {
         // Convert formatted price string to decimal format for backend
-        const numericPrice = parsePrice(item.price, item.currency);
+        const numericPrice = parsePrice(item.price);
         const isCstock = item.xwareCode?.startsWith('3');
         const stockLabel = isCstock ? 'C-STOCK' : 'B-STOCK';
         return {
@@ -264,7 +194,7 @@ export default function CheckoutPage() {
         };
       }),
       total: getTotalPrice(),
-      currency: items[0]?.currency || 'EUR'
+      currency: items[0]?.currency || 'CHF'
     };
 
     try {
@@ -305,7 +235,6 @@ export default function CheckoutPage() {
   }
 
   const totalPrice = getTotalPrice();
-  const firstItemCurrency = items[0]?.currency || 'EUR';
 
   // Calculate insurance charge
   const insurancePercentage = currentUser?.account?.insurance ? parseFloat(currentUser.account.insurance) : 0;
@@ -446,8 +375,7 @@ export default function CheckoutPage() {
                       ? `https://media.sound-service.eu/Artikelbilder/Shopsystem/278x148/${item.product.description.image1}`
                       : null;
 
-                    // Parse price based on currency format
-                    const itemTotal = parsePrice(item.price, item.currency) * item.quantity;
+                    const itemTotal = parsePrice(item.price) * item.quantity;
 
                     // Use product id + xwareCode as unique key for B-stock items
                     const itemKey = item.xwareCode ? `${item.product.id}-${item.xwareCode}` : item.product.id.toString();
@@ -493,14 +421,14 @@ export default function CheckoutPage() {
                           </h3>
                           <p className="text-xs text-gray-500">{t('sku')} {item.xwareCode || item.product.code}</p>
                           <p className={`text-sm mt-1 ${item.xwareCode ? stockTextColor : 'text-gray-700'}`}>
-                            {formatPriceWithCurrency(item.price, item.currency)} × {item.quantity}
+                            {formatPriceWithCurrency(item.price)} × {item.quantity}
                           </p>
                         </div>
 
                         {/* Item Total */}
                         <div className="text-right">
                           <p className={`font-semibold ${item.xwareCode ? stockTextColor : 'text-gray-900'}`}>
-                            {formatPriceWithCurrency(itemTotal, item.currency)}
+                            {formatPriceWithCurrency(itemTotal)}
                           </p>
                         </div>
                       </div>
@@ -530,14 +458,14 @@ export default function CheckoutPage() {
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-600">{t('subtotal')}</span>
                     <span className="font-medium">
-                      {formatPriceWithCurrency(totalPrice, firstItemCurrency)}
+                      {formatPriceWithCurrency(totalPrice)}
                     </span>
                   </div>
                   {insuranceCharge > 0 && (
                     <div className="flex justify-between text-sm">
                       <span className="text-gray-600">Insurance ({insurancePercentage}%)</span>
                       <span className="font-medium">
-                        {formatPriceWithCurrency(insuranceCharge, firstItemCurrency)}
+                        {formatPriceWithCurrency(insuranceCharge)}
                       </span>
                     </div>
                   )}
@@ -553,7 +481,7 @@ export default function CheckoutPage() {
                         <span className="font-medium text-gray-400 italic">Calculating...</span>
                       ) : shippingCharge > 0 ? (
                         <span className="font-medium">
-                          {formatPriceWithCurrency(shippingCharge, firstItemCurrency)}
+                          {formatPriceWithCurrency(shippingCharge)}
                         </span>
                       ) : (
                         <span className="font-medium text-gray-400 italic">Select address</span>
@@ -567,7 +495,7 @@ export default function CheckoutPage() {
                         <span className="font-medium text-gray-400 italic">Calculating...</span>
                       ) : (
                         <span className="font-medium">
-                          {formatPriceWithCurrency(freightCharge, firstItemCurrency)}
+                          {formatPriceWithCurrency(freightCharge)}
                         </span>
                       )}
                     </div>
@@ -577,7 +505,7 @@ export default function CheckoutPage() {
                 <div className="flex justify-between text-lg font-bold mb-6">
                   <span>{t('total')}</span>
                   <span className="text-brand">
-                    {formatPriceWithCurrency(grandTotal, firstItemCurrency)}
+                    {formatPriceWithCurrency(grandTotal)}
                   </span>
                 </div>
 

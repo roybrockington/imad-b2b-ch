@@ -7,11 +7,10 @@ import { useCart } from '@/contexts/CartContext';
 
 interface CsvUploadProps {
   onSuccess?: () => void;
-  userCurrency: string;
   userAccount: any;
 }
 
-export default function CsvUpload({ onSuccess, userCurrency, userAccount }: CsvUploadProps) {
+export default function CsvUpload({ onSuccess, userAccount }: CsvUploadProps) {
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
@@ -79,28 +78,12 @@ export default function CsvUpload({ onSuccess, userCurrency, userAccount }: CsvU
   };
 
   const calculatePrice = (product: Product): string => {
-    if (!userAccount) return product.trade_eu;
+    if (!userAccount) return product.trade_ch;
 
-    const currency = userAccount.currency?.code || 'EUR';
-    let basePrice = '0.00';
-
-    // Select base price based on currency
-    switch (currency) {
-      case 'PLN':
-        basePrice = product.trade_pl;
-        break;
-      case 'CZK':
-        basePrice = product.trade_cz;
-        break;
-      case 'GBP':
-        basePrice = product.trade_uk || product.trade_eu;
-        break;
-      default:
-        basePrice = product.trade_eu;
-    }
+    const basePrice = product.trade_ch;
 
     // Apply discounts if available
-    const price = parseFloat(basePrice.replace(/\s/g, '').replace(',', '.'));
+    const price = parseFloat(basePrice);
     let discount = parseFloat(userAccount.discount || '0');
 
     // Check for brand-specific discounts
@@ -125,14 +108,7 @@ export default function CsvUpload({ onSuccess, userCurrency, userAccount }: CsvU
 
     const discountedPrice = price * (1 - discount / 100);
 
-    // Format price based on currency
-    if (currency === 'GBP') {
-      // British format: use dot as decimal separator
-      return discountedPrice.toFixed(2);
-    } else {
-      // European format: use comma as decimal separator
-      return discountedPrice.toFixed(2).replace('.', ',');
-    }
+    return discountedPrice.toFixed(2);
   };
 
   const processFile = async (file: File) => {
@@ -161,11 +137,9 @@ export default function CsvUpload({ onSuccess, userCurrency, userAccount }: CsvU
 
       // Add found products to cart
       let addedCount = 0;
-      // Use currency from account, fallback to userCurrency prop
-      const currency = userAccount?.currency?.code || userCurrency;
       for (const { product, quantity } of result.found) {
         const price = calculatePrice(product);
-        addItem(product, quantity, price, currency);
+        addItem(product, quantity, price, 'CHF');
         addedCount++;
       }
 
