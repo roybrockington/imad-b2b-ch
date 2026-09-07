@@ -27,6 +27,11 @@ const countryToLocale: Record<string, string> = {
   'MC': 'fr', // Monaco
   'LU': 'fr', // Luxembourg
 
+  // Italian-speaking countries
+  'IT': 'it', // Italy
+  'SM': 'it', // San Marino
+  'VA': 'it', // Vatican City
+
   // Dutch-speaking countries
   'NL': 'nl', // Netherlands
 
@@ -39,7 +44,7 @@ const countryToLocale: Record<string, string> = {
 export default function proxy(request: VercelRequest) {
   const { pathname } = request.nextUrl;
 
-  // Handle artikel redirects for disabled locales (pl, nl, fr)
+  // Handle artikel redirects for disabled locales (pl, nl)
   // Match pattern: /[locale]/artikel/[article_number]
   const artikelMatch = pathname.match(/^\/([a-z]{2})\/artikel\/(\d+)$/);
   if (artikelMatch) {
@@ -53,7 +58,7 @@ export default function proxy(request: VercelRequest) {
     }
   }
 
-  // Check if the pathname already has a locale prefix (de, fr, nl, pl)
+  // Check if the pathname already has a locale prefix (de, fr, it, nl, pl)
   const pathnameHasLocale = routing.locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
@@ -79,5 +84,5 @@ export default function proxy(request: VercelRequest) {
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/', '/(de|fr|nl|pl)/:path*', '/((?!api|_next|_vercel|.*\\..*).*)']
+  matcher: ['/', '/(de|fr|it|nl|pl)/:path*', '/((?!api|_next|_vercel|.*\\..*).*)']
 };

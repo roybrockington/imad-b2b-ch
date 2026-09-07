@@ -3,8 +3,10 @@ import { createNavigation } from 'next-intl/navigation';
 
 export const routing = defineRouting({
   // A list of all locales that are supported
-  // Temporarily disabled: 'fr', 'nl', 'pl' until translations are complete
-  locales: ['en', 'de'],
+  // Temporarily disabled: 'nl', 'pl' until translations are complete
+  // English kept enabled here as the fallback/default locale even though it is
+  // temporarily hidden from the nav menu (see components/Navigation.tsx)
+  locales: ['en', 'de', 'fr', 'it'],
 
   // Used when no locale matches
   defaultLocale: 'en',

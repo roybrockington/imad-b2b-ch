@@ -2,8 +2,10 @@ import { notFound } from 'next/navigation';
 import { getRequestConfig } from 'next-intl/server';
 
 // Can be imported from a shared config
-// Temporarily disabled: 'fr', 'nl', 'pl' until translations are complete
-export const locales = ['en', 'de'] as const;
+// Temporarily disabled: 'nl', 'pl' until translations are complete
+// English kept enabled here as the fallback/default locale even though it is
+// temporarily hidden from the nav menu (see components/Navigation.tsx)
+export const locales = ['en', 'de', 'fr', 'it'] as const;
 export const defaultLocale = 'en' as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {

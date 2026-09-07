@@ -9,10 +9,13 @@ import { slugify } from '@/lib/utils';
 import CartIcon from './CartIcon';
 
 const languages = [
-  { code: 'en', name: 'English', countryCode: 'gb' },
+  // Temporarily disabled in the nav menu (English remains the site's
+  // underlying default/fallback locale, see i18n.ts / i18n/routing.ts):
+  // { code: 'en', name: 'English', countryCode: 'gb' },
   { code: 'de', name: 'Deutsch', countryCode: 'de' },
+  { code: 'fr', name: 'Français', countryCode: 'fr' },
+  { code: 'it', name: 'Italiano', countryCode: 'it' },
   // Temporarily disabled until translations are complete:
-  // { code: 'fr', name: 'Français', countryCode: 'fr' },
   // { code: 'nl', name: 'Nederlands', countryCode: 'nl' },
   // { code: 'pl', name: 'Polski', countryCode: 'pl' },
 ];

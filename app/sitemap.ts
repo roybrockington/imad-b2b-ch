@@ -72,7 +72,7 @@ function slugify(text: string): string {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const locales = ['en', 'de', 'fr', 'nl', 'pl'];
+  const locales = ['en', 'de', 'fr', 'it'];
   const defaultLocale = 'en';
 
   // Static pages
