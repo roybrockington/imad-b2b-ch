@@ -7,7 +7,6 @@ import { useLocale, useTranslations } from 'next-intl';
 
 const topBrands = [
   { code: 'Zoom', image: 'Zoom-Brand-Image.jpg', name: 'Zoom', slug: 'zoom' },
-  { code: 'Nord', image: 'Nord-Brand-Image.jpg', name: 'Nord Keyboards', slug: 'nord-keyboards' },
   { code: 'LTD', image: 'LTD-Brand-Image.jpg', name: 'LTD', slug: 'ltd' },
   { code: 'Focal', image: 'Focal-Brand-Image.jpg', name: 'Focal', slug: 'focal' },
   { code: 'iCon', image: 'Icon-Brand-Image.jpg', name: 'iCon Pro Audio', slug: 'icon-pro-audio' },
@@ -15,15 +14,9 @@ const topBrands = [
   { code: 'ENKI', image: 'Enki-Brand-Image.jpg', name: 'ENKI', slug: 'enki' },
   { code: 'ESP', image: 'ESP-Brand-Image.jpg', name: 'ESP', slug: 'esp' },
   { code: 'Tech21', image: 'Tech-21-Brand-Image.jpg', name: 'Tech21', slug: 'tech21' },
-  { code: 'DiMarzio', image: 'DiMarzio-Brand-Image.jpg', name: 'DiMarzio', slug: 'dimarzio' },
-  { code: 'EmpiricalL', image: 'Empirical-Labs-Brand-Image.jpg', name: 'Empirical Labs', slug: 'empirical-labs' },
-  { code: 'Dixon', image: 'dixon-brand-image.jpg', name: 'Dixon', slug: 'dixon' },
   { code: 'Masterwork', image: 'Masterwork-Brand-Image.jpg', name: 'Masterwork', slug: 'masterwork' },
   { code: 'Overtone', image: 'Overtone-Labs-Brand-Image.jpg', name: 'Overtone Labs', slug: 'overtone-labs' },
   { code: 'Soundbrenn', image: 'Soundbrenner-Brand-Image.jpg', name: 'Soundbrenner', slug: 'soundbrenner' },
-  { code: 'KHDK', image: 'KHDK-Brand-Image.jpg', name: 'KHDK', slug: 'khdk' },
-  { code: 'Markbass', image: 'Markbass-Brand-Image.jpg', name: 'Markbass', slug: 'markbass' },
-  { code: 'DV Mark', image: 'Dvmark-Brand-Image.jpg', name: 'DV Mark', slug: 'dv-mark' },
 ];
 
 export default function TopBrandsCarousel() {

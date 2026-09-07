@@ -508,12 +508,6 @@ export default function Navigation() {
                 </a>
               </li>
 
-              {/* Sales Areas */}
-              <li>
-                <Link href="/sales-areas" className="text-white hover:text-gray-200 transition-colors">
-                  {t('salesAreas')}
-                </Link>
-              </li>
 
               {/* Returns */}
               <li>
@@ -637,15 +631,6 @@ export default function Navigation() {
                 >
                   {t('news')}
                 </a>
-
-                {/* Sales Areas */}
-                <Link
-                  href="/sales-areas"
-                  className="block px-4 py-3 !text-gray-900 hover:bg-gray-100 rounded-md transition-colors font-medium"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {t('salesAreas')}
-                </Link>
 
                 {/* Returns */}
                 <Link
