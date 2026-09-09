@@ -38,7 +38,7 @@ const countryToLocale: Record<string, string> = {
   // Polish-speaking countries
   'PL': 'pl', // Poland
 
-  // English is the default fallback for all other countries
+  // German is the default fallback for all other countries
 };
 
 export default function proxy(request: VercelRequest) {
@@ -69,9 +69,9 @@ export default function proxy(request: VercelRequest) {
 
   // Only redirect if:
   // 1. We detected a locale from geo data
-  // 2. The detected locale is not the default (en)
+  // 2. The detected locale is not the default (de)
   // 3. The pathname doesn't already have a locale prefix
-  if (detectedLocale && detectedLocale !== 'en' && !pathnameHasLocale) {
+  if (detectedLocale && detectedLocale !== 'de' && !pathnameHasLocale) {
     const url = request.nextUrl.clone();
     url.pathname = `/${detectedLocale}${pathname}`;
     return NextResponse.redirect(url);
